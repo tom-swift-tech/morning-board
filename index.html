@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tom · Morning Board</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=IBM+Plex+Mono:wght@400;500&family=Outfit:wght@380;500;650&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #e8e0d2;
+    --mute: #9a917f;
+    --paper: #12110e;
+    --card: #1b1914;
+    --line: #2d2a22;
+    --copper: #d4a05a;
+    --ember: #ff6b3d;
+    --ok: #7dcea0;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; background: var(--paper); color: var(--ink); }
+  body {
+    font-family: Outfit, system-ui, sans-serif;
+    min-height: 100vh;
+    background:
+      radial-gradient(1200px 600px at 10% -10%, #2a2114 0%, transparent 50%),
+      radial-gradient(800px 400px at 100% 0%, #1a1410 0%, transparent 40%),
+      var(--paper);
+  }
+  header {
+    display: flex; justify-content: space-between; align-items: end;
+    padding: 36px 40px 20px; max-width: 1180px; margin: 0 auto;
+  }
+  .mark { font-family: "Instrument Serif", Georgia, serif; font-size: 42px; letter-spacing: -0.03em; line-height: 1; }
+  .mark em { font-style: italic; color: var(--copper); }
+  .sub { color: var(--mute); font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase; margin-top: 8px; }
+  .clock { text-align: right; font-family: "IBM Plex Mono", monospace; font-size: 13px; color: var(--mute); }
+  .clock b { display: block; color: var(--ink); font-size: 22px; font-weight: 500; margin-bottom: 4px; }
+  main { max-width: 1180px; margin: 0 auto; padding: 8px 40px 60px; display: grid; gap: 18px; grid-template-columns: 1fr 1.35fr; }
+  @media (max-width: 880px) { main, header { padding-left: 20px; padding-right: 20px; } main { grid-template-columns: 1fr; } }
+  .card {
+    background: linear-gradient(180deg, #211e18, var(--card));
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    padding: 22px 24px;
+    box-shadow: 0 20px 50px rgba(0,0,0,.28);
+  }
+  .card h2 {
+    font-family: "Instrument Serif", Georgia, serif;
+    font-size: 26px; font-weight: 400; margin: 0 0 16px;
+  }
+  .temp { font-family: "Instrument Serif", Georgia, serif; font-size: 88px; line-height: .85; letter-spacing: -0.04em; }
+  .temp span { font-size: 36px; color: var(--copper); }
+  .wx-meta { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 16px; margin-top: 18px; color: var(--mute); font-size: 13px; }
+  .wx-meta b { display: block; color: var(--ink); font-weight: 500; font-size: 15px; margin-top: 2px; }
+  .hours { display: flex; gap: 8px; overflow-x: auto; margin-top: 20px; padding-bottom: 4px; }
+  .hour { min-width: 54px; text-align: center; background: #14120e; border: 1px solid var(--line); border-radius: 12px; padding: 10px 6px; }
+  .hour em { display: block; font-style: normal; font-size: 18px; color: var(--copper); }
+  .hour small { color: var(--mute); font-size: 11px; }
+  .ship { display: flex; flex-direction: column; gap: 12px; }
+  a.item {
+    display: block; text-decoration: none; color: inherit;
+    padding: 12px 14px; border-radius: 12px; border: 1px solid transparent;
+    background: #14120e;
+  }
+  a.item:hover { border-color: var(--copper); }
+  a.item .who { font-family: "IBM Plex Mono", monospace; font-size: 11px; color: var(--copper); letter-spacing: .08em; text-transform: uppercase; }
+  a.item .name { font-size: 17px; margin: 3px 0 4px; }
+  a.item p { margin: 0; color: var(--mute); font-size: 13.5px; line-height: 1.45; }
+  .tools { grid-column: 1 / -1; }
+  .tabs { display: flex; gap: 8px; margin-bottom: 16px; }
+  .tabs button {
+    font: 500 13px Outfit, sans-serif; letter-spacing: .06em; text-transform: uppercase;
+    background: transparent; color: var(--mute); border: 1px solid var(--line);
+    border-radius: 999px; padding: 8px 14px; cursor: pointer;
+  }
+  .tabs button.on { color: #1a140c; background: var(--copper); border-color: var(--copper); }
+  .panel { display: none; }
+  .panel.on { display: block; }
+  textarea, input, select {
+    width: 100%; background: #0e0d0b; color: var(--ink);
+    border: 1px solid var(--line); border-radius: 12px;
+    font: 14px/1.5 "IBM Plex Mono", monospace; padding: 12px;
+  }
+  textarea { min-height: 220px; resize: vertical; }
+  .split { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  @media (max-width: 880px) { .split { grid-template-columns: 1fr; } }
+  .preview {
+    min-height: 220px; padding: 14px 16px; border-radius: 12px;
+    background: #0e0d0b; border: 1px solid var(--line); overflow: auto;
+  }
+  .preview h1,.preview h2,.preview h3 { font-family: "Instrument Serif", Georgia, serif; }
+  .preview code { background: #211c14; padding: 1px 5px; border-radius: 4px; }
+  .row { display: flex; gap: 10px; flex-wrap: wrap; margin: 10px 0; }
+  .row button, .tz button {
+    font: 500 13px Outfit, sans-serif; cursor: pointer;
+    background: #2a2418; color: var(--ink); border: 1px solid var(--line);
+    border-radius: 10px; padding: 8px 12px;
+  }
+  .err { color: var(--ember); font-size: 13px; margin-top: 8px; }
+  .ok { color: var(--ok); }
+  .tz-out { margin-top: 16px; font-family: "IBM Plex Mono", monospace; font-size: 18px; color: var(--copper); }
+  footer { max-width: 1180px; margin: 0 auto; padding: 0 40px 40px; color: var(--mute); font-size: 12px; }
+</style>
+</head>
+<body>
+<header>
+  <div>
+    <div class="mark">Morning <em>board</em></div>
+    <div class="sub">Tom Swift · 38582 · public sources only</div>
+  </div>
+  <div class="clock"><b id="now">--:--</b><span id="nowdate">America/Chicago</span></div>
+</header>
+<main>
+  <section class="card">
+    <h2>Monterey</h2>
+    <div class="temp" id="temp">--<span>°</span></div>
+    <div class="wx-meta">
+      <div>High / low<b id="hilo">-- / --</b></div>
+      <div>Feels like<b id="feels">--</b></div>
+      <div>Humidity / wind<b id="hum">--</b></div>
+      <div>Rain today<b id="rain">--</b></div>
+      <div>Sunrise<b id="rise">--</b></div>
+      <div>Sunset<b id="set">--</b></div>
+    </div>
+    <div class="hours" id="hours"></div>
+  </section>
+  <section class="card">
+    <h2>What shipped</h2>
+    <div class="ship">
+      <a class="item" href="https://x.ai/news/grok-4-6" target="_blank" rel="noopener">
+        <div class="who">xAI · Aug 12</div>
+        <div class="name">Grok 4.6</div>
+        <p>Long-running agents and visual work. Live in Cursor and Grok Build. $2 / $6 per million.</p>
+      </a>
+      <a class="item" href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-3-7-flash/" target="_blank" rel="noopener">
+        <div class="who">Google · Aug 13</div>
+        <div class="name">Gemini 3.7 Flash</div>
+        <p>Cheap coding and agent workhorse. Intro price $0.75 / $3.75 through Dec 31.</p>
+      </a>
+      <a class="item" href="https://www.theverge.com/ai-artificial-intelligence/981739/claude-gmail-google-drive-connector-cowork-mobile-web" target="_blank" rel="noopener">
+        <div class="who">Anthropic · Aug 18</div>
+        <div class="name">Claude Cowork + Workspace</div>
+        <p>Cowork on mobile and web for paid accounts. Gmail can send. Drive can manage files.</p>
+      </a>
+      <a class="item" href="https://www.nbclosangeles.com/news/national-international/openai-launches-chatgpt-for-teens-promising-age-appropriate-chatbot/3930743/" target="_blank" rel="noopener">
+        <div class="who">OpenAI · Aug 18</div>
+        <div class="name">ChatGPT for Teens</div>
+        <p>13–17 mode with tighter safety. Homework help that is not supposed to just spit answers.</p>
+      </a>
+      <a class="item" href="https://www.theverge.com/tech/981351/gemini-in-chrome-android-availability-usa" target="_blank" rel="noopener">
+        <div class="who">Google · Aug 18</div>
+        <div class="name">Gemini in Chrome on Android</div>
+        <p>US rollout. Toolbar sparkle. Summarize the page you are on.</p>
+      </a>
+    </div>
+  </section>
+  <section class="card tools">
+    <h2>Browser tools</h2>
+    <div class="tabs">
+      <button class="on" data-tab="md">Markdown</button>
+      <button data-tab="json">JSON</button>
+      <button data-tab="tz">Timezone</button>
+    </div>
+    <div id="md" class="panel on">
+      <div class="split">
+        <textarea id="mdIn"># Hello, Tom
+
+Write **markdown** on the left.
+
+- Stays in this browser
+- No upload
+- No accounts
+</textarea>
+        <div class="preview" id="mdOut"></div>
+      </div>
+    </div>
+    <div id="json" class="panel">
+      <textarea id="jsonIn">{ "hello": "tom", "ok": true }</textarea>
+      <div class="row">
+        <button id="pretty">Pretty-print</button>
+        <button id="mini">Minify</button>
+        <button id="jclear">Clear</button>
+      </div>
+      <div class="err" id="jsonErr"></div>
+    </div>
+    <div id="tz" class="panel">
+      <div class="split">
+        <div>
+          <label class="sub">From</label>
+          <select id="tzFrom">
+            <option value="America/Chicago" selected>America/Chicago</option>
+            <option value="UTC">UTC</option>
+            <option value="America/New_York">America/New_York</option>
+            <option value="America/Los_Angeles">America/Los_Angeles</option>
+            <option value="Europe/London">Europe/London</option>
+            <option value="Asia/Tokyo">Asia/Tokyo</option>
+          </select>
+        </div>
+        <div>
+          <label class="sub">To</label>
+          <select id="tzTo">
+            <option value="UTC" selected>UTC</option>
+            <option value="America/Chicago">America/Chicago</option>
+            <option value="America/New_York">America/New_York</option>
+            <option value="America/Los_Angeles">America/Los_Angeles</option>
+            <option value="Europe/London">Europe/London</option>
+            <option value="Asia/Tokyo">Asia/Tokyo</option>
+          </select>
+        </div>
+      </div>
+      <div class="row" style="margin-top:12px">
+        <input id="tzIn" type="datetime-local">
+        <button id="tzGo">Convert</button>
+        <button id="tzNow">Use now</button>
+      </div>
+      <div class="tz-out" id="tzOut">Choose zones and convert a time.</div>
+    </div>
+  </section>
+</main>
+<footer>Weather from Open-Meteo. Tools never leave this file. Built for Tom, not AgentThread.</footer>
+<script>
+const $ = (id) => document.getElementById(id);
+function tick() {
+  const n = new Date();
+  $("now").textContent = n.toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit", timeZone: "America/Chicago" });
+  $("nowdate").textContent = n.toLocaleDateString("en-US", { weekday: "long", month: "short", day: "numeric", timeZone: "America/Chicago" }) + " · Chicago";
+}
+tick(); setInterval(tick, 15000);
+
+async function weather() {
+  const url = "https://api.open-meteo.com/v1/forecast?latitude=36.15&longitude=-85.27&current=temperature_2m,relative_humidity_2m,wind_speed_10m,apparent_temperature&daily=temperature_2m_max,temperature_2m_min,precipitation_probability_max,sunrise,sunset&hourly=temperature_2m&temperature_unit=fahrenheit&wind_speed_unit=mph&timezone=America%2FChicago&forecast_days=1";
+  const d = await fetch(url).then(r => r.json());
+  $("temp").innerHTML = Math.round(d.current.temperature_2m) + "<span>°</span>";
+  $("hilo").textContent = Math.round(d.daily.temperature_2m_max[0]) + "° / " + Math.round(d.daily.temperature_2m_min[0]) + "°";
+  $("feels").textContent = Math.round(d.current.apparent_temperature) + "°";
+  $("hum").textContent = d.current.relative_humidity_2m + "% · " + Math.round(d.current.wind_speed_10m) + " mph";
+  $("rain").textContent = d.daily.precipitation_probability_max[0] + "%";
+  $("rise").textContent = d.daily.sunrise[0].slice(11);
+  $("set").textContent = d.daily.sunset[0].slice(11);
+  const hours = $("hours");
+  hours.innerHTML = "";
+  d.hourly.time.forEach((t, i) => {
+    const h = Number(t.slice(11,13));
+    if (h % 2 || h < 6 || h > 20) return;
+    const el = document.createElement("div");
+    el.className = "hour";
+    el.innerHTML = "<small>" + (h === 12 ? "12p" : h > 12 ? (h-12)+"p" : h+"a") + "</small><em>" + Math.round(d.hourly.temperature_2m[i]) + "°</em>";
+    hours.appendChild(el);
+  });
+}
+weather().catch(() => { $("temp").innerHTML = "\u2014"; });
+
+function esc(s){ return s.replace(/[&<>]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;'}[c])); }
+function md(src){
+  let t = esc(src);
+  t = t.replace(/^### (.*)$/gm,'<h3>$1</h3>').replace(/^## (.*)$/gm,'<h2>$1</h2>').replace(/^# (.*)$/gm,'<h1>$1</h1>');
+  t = t.replace(/\*\*(.+?)\*\*/g,'<strong>$1</strong>').replace(/\*(.+?)\*/g,'<em>$1</em>');
+  t = t.replace(/`([^`]+)`/g,'<code>$1</code>');
+  t = t.replace(/\[(.+?)\]\((https?:\/\/[^\s)]+)\)/g,'<a href="$2" target="_blank" rel="noopener">$1</a>');
+  t = t.replace(/^\- (.*)$/gm,'<li>$1</li>').replace(/(<li>.*<\/li>)/gs,'<ul>$1</ul>');
+  t = t.replace(/\n{2,}/g,'</p><p>').replace(/\n/g,'<br>');
+  return '<p>'+t+'</p>';
+}
+const mdIn = $("mdIn"); const mdOut = $("mdOut");
+const paint = () => { mdOut.innerHTML = md(mdIn.value); };
+mdIn.addEventListener("input", paint); paint();
+
+document.querySelectorAll(".tabs button").forEach(b => {
+  b.onclick = () => {
+    document.querySelectorAll(".tabs button").forEach(x => x.classList.remove("on"));
+    document.querySelectorAll(".panel").forEach(x => x.classList.remove("on"));
+    b.classList.add("on"); $(b.dataset.tab).classList.add("on");
+  };
+});
+
+$("pretty").onclick = () => {
+  try { $("jsonIn").value = JSON.stringify(JSON.parse($("jsonIn").value), null, 2); $("jsonErr").textContent = "Valid."; $("jsonErr").className = "err ok"; }
+  catch(e){ $("jsonErr").textContent = e.message; $("jsonErr").className = "err"; }
+};
+$("mini").onclick = () => {
+  try { $("jsonIn").value = JSON.stringify(JSON.parse($("jsonIn").value)); $("jsonErr").textContent = "Valid."; $("jsonErr").className = "err ok"; }
+  catch(e){ $("jsonErr").textContent = e.message; $("jsonErr").className = "err"; }
+};
+$("jclear").onclick = () => { $("jsonIn").value = ""; $("jsonErr").textContent = ""; };
+
+function convertTz() {
+  const from = $("tzFrom").value, to = $("tzTo").value, raw = $("tzIn").value;
+  if (!raw) { $("tzOut").textContent = "Pick a datetime first."; return; }
+  const [date, time] = raw.split("T");
+  const asFrom = new Date(new Date(date + "T" + time + ":00").toLocaleString("en-US", { timeZone: from }));
+  // Interpret the entered clock time as the source zone
+  const probe = new Date(raw);
+  const fmt = (tz) => probe.toLocaleString("en-US", { timeZone: tz, weekday: "short", month: "short", day: "numeric", hour: "numeric", minute: "2-digit" });
+  // Better: treat input as local-in-from using Intl
+  const fake = Date.parse(raw);
+  const inFrom = new Date(raw);
+  const wanted = new Intl.DateTimeFormat("en-US", { timeZone: to, weekday: "short", month: "short", day: "numeric", hour: "numeric", minute: "2-digit", timeZoneName: "short" });
+  // Construct a UTC instant from "wall time in `from`"
+  const wall = raw; // yyyy-mm-ddThh:mm
+  const utcMs = wallTimeToUtc(wall, from);
+  $("tzOut").textContent = new Intl.DateTimeFormat("en-US", { timeZone: to, weekday: "short", month: "short", day: "numeric", hour: "numeric", minute: "2-digit", timeZoneName: "short" }).format(new Date(utcMs));
+}
+function wallTimeToUtc(wall, tz) {
+  const [d, t] = wall.split("T");
+  const [Y,M,D] = d.split("-").map(Number);
+  const [h,m] = t.split(":").map(Number);
+  let guess = Date.UTC(Y, M-1, D, h, m);
+  const parts = new Intl.DateTimeFormat("en-US", { timeZone: tz, hour12: false, year:"numeric", month:"2-digit", day:"2-digit", hour:"2-digit", minute:"2-digit" }).formatToParts(new Date(guess));
+  const g = Object.fromEntries(parts.map(p => [p.type, p.value]));
+  const got = Date.UTC(+g.year, +g.month-1, +g.day, +g.hour % 24, +g.minute);
+  const target = Date.UTC(Y, M-1, D, h, m);
+  return guess + (target - got);
+}
+$("tzGo").onclick = convertTz;
+$("tzNow").onclick = () => {
+  const n = new Date();
+  const parts = new Intl.DateTimeFormat("en-CA", { timeZone: $("tzFrom").value, year:"numeric", month:"2-digit", day:"2-digit", hour:"2-digit", minute:"2-digit", hour12: false }).formatToParts(n);
+  const g = Object.fromEntries(parts.map(p => [p.type, p.value]));
+  $("tzIn").value = `${g.year}-${g.month}-${g.day}T${g.hour}:${g.minute}`;
+  convertTz();
+};
+</script>
+</body>
+</html>
