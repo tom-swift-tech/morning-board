@@ -127,6 +127,10 @@
     <div class="hours" id="hours"></div>
   </section>
   <section class="card">
+    <h2>Local LLM on X</h2>
+    <div class="ship" id="llmTopics"></div>
+  </section>
+  <section class="card">
     <h2>What shipped</h2>
     <div class="ship">
       <a class="item" href="https://x.ai/news/grok-4-6" target="_blank" rel="noopener">
@@ -321,6 +325,43 @@ $("tzNow").onclick = () => {
   $("tzIn").value = `${g.year}-${g.month}-${g.day}T${g.hour}:${g.minute}`;
   convertTz();
 };
+
+async function loadLlmTopics() {
+  const container = $("llmTopics");
+  try {
+    const resp = await fetch("data/local-llm-x.json");
+    if (!resp.ok) throw new Error("File not found");
+    const data = await resp.json();
+    
+    if (!data.topics || data.topics.length === 0) {
+      container.innerHTML = '<div style="color:var(--mute);font-size:13.5px;padding:12px 14px;">No topics yet. Check back tomorrow.</div>';
+      return;
+    }
+    
+    const ageMs = data.last_updated ? Date.now() - new Date(data.last_updated).getTime() : Infinity;
+    const stale = ageMs > 36 * 60 * 60 * 1000;
+    
+    if (stale) {
+      container.innerHTML = '<div style="color:var(--mute);font-size:13.5px;padding:12px 14px;">Topics data is stale. Refresh pending.</div>';
+      return;
+    }
+    
+    container.innerHTML = data.topics.map(t => {
+      const post = t.posts && t.posts[0];
+      const href = post ? post.url : "#";
+      const author = post ? post.author : "";
+      const engagement = t.engagement ? ` · ${t.engagement.toLocaleString()} signals` : "";
+      return `<a class="item" href="${esc(href)}" target="_blank" rel="noopener">
+        <div class="who">${esc(author)}${engagement}</div>
+        <div class="name">${esc(t.title)}</div>
+        <p>${esc(t.why)}</p>
+      </a>`;
+    }).join("");
+  } catch(e) {
+    container.innerHTML = '<div style="color:var(--mute);font-size:13.5px;padding:12px 14px;">Topics unavailable. Check back tomorrow.</div>';
+  }
+}
+loadLlmTopics();
 </script>
 </body>
 </html>
