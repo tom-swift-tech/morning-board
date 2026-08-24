@@ -3,19 +3,8 @@
   "topics": [
     {
       "title": "Ollama still the local-volume leader",
-      "why": "~845 posts yesterday (5,850 over 7 days). Official account highlighted a Poolside/NVIDIA Nemotron open-model collab.",
+      "why": "~845 posts yesterday, 5,850 over 7 days. Official account highlighted a Poolside/NVIDIA Nemotron open-model collab.",
       "engagement": 472,
-      "posts": [
-        {
-          "url": "https://x.com/ollama/status/2091344612980060304",
-          "author": "@ollama"
-        }
-      ]
-    },
-    {
-      "title": "llama.cpp volume jumped Sunday",
-      "why": "Post volume 258 → 452 on Aug 23, with 200 more already this morning. No official @ggerganov post in the last 48h.",
-      "engagement": 452,
       "posts": [
         {
           "url": "https://x.com/ollama/status/2091344612980060304",
