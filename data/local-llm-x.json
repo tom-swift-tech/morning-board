@@ -1,14 +1,51 @@
 {
-  "last_updated": "2026-08-24T10:40:00Z",
+  "last_updated": "2026-08-26T10:41:00Z",
   "topics": [
     {
-      "title": "Ollama still the local-volume leader",
-      "why": "~845 posts yesterday, 5,850 over 7 days. Official account highlighted a Poolside/NVIDIA Nemotron open-model collab.",
-      "engagement": 472,
+      "title": "Ollama v0.33 is a Claude Desktop gateway",
+      "why": "Official post: one toggle, Claude Desktop talks to Ollama for cloud and local models. 781 Ollama posts yesterday (UTC).",
+      "engagement": 1237,
       "posts": [
         {
-          "url": "https://x.com/ollama/status/2091344612980060304",
+          "url": "https://x.com/ollama/status/2092453536634380763",
           "author": "@ollama"
+        },
+        {
+          "url": "https://x.com/EliaAlberti/status/2092489655350390825",
+          "author": "@EliaAlberti"
+        }
+      ]
+    },
+    {
+      "title": "Qwen3.8 Flash is hours away",
+      "why": "Local-AI accounts counting down a Flash drop; Hugging Face amplified it last night.",
+      "engagement": 893,
+      "posts": [
+        {
+          "url": "https://x.com/MiaAI_lab/status/2092284107120066919",
+          "author": "@MiaAI_lab"
+        }
+      ]
+    },
+    {
+      "title": "llama.cpp docs moved",
+      "why": "Georgi retweeted the new docs home. llama.cpp volume was 403 posts yesterday.",
+      "engagement": 333,
+      "posts": [
+        {
+          "url": "https://x.com/mervenoyann/status/2091892738832703781",
+          "author": "@mervenoyann"
+        }
+      ]
+    },
+    {
+      "title": "LM Studio chatter jumped",
+      "why": "314 posts yesterday vs ~100 most days this week. No single official post to pin it on.",
+      "engagement": 314,
+      "posts": [
+        {
+          "url": "https://x.com/search?q=LM%20Studio&src=typed_query&f=live",
+          "author": "@search"
         }
       ]
     }
