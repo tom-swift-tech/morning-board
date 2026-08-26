@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-26T10:41:00Z",
+  "last_updated": "2026-08-26T10:42:00Z",
   "topics": [
     {
       "title": "Ollama v0.33 is a Claude Desktop gateway",
@@ -35,17 +35,6 @@
         {
           "url": "https://x.com/mervenoyann/status/2091892738832703781",
           "author": "@mervenoyann"
-        }
-      ]
-    },
-    {
-      "title": "LM Studio chatter jumped",
-      "why": "314 posts yesterday vs ~100 most days this week. No single official post to pin it on.",
-      "engagement": 314,
-      "posts": [
-        {
-          "url": "https://x.com/search?q=LM%20Studio&src=typed_query&f=live",
-          "author": "@search"
         }
       ]
     }
