@@ -1,40 +1,63 @@
 {
-  "last_updated": "2026-08-26T10:42:00Z",
+  "last_updated": "2026-09-14T10:33:39Z",
   "topics": [
     {
-      "title": "Ollama v0.33 is a Claude Desktop gateway",
-      "why": "Official post: one toggle, Claude Desktop talks to Ollama for cloud and local models. 781 Ollama posts yesterday (UTC).",
-      "engagement": 1237,
+      "title": "SES O3b mPOWER SUCCESS \u2014 Falcon 700th",
+      "why": "Sun Sep 13 1:49pm CT SLC-40: Falcon 9 B1080 (29th) lofted final three O3b mPOWER sats; ASOG landing success; Falcon family 700th successful mission per Space.com",
+      "engagement": 0,
       "posts": [
         {
-          "url": "https://x.com/ollama/status/2092453536634380763",
-          "author": "@ollama"
+          "url": "https://www.spacex.com/launches/mpower-f",
+          "author": "SpaceX"
         },
         {
-          "url": "https://x.com/EliaAlberti/status/2092489655350390825",
-          "author": "@EliaAlberti"
+          "url": "https://www.space.com/space-exploration/launches-spacecraft/spacex-launches-3-telecom-satellites-to-orbit-on-700th-falcon-mission-of-all-time-video",
+          "author": "Space.com"
         }
       ]
     },
     {
-      "title": "Qwen3.8 Flash is hours away",
-      "why": "Local-AI accounts counting down a Flash drop; Hugging Face amplified it last night.",
-      "engagement": 893,
+      "title": "llama.cpp nightlies through b10952 \u2014 Nemotron-h load fix",
+      "why": "Since Sep 11 b10905: b10947 guards nemotron-h expert FFN zero-divisor on NextN/MTP; b10950 CUDA BF16\u2192F32 fallback; b10907 MTP KV for deepseek2/glm4moe. Ollama still v0.34.0.",
+      "engagement": 0,
       "posts": [
         {
-          "url": "https://x.com/MiaAI_lab/status/2092284107120066919",
-          "author": "@MiaAI_lab"
+          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b10952",
+          "author": "ggml-org"
+        },
+        {
+          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b10947",
+          "author": "ggml-org"
+        },
+        {
+          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b10950",
+          "author": "ggml-org"
         }
       ]
     },
     {
-      "title": "llama.cpp docs moved",
-      "why": "Georgi retweeted the new docs home. llama.cpp volume was 403 posts yesterday.",
-      "engagement": 333,
+      "title": "USSF-259 tonight + Flight 14 FAA window",
+      "why": "USSF-259 Tue Sep 15 window opens 8:00pm CT Vandenberg SLC-4E OCISLY. Flight 14: FAA planning Fri Sep 18 ~7:15\u20139:14am CT; SpaceX still no official T-0.",
+      "engagement": 0,
       "posts": [
         {
-          "url": "https://x.com/mervenoyann/status/2091892738832703781",
-          "author": "@mervenoyann"
+          "url": "https://www.spacex.com/launches/ussf259",
+          "author": "SpaceX"
+        }
+      ]
+    },
+    {
+      "title": "xAI quiet \u2014 Grok 4.7 still cooking",
+      "why": "No new x.ai/news after Sep 3 Grok Bot for Enterprise. Grok 4.7 not shipped; Musk ~Sep 11 said a few more days (RL length penalty / early quit). Docs still Grok 4.6.",
+      "engagement": 0,
+      "posts": [
+        {
+          "url": "https://x.ai/news",
+          "author": "xAI"
+        },
+        {
+          "url": "https://docs.x.ai/developers/models",
+          "author": "xAI Docs"
         }
       ]
     }
