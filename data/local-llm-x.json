@@ -1,62 +1,62 @@
 {
-  "last_updated": "2026-09-14T10:33:39Z",
+  "last_updated": "2026-09-15T10:45:03Z",
   "topics": [
     {
-      "title": "SES O3b mPOWER SUCCESS \u2014 Falcon 700th",
-      "why": "Sun Sep 13 1:49pm CT SLC-40: Falcon 9 B1080 (29th) lofted final three O3b mPOWER sats; ASOG landing success; Falcon family 700th successful mission per Space.com",
-      "engagement": 0,
-      "posts": [
-        {
-          "url": "https://www.spacex.com/launches/mpower-f",
-          "author": "SpaceX"
-        },
-        {
-          "url": "https://www.space.com/space-exploration/launches-spacecraft/spacex-launches-3-telecom-satellites-to-orbit-on-700th-falcon-mission-of-all-time-video",
-          "author": "Space.com"
-        }
-      ]
-    },
-    {
-      "title": "llama.cpp nightlies through b10952 \u2014 Nemotron-h load fix",
-      "why": "Since Sep 11 b10905: b10947 guards nemotron-h expert FFN zero-divisor on NextN/MTP; b10950 CUDA BF16\u2192F32 fallback; b10907 MTP KV for deepseek2/glm4moe. Ollama still v0.34.0.",
-      "engagement": 0,
-      "posts": [
-        {
-          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b10952",
-          "author": "ggml-org"
-        },
-        {
-          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b10947",
-          "author": "ggml-org"
-        },
-        {
-          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b10950",
-          "author": "ggml-org"
-        }
-      ]
-    },
-    {
-      "title": "USSF-259 tonight + Flight 14 FAA window",
-      "why": "USSF-259 Tue Sep 15 window opens 8:00pm CT Vandenberg SLC-4E OCISLY. Flight 14: FAA planning Fri Sep 18 ~7:15\u20139:14am CT; SpaceX still no official T-0.",
+      "title": "USSF-259 tonight \u2014 Vandenberg window 8pm CT",
+      "why": "Falcon 9 classified USSF from SLC-4E; window opens Tue Sep 15 8:00pm CT (6:00pm PT), backup Wed Sep 16 same time; B1097 13th flight, OCISLY. Not yet launched as of morning brief.",
       "engagement": 0,
       "posts": [
         {
           "url": "https://www.spacex.com/launches/ussf259",
           "author": "SpaceX"
+        },
+        {
+          "url": "https://spaceflightnow.com/launch-schedule/",
+          "author": "Spaceflight Now"
         }
       ]
     },
     {
-      "title": "xAI quiet \u2014 Grok 4.7 still cooking",
-      "why": "No new x.ai/news after Sep 3 Grok Bot for Enterprise. Grok 4.7 not shipped; Musk ~Sep 11 said a few more days (RL length penalty / early quit). Docs still Grok 4.6.",
+      "title": "Ollama v0.34.1-rc2 + llama.cpp 0.4.1 / b10977",
+      "why": "Ollama v0.34.1-rc2 Mon Sep 14 ~5:14pm CT (MLX runner memory/evict, gemma3n projector off CPU); stable still v0.34.0. llama.cpp nightlies through b10977 (~5:07am CT Sep 15); b10964 bumped version to 0.4.1; no new flagship GGUF.",
       "engagement": 0,
       "posts": [
         {
-          "url": "https://x.ai/news",
-          "author": "xAI"
+          "url": "https://github.com/ollama/ollama/releases/tag/v0.34.1-rc2",
+          "author": "ollama"
         },
         {
-          "url": "https://docs.x.ai/developers/models",
+          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b10977",
+          "author": "ggml-org"
+        },
+        {
+          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b10964",
+          "author": "ggml-org"
+        }
+      ]
+    },
+    {
+      "title": "Flight 14 tracker NET slipped to Sep 22",
+      "why": "Spaceflight Now (updated Sep 14) lists Starship Flight 14 NET Sep 22, window opens 7:15am CT; delayed from Sep 15 and 18. Still no official SpaceX T-0. Yesterday's brief had FAA ATC planning Sep 18.",
+      "engagement": 0,
+      "posts": [
+        {
+          "url": "https://spaceflightnow.com/launch-schedule/",
+          "author": "Spaceflight Now"
+        }
+      ]
+    },
+    {
+      "title": "mlx-vlm v0.7.1; xAI still Grok 4.6",
+      "why": "mlx-vlm v0.7.1 shipped Mon Sep 14 ~1:09pm CT (after Sep 14 morning brief cutoff). docs.x.ai still lists grok-4.6 as flagship; Grok 4.7 not shipped.",
+      "engagement": 0,
+      "posts": [
+        {
+          "url": "https://github.com/Blaizzy/mlx-vlm/releases/tag/v0.7.1",
+          "author": "Blaizzy"
+        },
+        {
+          "url": "https://docs.x.ai/docs/models",
           "author": "xAI Docs"
         }
       ]
