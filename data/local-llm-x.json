@@ -1,9 +1,43 @@
 {
-  "last_updated": "2026-09-16T10:30:03Z",
+  "last_updated": "2026-09-17T10:37:32Z",
   "topics": [
     {
-      "title": "Starship Flight 14 official page \u2014 first orbit + 26 Starlink V3",
-      "why": "SpaceX published the Flight 14 mission page: NET Tue Sep 22 window opens 7:15am CT, first planned Starship orbit (~275 km, ~six orbits, ~10h), 26 Starlink V3 sats, Pacific splashdown west of Chile. Pending regulatory approval.",
+      "title": "USSF-259 SUCCESS \u2014 Falcon 9 Wed Sep 16 8:08pm CT",
+      "why": "Classified USSF-259 launched from Vandenberg SLC-4E after a one-day scrub; B1097 13th flight, OCISLY recovery; SpaceX confirmed payload to orbit early Thu CT.",
+      "engagement": 0,
+      "posts": [
+        {
+          "url": "https://www.spacex.com/launches/ussf259",
+          "author": "SpaceX"
+        },
+        {
+          "url": "https://x.com/SpaceX/status/2100464625993052185",
+          "author": "SpaceX"
+        }
+      ]
+    },
+    {
+      "title": "llama.cpp CUDA MTP graphs (b11007); nightlies through b11019",
+      "why": "b11007 enables CUDA graph for MTP draft on RTX stacks; also CUDA/HIP im2col (b11002), RPC graph-free RCE fix (b11000), TP fused-QKV for gemma4/qwen35 (b11009). Nightlies through b11019 (~5:35am CT).",
+      "engagement": 0,
+      "posts": [
+        {
+          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11007",
+          "author": "ggml-org"
+        },
+        {
+          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11000",
+          "author": "ggml-org"
+        },
+        {
+          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11019",
+          "author": "ggml-org"
+        }
+      ]
+    },
+    {
+      "title": "Starship Flight 14 still NET Tue Sep 22 7:15am CT",
+      "why": "No material change vs yesterday: first planned Starship orbit (~275 km, ~six orbits, ~10h), 26 Starlink V3, Pacific splashdown west of Chile; still pending regulatory.",
       "engagement": 0,
       "posts": [
         {
@@ -13,47 +47,13 @@
       ]
     },
     {
-      "title": "llama.cpp b10994 Metal MoE NaN fix; nightlies through b10997",
-      "why": "b10994 fixes Metal mul_mm_id NaN when MoE activations exceed f16 (Mistral Small 4-class). Also HIP AllReduce (b10989), RPC weight-only hash-cache (b10985), Vulkan sparse FA (b10982).",
+      "title": "Unity Official Plugin for Codex",
+      "why": "Unity shipped an official Codex plugin: 31 Unity-authored skills, CLI project/package control, Unity 6+ support \u2014 useful if Tom is tooling game-dev with AI agents.",
       "engagement": 0,
       "posts": [
         {
-          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b10994",
-          "author": "ggml-org"
-        },
-        {
-          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b10997",
-          "author": "ggml-org"
-        }
-      ]
-    },
-    {
-      "title": "Ollama v0.34.1 stable; v0.34.2-rc0 out",
-      "why": "v0.34.1 is now stable (MLX create no longer experimental, faster /api/tags, MLX memory). v0.34.2-rc0 is llama.cpp updates only.",
-      "engagement": 0,
-      "posts": [
-        {
-          "url": "https://github.com/ollama/ollama/releases/tag/v0.34.1",
-          "author": "ollama"
-        },
-        {
-          "url": "https://github.com/ollama/ollama/releases/tag/v0.34.2-rc0",
-          "author": "ollama"
-        }
-      ]
-    },
-    {
-      "title": "USSF-259 scrubbed Tue; backup Wed Sep 16 8pm CT",
-      "why": "SpaceX scrubbed USSF-259 before fueling Tue Sep 15; backup window opens 8:00pm CT Wed Sep 16 at Vandenberg SLC-4E (B1097 13th, OCISLY).",
-      "engagement": 0,
-      "posts": [
-        {
-          "url": "https://www.spacex.com/launches/ussf259",
-          "author": "SpaceX"
-        },
-        {
-          "url": "https://spaceflightnow.com/2026/09/15/live-coverage-spacex-to-launch-national-security-payload-for-the-u-s-space-force-on-falcon-9-rocket-from-vandenberg/",
-          "author": "Spaceflight Now"
+          "url": "https://unity.com/blog/unity-plugin-codex",
+          "author": "Unity"
         }
       ]
     }
