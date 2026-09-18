@@ -1,59 +1,48 @@
 {
-  "last_updated": "2026-09-17T10:37:32Z",
+  "last_updated": "2026-09-18T10:35:33Z",
   "topics": [
     {
-      "title": "USSF-259 SUCCESS \u2014 Falcon 9 Wed Sep 16 8:08pm CT",
-      "why": "Classified USSF-259 launched from Vandenberg SLC-4E after a one-day scrub; B1097 13th flight, OCISLY recovery; SpaceX confirmed payload to orbit early Thu CT.",
+      "title": "llama.cpp b11025 extends Nemotron MTP",
+      "why": "Material overnight for Bastion: Nemotron MTP support extended (b11025/#29018); also qwen35moe MTP skip (b11026), Vulkan high-expert MoE path (b11029). Nightlies through b11033.",
       "engagement": 0,
       "posts": [
         {
-          "url": "https://www.spacex.com/launches/ussf259",
-          "author": "SpaceX"
-        },
-        {
-          "url": "https://x.com/SpaceX/status/2100464625993052185",
-          "author": "SpaceX"
-        }
-      ]
-    },
-    {
-      "title": "llama.cpp CUDA MTP graphs (b11007); nightlies through b11019",
-      "why": "b11007 enables CUDA graph for MTP draft on RTX stacks; also CUDA/HIP im2col (b11002), RPC graph-free RCE fix (b11000), TP fused-QKV for gemma4/qwen35 (b11009). Nightlies through b11019 (~5:35am CT).",
-      "engagement": 0,
-      "posts": [
-        {
-          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11007",
+          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11025",
           "author": "ggml-org"
         },
         {
-          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11000",
-          "author": "ggml-org"
-        },
-        {
-          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11019",
+          "url": "https://github.com/ggml-org/llama.cpp/pull/29018",
           "author": "ggml-org"
         }
       ]
     },
     {
-      "title": "Starship Flight 14 still NET Tue Sep 22 7:15am CT",
-      "why": "No material change vs yesterday: first planned Starship orbit (~275 km, ~six orbits, ~10h), 26 Starlink V3, Pacific splashdown west of Chile; still pending regulatory.",
+      "title": "Starship Flight 14 slipped to NET Mon Sep 28",
+      "why": "SpaceX retargeted Flight 14 from NET Sep 22 to as early as Mon Sep 28, still pending regulatory. Window still opens 7:15am CT per Spaceflight Now.",
       "engagement": 0,
       "posts": [
         {
-          "url": "https://www.spacex.com/launches/starship-flight-14",
+          "url": "https://x.com/SpaceX/status/2100633608734081213",
           "author": "SpaceX"
+        },
+        {
+          "url": "https://spaceflightnow.com/launch-schedule/",
+          "author": "Spaceflight Now"
         }
       ]
     },
     {
-      "title": "Unity Official Plugin for Codex",
-      "why": "Unity shipped an official Codex plugin: 31 Unity-authored skills, CLI project/package control, Unity 6+ support \u2014 useful if Tom is tooling game-dev with AI agents.",
+      "title": "xAI docs: grok-voice-transcribe-2.0; Claude Code Projects redesigned",
+      "why": "Silent docs drop for voice-transcribe-2.0; flagship still grok-4.6. Adjacent: Claude Code Projects beta coordinator + parallel cloud threads (Sep 17).",
       "engagement": 0,
       "posts": [
         {
-          "url": "https://unity.com/blog/unity-plugin-codex",
-          "author": "Unity"
+          "url": "https://docs.x.ai/developers/release-notes",
+          "author": "xAI"
+        },
+        {
+          "url": "https://claude.com/blog/projects-redesigned",
+          "author": "Anthropic"
         }
       ]
     }
