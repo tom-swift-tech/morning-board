@@ -1,48 +1,56 @@
 {
-  "last_updated": "2026-09-18T10:35:33Z",
+  "last_updated": "2026-09-21T10:38:40Z",
   "topics": [
     {
-      "title": "llama.cpp b11025 extends Nemotron MTP",
-      "why": "Material overnight for Bastion: Nemotron MTP support extended (b11025/#29018); also qwen35moe MTP skip (b11026), Vulkan high-expert MoE path (b11029). Nightlies through b11033.",
+      "title": "llama.cpp through b11069 \u2014 Metal qwen4/Kimi-K3 + CUDA Gemma 4 / qwen4 FA",
+      "why": "Nightlies since Sep 18 brief (was b11033): Metal qwen4exp HC + arbitrary hc dsv4 for Kimi-K3; CUDA sparse FA for qwen4; CUDA FA tune Gemma 4 Ampere+; Ling 3.0 parser; Vulkan IQ3_S MMQ.",
       "engagement": 0,
       "posts": [
         {
-          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11025",
+          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11069",
           "author": "ggml-org"
         },
         {
-          "url": "https://github.com/ggml-org/llama.cpp/pull/29018",
+          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11064",
+          "author": "ggml-org"
+        },
+        {
+          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11065",
+          "author": "ggml-org"
+        },
+        {
+          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11062",
+          "author": "ggml-org"
+        },
+        {
+          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11048",
           "author": "ggml-org"
         }
       ]
     },
     {
-      "title": "Starship Flight 14 slipped to NET Mon Sep 28",
-      "why": "SpaceX retargeted Flight 14 from NET Sep 22 to as early as Mon Sep 28, still pending regulatory. Window still opens 7:15am CT per Spaceflight Now.",
+      "title": "Ollama v0.34.3-rc1 \u2014 Nemotron H vision on Apple Silicon MLX",
+      "why": "RC1 Fri Sep 18 7:02pm CT: Nemotron H vision via MLX on Apple Silicon; thinking controls on GET /api/show; HF pull fix. Stable still v0.34.2.",
       "engagement": 0,
       "posts": [
         {
-          "url": "https://x.com/SpaceX/status/2100633608734081213",
+          "url": "https://github.com/ollama/ollama/releases/tag/v0.34.3-rc1",
+          "author": "ollama"
+        }
+      ]
+    },
+    {
+      "title": "Starlink Group 15-27 SUCCESS \u2014 Sat Sep 19 8:47pm CT Vandenberg",
+      "why": "Falcon 9 lofted 27 V2 Mini from SLC-4E; B1093 17th flight, OCISLY; SpaceX confirmed deployment ~9:50pm CT.",
+      "engagement": 0,
+      "posts": [
+        {
+          "url": "https://x.com/SpaceX/status/2101530724335559060",
           "author": "SpaceX"
         },
         {
-          "url": "https://spaceflightnow.com/launch-schedule/",
-          "author": "Spaceflight Now"
-        }
-      ]
-    },
-    {
-      "title": "xAI docs: grok-voice-transcribe-2.0; Claude Code Projects redesigned",
-      "why": "Silent docs drop for voice-transcribe-2.0; flagship still grok-4.6. Adjacent: Claude Code Projects beta coordinator + parallel cloud threads (Sep 17).",
-      "engagement": 0,
-      "posts": [
-        {
-          "url": "https://docs.x.ai/developers/release-notes",
-          "author": "xAI"
-        },
-        {
-          "url": "https://claude.com/blog/projects-redesigned",
-          "author": "Anthropic"
+          "url": "https://x.com/SpaceX/status/2101504221266792661",
+          "author": "SpaceX"
         }
       ]
     }
