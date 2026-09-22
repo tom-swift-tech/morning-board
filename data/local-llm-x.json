@@ -1,56 +1,29 @@
 {
-  "last_updated": "2026-09-21T10:38:40Z",
+  "last_updated": "2026-09-22T10:39:44Z",
   "topics": [
     {
-      "title": "llama.cpp through b11069 \u2014 Metal qwen4/Kimi-K3 + CUDA Gemma 4 / qwen4 FA",
-      "why": "Nightlies since Sep 18 brief (was b11033): Metal qwen4exp HC + arbitrary hc dsv4 for Kimi-K3; CUDA sparse FA for qwen4; CUDA FA tune Gemma 4 Ampere+; Ling 3.0 parser; Vulkan IQ3_S MMQ.",
+      "title": "llama.cpp nightlies through b11100",
+      "why": "Since b11069: Snapdragon Hexagon NPU binaries now on releases (#29007), OpenCL A8 Q4_0 (#29055), Hexagon HMX GATED_DELTA_NET (#29199), Metal FA mask-bounds fix (#29220), Ubuntu CUDA builds on 13.4 (#29202). Ollama still 0.34.3-rc1 / stable 0.34.2.",
       "engagement": 0,
       "posts": [
         {
-          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11069",
+          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11100",
           "author": "ggml-org"
         },
         {
-          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11064",
-          "author": "ggml-org"
-        },
-        {
-          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11065",
-          "author": "ggml-org"
-        },
-        {
-          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11062",
-          "author": "ggml-org"
-        },
-        {
-          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11048",
+          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11099",
           "author": "ggml-org"
         }
       ]
     },
     {
-      "title": "Ollama v0.34.3-rc1 \u2014 Nemotron H vision on Apple Silicon MLX",
-      "why": "RC1 Fri Sep 18 7:02pm CT: Nemotron H vision via MLX on Apple Silicon; thinking controls on GET /api/show; HF pull fix. Stable still v0.34.2.",
+      "title": "xAI shipped Grok 4.7 (Sep 21)",
+      "why": "New flagship in Cursor, Grok Build, and Grok API at same $2/$6 pricing as 4.6; 500k context; text+image in. Fast variant at 2x output speed / 2x price.",
       "engagement": 0,
       "posts": [
         {
-          "url": "https://github.com/ollama/ollama/releases/tag/v0.34.3-rc1",
-          "author": "ollama"
-        }
-      ]
-    },
-    {
-      "title": "Starlink Group 15-27 SUCCESS \u2014 Sat Sep 19 8:47pm CT Vandenberg",
-      "why": "Falcon 9 lofted 27 V2 Mini from SLC-4E; B1093 17th flight, OCISLY; SpaceX confirmed deployment ~9:50pm CT.",
-      "engagement": 0,
-      "posts": [
-        {
-          "url": "https://x.com/SpaceX/status/2101530724335559060",
-          "author": "SpaceX"
-        },
-        {
-          "url": "https://x.com/SpaceX/status/2101504221266792661",
-          "author": "SpaceX"
+          "url": "https://x.ai/news/grok-4-7",
+          "author": "xAI"
         }
       ]
     }
