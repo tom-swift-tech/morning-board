@@ -1,29 +1,33 @@
 {
-  "last_updated": "2026-09-22T10:39:44Z",
+  "last_updated": "2026-09-23T10:38:37Z",
   "topics": [
     {
-      "title": "llama.cpp nightlies through b11100",
-      "why": "Since b11069: Snapdragon Hexagon NPU binaries now on releases (#29007), OpenCL A8 Q4_0 (#29055), Hexagon HMX GATED_DELTA_NET (#29199), Metal FA mask-bounds fix (#29220), Ubuntu CUDA builds on 13.4 (#29202). Ollama still 0.34.3-rc1 / stable 0.34.2.",
+      "title": "llama.cpp nightlies through b11124",
+      "why": "Since b11100: CUDA top-k MoE always-fire (#28432), MiMo-V2.6 convert (#29257), OpenCL Adreno A8 Q4_K (#29056), Hexagon DMA FA-mask cache (#29282), Vulkan Intel Xe FA + dlopen crash fix, Metal mul_mm_id gate, server router eviction fix.",
       "engagement": 0,
       "posts": [
         {
-          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11100",
+          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11124",
           "author": "ggml-org"
         },
         {
-          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11099",
+          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11102",
           "author": "ggml-org"
         }
       ]
     },
     {
-      "title": "xAI shipped Grok 4.7 (Sep 21)",
-      "why": "New flagship in Cursor, Grok Build, and Grok API at same $2/$6 pricing as 4.6; 500k context; text+image in. Fast variant at 2x output speed / 2x price.",
+      "title": "Ollama v0.34.4-rc0 + Transformers GGUF",
+      "why": "Ollama 0.34.4-rc0 (Tue 9:24pm CT): MLX Qwen 3.8 PP speedup, Gemma 4 dynamic image res, model-not-found fix; stable is 0.34.3. HF Transformers (Sep 22) loads GGUF via ggml Metal kernels on Apple Silicon (Qwen3.5 first).",
       "engagement": 0,
       "posts": [
         {
-          "url": "https://x.ai/news/grok-4-7",
-          "author": "xAI"
+          "url": "https://github.com/ollama/ollama/releases/tag/v0.34.4-rc0",
+          "author": "ollama"
+        },
+        {
+          "url": "https://huggingface.co/blog/transformers-llama-cpp-quants",
+          "author": "Hugging Face"
         }
       ]
     }
