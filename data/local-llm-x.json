@@ -1,33 +1,29 @@
 {
-  "last_updated": "2026-09-23T10:38:37Z",
+  "last_updated": "2026-09-24T10:42:43Z",
   "topics": [
     {
-      "title": "llama.cpp nightlies through b11124",
-      "why": "Since b11100: CUDA top-k MoE always-fire (#28432), MiMo-V2.6 convert (#29257), OpenCL Adreno A8 Q4_K (#29056), Hexagon DMA FA-mask cache (#29282), Vulkan Intel Xe FA + dlopen crash fix, Metal mul_mm_id gate, server router eviction fix.",
+      "title": "llama.cpp v0.5.0",
+      "why": "Major release Wed Sep 23 3:50pm CT: CUDA conv2d, Metal MoE/SSM fusion, multi-host server bind, MiMo-V2.6/HunyuanOCR/Muse Glimmer, ggml 0.25.0. Nightlies through b11157 (~3:45am CT Thu) add CUDA conv3d, Ling 3.0 VL, OpenCL A8 Q6_K.",
       "engagement": 0,
       "posts": [
         {
-          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11124",
+          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/v0.5.0",
           "author": "ggml-org"
         },
         {
-          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11102",
+          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11157",
           "author": "ggml-org"
         }
       ]
     },
     {
-      "title": "Ollama v0.34.4-rc0 + Transformers GGUF",
-      "why": "Ollama 0.34.4-rc0 (Tue 9:24pm CT): MLX Qwen 3.8 PP speedup, Gemma 4 dynamic image res, model-not-found fix; stable is 0.34.3. HF Transformers (Sep 22) loads GGUF via ggml Metal kernels on Apple Silicon (Qwen3.5 first).",
+      "title": "Ollama v0.34.4 stable",
+      "why": "Stable (was rc0 yesterday): thinking-model structured outputs single-pass, large-library model-not-found fix, Qwen 3.8 PP + Gemma 4 dynamic image on Apple Silicon.",
       "engagement": 0,
       "posts": [
         {
-          "url": "https://github.com/ollama/ollama/releases/tag/v0.34.4-rc0",
+          "url": "https://github.com/ollama/ollama/releases/tag/v0.34.4",
           "author": "ollama"
-        },
-        {
-          "url": "https://huggingface.co/blog/transformers-llama-cpp-quants",
-          "author": "Hugging Face"
         }
       ]
     }
