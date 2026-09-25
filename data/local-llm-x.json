@@ -1,29 +1,48 @@
-{
-  "last_updated": "2026-09-24T10:42:43Z",
+wrote 1324 bytes
+": "2026-09-25T10:37:21Z",
   "topics": [
     {
-      "title": "llama.cpp v0.5.0",
-      "why": "Major release Wed Sep 23 3:50pm CT: CUDA conv2d, Metal MoE/SSM fusion, multi-host server bind, MiMo-V2.6/HunyuanOCR/Muse Glimmer, ggml 0.25.0. Nightlies through b11157 (~3:45am CT Thu) add CUDA conv3d, Ling 3.0 VL, OpenCL A8 Q6_K.",
+      "title": "llama.cpp nightlies through b11177",
+      "why": "Since yesterday's b11157: Vulkan int8 coopmat for AMD RDNA3/RDNA4 (b11160), CUDA fuse RMS_NORM+SCALE (b11177), Metal sparse FA (b11172), CUDA F16 CONV_2D_DW (b11166), llama_batch_ext (b11163). Stable still v0.5.0.",
       "engagement": 0,
       "posts": [
         {
-          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/v0.5.0",
+          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11177",
           "author": "ggml-org"
         },
         {
-          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11157",
+          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11160",
           "author": "ggml-org"
         }
       ]
     },
     {
-      "title": "Ollama v0.34.4 stable",
-      "why": "Stable (was rc0 yesterday): thinking-model structured outputs single-pass, large-library model-not-found fix, Qwen 3.8 PP + Gemma 4 dynamic image on Apple Silicon.",
+      "title": "Ollama v0.40.0-rc0",
+      "why": "Thu Sep 24 10:31pm CT: supported model architectures run on MLX by default on Apple Silicon (major jump from v0.34.4). More models enabling during RC.",
       "engagement": 0,
       "posts": [
         {
-          "url": "https://github.com/ollama/ollama/releases/tag/v0.34.4",
+          "url": "https://github.com/ollama/ollama/releases/tag/v0.40.0-rc0",
           "author": "ollama"
+        }
+      ]
+    },
+    {
+      "title": "Starship Flight 14 WDR complete",
+      "why": "SpaceX: launch rehearsal complete Thu Sep 24 ~4:08pm CT. Still NET Mon Sep 28 7:15am CT pending FAA. USSF-385 Sat Sep 26 window opens 6:56am CT SLC-4E.",
+      "engagement": 15630,
+      "posts": [
+        {
+          "url": "https://x.com/SpaceX/status/2103230238390173995",
+          "author": "SpaceX"
+        },
+        {
+          "url": "https://www.spacex.com/launches/starship-flight-14",
+          "author": "SpaceX"
+        },
+        {
+          "url": "https://www.spacex.com/launches/ussf385",
+          "author": "SpaceX"
         }
       ]
     }
