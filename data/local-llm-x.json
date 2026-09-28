@@ -1,26 +1,30 @@
 {
-  "last_updated": "2026-09-25T10:37:50Z",
+  "last_updated": "2026-09-28T10:33:44Z",
   "topics": [
     {
-      "title": "llama.cpp nightlies through b11177",
-      "why": "Since yesterday's b11157: Vulkan int8 coopmat for AMD RDNA3/RDNA4 (b11160), CUDA fuse RMS_NORM+SCALE (b11177), Metal sparse FA (b11172), CUDA F16 CONV_2D_DW (b11166), llama_batch_ext (b11163). Stable still v0.5.0.",
+      "title": "Starship Flight 14 \u2014 first orbital attempt today (target 7:46am CT)",
+      "why": "SpaceX on track; 75-min window opened 7:15am CT; live ~35 min before liftoff. Ship 41 / Booster 21 from Pad 2; 26 Starlink V3; first orbital Starship.",
       "engagement": 0,
       "posts": [
         {
-          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11177",
-          "author": "ggml-org"
+          "url": "https://x.com/SpaceX/status/2104518426270064769",
+          "author": "SpaceX"
         },
         {
-          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11160",
-          "author": "ggml-org"
+          "url": "https://x.com/SpaceX/status/2104495974668173801",
+          "author": "SpaceX"
         }
       ]
     },
     {
-      "title": "Ollama v0.40.0-rc0",
-      "why": "Thu Sep 24 10:31pm CT: supported model architectures run on MLX by default on Apple Silicon (major jump from v0.34.4). More models enabling during RC.",
+      "title": "llama.cpp nightlies through b11227 \u2014 vision causal_attn speedup",
+      "why": "Since Sep 25 b11177: b11227 skips sched re-reserve on causal_attn toggle (big multi-image/video win); also Vulkan KV mul_mat fix, CUDA FA tune, Nemotron Puzzle CUDA, Metal FWHT. Ollama still v0.40.0-rc0.",
       "engagement": 0,
       "posts": [
+        {
+          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11227",
+          "author": "ggml-org"
+        },
         {
           "url": "https://github.com/ollama/ollama/releases/tag/v0.40.0-rc0",
           "author": "ollama"
@@ -28,20 +32,16 @@
       ]
     },
     {
-      "title": "Starship Flight 14 WDR complete",
-      "why": "SpaceX: launch rehearsal complete Thu Sep 24 ~4:08pm CT. Still NET Mon Sep 28 7:15am CT pending FAA. USSF-385 Sat Sep 26 window opens 6:56am CT SLC-4E.",
-      "engagement": 15630,
+      "title": "USSF-385 launched Sat Sep 26; Crew-13 static fire done (NET Oct 1)",
+      "why": "Falcon 9 USSF-385 to orbit from SLC-4E with OCISLY landing. Crew-13 static fire complete, targeting Thu Oct 1. xAI quiet.",
+      "engagement": 0,
       "posts": [
         {
-          "url": "https://x.com/SpaceX/status/2103230238390173995",
+          "url": "https://x.com/SpaceX/status/2103912982832988264",
           "author": "SpaceX"
         },
         {
-          "url": "https://www.spacex.com/launches/starship-flight-14",
-          "author": "SpaceX"
-        },
-        {
-          "url": "https://www.spacex.com/launches/ussf385",
+          "url": "https://x.com/SpaceX/status/2104478343664177457",
           "author": "SpaceX"
         }
       ]
