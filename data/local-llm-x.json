@@ -1,66 +1,44 @@
 {
-  "last_updated": "2026-09-29T10:34:56Z",
+  "last_updated": "2026-09-30T10:35:23Z",
   "topics": [
     {
-      "title": "Starship Flight 14 \u2014 first orbital flight",
-      "why": "Ship 41/Booster 21 launched Mon Sep 28 ~7:49am CT; orbit ~8:16am CT; all 26 Starlink V3 deployed; early ~3h Pacific splashdown ~10:57am CT; no tower catch.",
+      "title": "llama.cpp nightlies through b11278",
+      "why": "Densest local-runtime delta since b11249: Vulkan MoE/GDN, AVX512-FP16, HIP packed-byte opt, ModernBERT reranker pooling, Hexagon F16 activations, draft-EOG stop.",
       "engagement": 0,
       "posts": [
         {
-          "url": "https://www.spacex.com/launches/starship-flight-14/",
-          "author": "SpaceX"
-        },
-        {
-          "url": "https://x.com/SpaceX/status/2104560708969259344",
-          "author": "SpaceX"
-        }
-      ]
-    },
-    {
-      "title": "Ollama v0.35.0 decision models",
-      "why": "Pre-release adds /v1/systemone decision API (choice/noul/score) with Nimble and Tev1; separate track from still-open v0.40.0-rc0.",
-      "engagement": 0,
-      "posts": [
-        {
-          "url": "https://github.com/ollama/ollama/releases/tag/v0.35.0",
-          "author": "ollama"
-        }
-      ]
-    },
-    {
-      "title": "llama.cpp nightlies through b11249",
-      "why": "Since b11227: server multimodal /v1/embeddings, Metal/audio pad, SYCL oneAPI 2026.1, Vulkan descriptor reuse, CPU tiled FA.",
-      "engagement": 0,
-      "posts": [
-        {
-          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11249",
+          "url": "https://github.com/ggml-org/llama.cpp/releases",
           "author": "ggml-org"
         }
       ]
     },
     {
-      "title": "MLX 0.32.3 + mlx-vlm 0.7.4",
-      "why": "MLX Metal gated-delta + M5 Ultra tunings; mlx-vlm adds DeepSeek V4.1 VLM and InternVL3.5.",
+      "title": "Crew-13 dry dress done \u2014 NET Thu Oct 1 10:10am CT",
+      "why": "Full launch-day rehearsal complete; stack static-fired; liftoff NET Thu Oct 1 10:10am CT from SLC-40 (backup Oct 2).",
       "engagement": 0,
       "posts": [
         {
-          "url": "https://github.com/ml-explore/mlx/releases/tag/v0.32.3",
-          "author": "ml-explore"
+          "url": "https://x.com/SpaceX/status/2105037817667784890",
+          "author": "SpaceX"
         },
         {
-          "url": "https://github.com/Blaizzy/mlx-vlm/releases/tag/v0.7.4",
-          "author": "Blaizzy"
+          "url": "https://www.spacex.com/launches/crew13",
+          "author": "SpaceX"
         }
       ]
     },
     {
-      "title": "xAI Team Bots",
-      "why": "Shared Grok Bot teammates with team context, plugins, credentials, memories, and Slack handles.",
+      "title": "Falcon Heavy NROL-97 rolled to LC-39A",
+      "why": "First NRO Falcon Heavy / NSSL Phase 3 Lane 2; SFN target Wed\u2013Thu Oct 1/2 ~10:53pm CT with side-booster LZ landings.",
       "engagement": 0,
       "posts": [
         {
-          "url": "https://x.ai/news/team-bots",
-          "author": "xAI"
+          "url": "https://x.com/SpaceX/status/2105107345852522585",
+          "author": "SpaceX"
+        },
+        {
+          "url": "https://www.spacex.com/launches/nrol97",
+          "author": "SpaceX"
         }
       ]
     }
