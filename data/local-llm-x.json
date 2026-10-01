@@ -1,41 +1,45 @@
 {
-  "last_updated": "2026-09-30T10:35:23Z",
+  "last_updated": "2026-10-01T10:30:16Z",
   "topics": [
     {
-      "title": "llama.cpp nightlies through b11278",
-      "why": "Densest local-runtime delta since b11249: Vulkan MoE/GDN, AVX512-FP16, HIP packed-byte opt, ModernBERT reranker pooling, Hexagon F16 activations, draft-EOG stop.",
+      "title": "llama.cpp nightlies through b11318 \u2014 GLM-5.3-Flash + Metal mxfp4 bf16",
+      "why": "After Sep 30 brief (b11278): NEW GLM-5.3-Flash/GLM5-Next support (#27773), Metal bf16 math for mxfp4 mul-mat (#29770), BF16 unary/GLU/binary/scale on CPU+CUDA (#29675), llama_prefetch_rows (#29599). Latest tag b11318 ~5:16am CT Thu Oct 1.",
       "engagement": 0,
       "posts": [
         {
-          "url": "https://github.com/ggml-org/llama.cpp/releases",
-          "author": "ggml-org"
+          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11318",
+          "author": "ggml-org/llama.cpp"
+        },
+        {
+          "url": "https://github.com/ggml-org/llama.cpp/pull/27773",
+          "author": "ggml-org/llama.cpp"
+        },
+        {
+          "url": "https://github.com/ggml-org/llama.cpp/pull/29770",
+          "author": "ggml-org/llama.cpp"
         }
       ]
     },
     {
-      "title": "Crew-13 dry dress done \u2014 NET Thu Oct 1 10:10am CT",
-      "why": "Full launch-day rehearsal complete; stack static-fired; liftoff NET Thu Oct 1 10:10am CT from SLC-40 (backup Oct 2).",
+      "title": "Crew-13 go for launch today 10:10am CT (weather 55%)",
+      "why": "NASA/SpaceX LRR polled go Sep 30; Falcon 9 + Dragon from SLC-40 Thu Oct 1 11:10am EDT / 10:10am CT; backup Fri Oct 2 10:47am EDT / 9:47am CT.",
       "engagement": 0,
       "posts": [
-        {
-          "url": "https://x.com/SpaceX/status/2105037817667784890",
-          "author": "SpaceX"
-        },
         {
           "url": "https://www.spacex.com/launches/crew13",
           "author": "SpaceX"
+        },
+        {
+          "url": "https://www.nasa.gov/blogs/commercialcrew/2026/09/30/nasa-spacex-conclude-review-crew-13-go-for-launch/",
+          "author": "NASA"
         }
       ]
     },
     {
-      "title": "Falcon Heavy NROL-97 rolled to LC-39A",
-      "why": "First NRO Falcon Heavy / NSSL Phase 3 Lane 2; SFN target Wed\u2013Thu Oct 1/2 ~10:53pm CT with side-booster LZ landings.",
+      "title": "Falcon Heavy NROL-97 targeted tonight 10:53pm CT LC-39A",
+      "why": "SpaceX targeting Thu Oct 1 11:53pm EDT / 10:53pm CT from LC-39A; side boosters LZ-1/LZ-2; backup Fri Oct 2 11:48pm EDT.",
       "engagement": 0,
       "posts": [
-        {
-          "url": "https://x.com/SpaceX/status/2105107345852522585",
-          "author": "SpaceX"
-        },
         {
           "url": "https://www.spacex.com/launches/nrol97",
           "author": "SpaceX"
