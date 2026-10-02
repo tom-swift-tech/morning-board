@@ -1,28 +1,24 @@
 {
-  "last_updated": "2026-10-01T10:30:16Z",
+  "last_updated": "2026-10-02T10:39:14Z",
   "topics": [
     {
-      "title": "llama.cpp nightlies through b11318 \u2014 GLM-5.3-Flash + Metal mxfp4 bf16",
-      "why": "After Sep 30 brief (b11278): NEW GLM-5.3-Flash/GLM5-Next support (#27773), Metal bf16 math for mxfp4 mul-mat (#29770), BF16 unary/GLU/binary/scale on CPU+CUDA (#29675), llama_prefetch_rows (#29599). Latest tag b11318 ~5:16am CT Thu Oct 1.",
+      "title": "llama.cpp b11344 \u2014 Qwen3.8-Flash-Next MTP",
+      "why": "Nightlies through b11344 (~3:54am CT Fri). #29761/b11330 adds speculative MTP for Qwen3.8-Flash-Next (--spec-type draft-mtp); PR Spark iq4_xs ~1.55\u00d7 decode. Also Metal temp-buffer free, CUDA NVFP4 cublas, mmap direct-io no double copy. Ollama/MLX/LM Studio quiet.",
       "engagement": 0,
       "posts": [
         {
-          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11318",
-          "author": "ggml-org/llama.cpp"
+          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11344",
+          "author": "ggml-org"
         },
         {
-          "url": "https://github.com/ggml-org/llama.cpp/pull/27773",
-          "author": "ggml-org/llama.cpp"
-        },
-        {
-          "url": "https://github.com/ggml-org/llama.cpp/pull/29770",
-          "author": "ggml-org/llama.cpp"
+          "url": "https://github.com/ggml-org/llama.cpp/pull/29761",
+          "author": "ggml-org"
         }
       ]
     },
     {
-      "title": "Crew-13 go for launch today 10:10am CT (weather 55%)",
-      "why": "NASA/SpaceX LRR polled go Sep 30; Falcon 9 + Dragon from SLC-40 Thu Oct 1 11:10am EDT / 10:10am CT; backup Fri Oct 2 10:47am EDT / 9:47am CT.",
+      "title": "Crew-13 docked + Falcon Heavy NROL-97",
+      "why": "Crew-13 launched Thu 10:10am CT, docked ISS 6:05pm CT in 7h55m (record U.S. to station), hatch 8:19pm CT. FH NROL-97 lifted 10:54pm CT LC-39A \u2014 NRO\u2019s first Falcon Heavy; LZ-1/LZ-2. Transporter-18 also flew ~1:33pm CT (130 payloads). xAI quiet.",
       "engagement": 0,
       "posts": [
         {
@@ -30,16 +26,9 @@
           "author": "SpaceX"
         },
         {
-          "url": "https://www.nasa.gov/blogs/commercialcrew/2026/09/30/nasa-spacex-conclude-review-crew-13-go-for-launch/",
+          "url": "https://www.nasa.gov/blogs/spacestation/2026/10/01/dragon-docks-bringing-spacex-crew-13-to-station/",
           "author": "NASA"
-        }
-      ]
-    },
-    {
-      "title": "Falcon Heavy NROL-97 targeted tonight 10:53pm CT LC-39A",
-      "why": "SpaceX targeting Thu Oct 1 11:53pm EDT / 10:53pm CT from LC-39A; side boosters LZ-1/LZ-2; backup Fri Oct 2 11:48pm EDT.",
-      "engagement": 0,
-      "posts": [
+        },
         {
           "url": "https://www.spacex.com/launches/nrol97",
           "author": "SpaceX"
