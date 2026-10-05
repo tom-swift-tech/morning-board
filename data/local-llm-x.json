@@ -1,37 +1,59 @@
 {
-  "last_updated": "2026-10-02T10:39:14Z",
+  "last_updated": "2026-10-05T10:32:23Z",
   "topics": [
     {
-      "title": "llama.cpp b11344 \u2014 Qwen3.8-Flash-Next MTP",
-      "why": "Nightlies through b11344 (~3:54am CT Fri). #29761/b11330 adds speculative MTP for Qwen3.8-Flash-Next (--spec-type draft-mtp); PR Spark iq4_xs ~1.55\u00d7 decode. Also Metal temp-buffer free, CUDA NVFP4 cublas, mmap direct-io no double copy. Ollama/MLX/LM Studio quiet.",
+      "title": "llama.cpp runs Jev-style decision models locally (/v1/systemone)",
+      "why": "b11361 (Fri Oct 2 ~6:53pm CT) adds /v1/systemone to llama-server for laya, julia-1, lev, openjev (+vision), kev. ggml-org/OpenJev-GGUF: Q4_K_M 19GB, Q8_0 28.6GB, fits a single RTX 5090.",
       "engagement": 0,
       "posts": [
         {
-          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11344",
+          "url": "https://github.com/ggml-org/llama.cpp/pull/29818",
           "author": "ggml-org"
         },
         {
-          "url": "https://github.com/ggml-org/llama.cpp/pull/29761",
+          "url": "https://huggingface.co/ggml-org/OpenJev-GGUF",
           "author": "ggml-org"
         }
       ]
     },
     {
-      "title": "Crew-13 docked + Falcon Heavy NROL-97",
-      "why": "Crew-13 launched Thu 10:10am CT, docked ISS 6:05pm CT in 7h55m (record U.S. to station), hatch 8:19pm CT. FH NROL-97 lifted 10:54pm CT LC-39A \u2014 NRO\u2019s first Falcon Heavy; LZ-1/LZ-2. Transporter-18 also flew ~1:33pm CT (130 payloads). xAI quiet.",
+      "title": "llama.cpp speculative decoding holds up at temp > 0",
+      "why": "b11368 makes simple-draft and MTP drafting probabilistic with rejection-sampling verify; b11387 fixes n-gram drafts at temp > 0. Weekend CUDA work: fused shared experts into MMVQ, whole-tile FlashAttention, MoE MMQ fault fix. Nightlies through b11412 (~5:30am CT Mon).",
       "engagement": 0,
       "posts": [
         {
-          "url": "https://www.spacex.com/launches/crew13",
-          "author": "SpaceX"
+          "url": "https://github.com/ggml-org/llama.cpp/pull/27694",
+          "author": "ggml-org"
         },
         {
-          "url": "https://www.nasa.gov/blogs/spacestation/2026/10/01/dragon-docks-bringing-spacex-crew-13-to-station/",
-          "author": "NASA"
+          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11412",
+          "author": "ggml-org"
+        }
+      ]
+    },
+    {
+      "title": "SpaceX SDA T1TL-A scrubbed in final minute",
+      "why": "Falcon 9 with 21 Northrop Grumman SDA transport sats aborted in the last minute at Vandenberg ~3:17am CT Mon; next try NET Tue Oct 6 3:17am CT.",
+      "engagement": 0,
+      "posts": [
+        {
+          "url": "https://spaceflightnow.com/2026/10/04/live-coverage-spacex-to-launch-21-data-transport-satellites-for-the-space-development-agency/",
+          "author": "Spaceflight Now"
         },
         {
-          "url": "https://www.spacex.com/launches/nrol97",
+          "url": "https://www.spacex.com/launches/sda-t1tl-a",
           "author": "SpaceX"
+        }
+      ]
+    },
+    {
+      "title": "xAI ships official TypeScript SDK",
+      "why": "xai-org/xai-sdk-ts v0.1.0 through v0.2.1 released Fri Oct 2 (experimental).",
+      "engagement": 0,
+      "posts": [
+        {
+          "url": "https://github.com/xai-org/xai-sdk-ts",
+          "author": "xai-org"
         }
       ]
     }
