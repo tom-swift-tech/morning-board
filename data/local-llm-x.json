@@ -1,59 +1,81 @@
 {
-  "last_updated": "2026-10-07T10:38:44Z",
+  "last_updated": "2026-10-08T10:35:29Z",
   "topics": [
     {
-      "title": "llama.cpp adds pplx-decider (Perplexity's open 27B decision model)",
-      "why": "Apache-2.0 Qwen3.8-27B finetune now converts to GGUF and serves through llama-server's systemone decision endpoint, same path as OpenJev. Perplexity's card claims v1.1 tops Jev on the Decision Index; no official GGUF yet.",
+      "title": "llama.cpp adds a GPU cache for MoE experts kept in host RAM",
+      "why": "New --moe-cache-mib flag keeps hot experts on the GPU in an LRU cache and only uploads misses. PR numbers on Qwen3.8-Flash-Next Q4_0 show an RTX 5090 going from 30.8 to 67.8 tok/s generation (2.2x) with -cmoe --moe-cache-mib 19000. Landed in b11480.",
       "engagement": 0,
       "posts": [
         {
-          "url": "https://github.com/ggml-org/llama.cpp/pull/30044",
+          "url": "https://github.com/ggml-org/llama.cpp/pull/29887",
           "author": "ggml-org"
         },
         {
-          "url": "https://huggingface.co/perplexity-ai/pplx-decider-v1.1-27b",
-          "author": "perplexity-ai"
-        }
-      ]
-    },
-    {
-      "title": "llama.cpp mainline support for K2 Horizon dense + MoVA",
-      "why": "IFM's K2 Horizon family (incl. MoVA-36B-A4B) now loads in stock llama.cpp with a dedicated reasoning/tool-call parser.",
-      "engagement": 0,
-      "posts": [
-        {
-          "url": "https://github.com/ggml-org/llama.cpp/pull/29535",
-          "author": "ggml-org"
-        },
-        {
-          "url": "https://huggingface.co/IFM/K2-Horizon-MoVA-36B-A4B-GGUF",
-          "author": "IFM"
-        }
-      ]
-    },
-    {
-      "title": "llama.cpp RPC gets tensor-parallel split (-sm tensor)",
-      "why": "Split one model tensor-parallel across networked machines over RPC; PR demo ran a 284B MXFP4 MoE on two DGX Sparks.",
-      "engagement": 0,
-      "posts": [
-        {
-          "url": "https://github.com/ggml-org/llama.cpp/pull/26610",
+          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11480",
           "author": "ggml-org"
         }
       ]
     },
     {
-      "title": "Google EmbeddingGemma 2 (740M, Apache 2.0)",
-      "why": "On-device multimodal embeddings (text, code, image, audio, video) with same-day GGUF and MLX builds.",
+      "title": "LiquidAI d1-3B and d1-omni-600M decision models land in llama.cpp",
+      "why": "Small multimodal decision models (state + typed questions, zero output tokens) with official GGUFs; d1-3B claims best-under-10B on the Decision Index. LFM1.0 license, not Apache.",
       "engagement": 0,
       "posts": [
         {
-          "url": "https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2/",
-          "author": "Google"
+          "url": "https://github.com/ggml-org/llama.cpp/pull/30110",
+          "author": "ggml-org"
         },
         {
-          "url": "https://huggingface.co/ggml-org/embeddinggemma-2-GGUF",
-          "author": "ggml-org"
+          "url": "https://huggingface.co/LiquidAI/d1-3B-GGUF",
+          "author": "LiquidAI"
+        }
+      ]
+    },
+    {
+      "title": "Ollama v0.40.1",
+      "why": "Windows fixes (Clef head reads past 2GiB, manifests without symlinks) and MLX residency patch now upstream.",
+      "engagement": 0,
+      "posts": [
+        {
+          "url": "https://github.com/ollama/ollama/releases/tag/v0.40.1",
+          "author": "ollama"
+        }
+      ]
+    },
+    {
+      "title": "SpaceX SDA T1TL-A slips to NET Oct 10",
+      "why": "Falcon 9 and payload healthy; extra time for vehicle double checks and range deconfliction.",
+      "engagement": 2180,
+      "posts": [
+        {
+          "url": "https://x.com/SpaceX/status/2107993080398057920",
+          "author": "SpaceX"
+        }
+      ]
+    },
+    {
+      "title": "Crew-12 splashes down today off California",
+      "why": "Dragon Freedom undocked Oct 7; NASA targets splashdown ~10:34am CT Oct 8.",
+      "engagement": 0,
+      "posts": [
+        {
+          "url": "https://www.nasa.gov/blogs/spacestation/2026/10/07/nasas-spacex-crew-12-undocks-in-dragon-for-ride-home/",
+          "author": "NASA"
+        }
+      ]
+    },
+    {
+      "title": "Grok Bot will route to the best backend model per task",
+      "why": "Musk says Grok Bot will use Claude Opus 5.5, Midjourney, Suno and other APIs where they win, with a fast Grok 4.8 for simple requests once it ships. Grok Bot 0.68.1 also shipped Oct 7.",
+      "engagement": 104650,
+      "posts": [
+        {
+          "url": "https://x.com/elonmusk/status/2107724314451878104",
+          "author": "elonmusk"
+        },
+        {
+          "url": "https://x.ai/changelog/bot",
+          "author": "xAI"
         }
       ]
     }
