@@ -1,81 +1,70 @@
 {
-  "last_updated": "2026-10-08T10:35:29Z",
+  "last_updated": "2026-10-09T10:35:15Z",
   "topics": [
     {
-      "title": "llama.cpp adds a GPU cache for MoE experts kept in host RAM",
-      "why": "New --moe-cache-mib flag keeps hot experts on the GPU in an LRU cache and only uploads misses. PR numbers on Qwen3.8-Flash-Next Q4_0 show an RTX 5090 going from 30.8 to 67.8 tok/s generation (2.2x) with -cmoe --moe-cache-mib 19000. Landed in b11480.",
+      "title": "llama-server's default port moves from 8080 to 9931 (b11521)",
+      "why": "Anything pointing at localhost:8080 without --port breaks on the next llama.cpp update; Docker images keep 8080 inside the container.",
       "engagement": 0,
       "posts": [
         {
-          "url": "https://github.com/ggml-org/llama.cpp/pull/29887",
-          "author": "ggml-org"
+          "url": "https://github.com/ggml-org/llama.cpp/pull/30159",
+          "author": "ggml-org/llama.cpp"
         },
         {
-          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11480",
-          "author": "ggml-org"
+          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11521",
+          "author": "ggml-org/llama.cpp"
         }
       ]
     },
     {
-      "title": "LiquidAI d1-3B and d1-omni-600M decision models land in llama.cpp",
-      "why": "Small multimodal decision models (state + typed questions, zero output tokens) with official GGUFs; d1-3B claims best-under-10B on the Decision Index. LFM1.0 license, not Apache.",
+      "title": "JetBrains Mellum2.1 12B-A2.5B Thinking, Apache 2.0, official GGUF",
+      "why": "Small fast MoE coding-agent model with first-party Q4_K_M/Q6_K/Q8_0/MXFP4_MOE GGUFs.",
       "engagement": 0,
       "posts": [
         {
-          "url": "https://github.com/ggml-org/llama.cpp/pull/30110",
-          "author": "ggml-org"
+          "url": "https://blog.jetbrains.com/ai/2026/10/mellum2-1-gets-to-work-a-fast-open-model-for-coding-agents/",
+          "author": "JetBrains"
         },
         {
-          "url": "https://huggingface.co/LiquidAI/d1-3B-GGUF",
-          "author": "LiquidAI"
+          "url": "https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking-GGUF",
+          "author": "JetBrains"
         }
       ]
     },
     {
-      "title": "Ollama v0.40.1",
-      "why": "Windows fixes (Clef head reads past 2GiB, manifests without symlinks) and MLX residency patch now upstream.",
+      "title": "Ollama v0.40.2: upgraded models keep a backup copy on disk",
+      "why": "Models moved to the llama.cpp runner are stored twice until a future release cleans up; release notes include a command to delete the backups.",
       "engagement": 0,
       "posts": [
         {
-          "url": "https://github.com/ollama/ollama/releases/tag/v0.40.1",
-          "author": "ollama"
+          "url": "https://github.com/ollama/ollama/releases/tag/v0.40.2",
+          "author": "ollama/ollama"
         }
       ]
     },
     {
-      "title": "SpaceX SDA T1TL-A slips to NET Oct 10",
-      "why": "Falcon 9 and payload healthy; extra time for vehicle double checks and range deconfliction.",
-      "engagement": 2180,
+      "title": "SpaceX buys Grain's nationwide 800 MHz spectrum for Starlink Mobile",
+      "why": "Up to 14 MHz paired low-band for indoor coverage; pending FCC approval, price undisclosed.",
+      "engagement": 0,
       "posts": [
         {
-          "url": "https://x.com/SpaceX/status/2107993080398057920",
+          "url": "https://x.com/SpaceX/status/2108291133025698301",
           "author": "SpaceX"
+        },
+        {
+          "url": "https://www.prnewswire.com/news-releases/grain-management-announces-definitive-agreement-to-sell-nationwide-800-mhz-spectrum-portfolio-to-spacex-302902974.html",
+          "author": "Grain Management"
         }
       ]
     },
     {
-      "title": "Crew-12 splashes down today off California",
-      "why": "Dragon Freedom undocked Oct 7; NASA targets splashdown ~10:34am CT Oct 8.",
+      "title": "SpaceXAI backs Omarchy with $1.5M in Grok tokens",
+      "why": "Founding Corporate Patron of DHH's Omacom Foundation.",
       "engagement": 0,
       "posts": [
         {
-          "url": "https://www.nasa.gov/blogs/spacestation/2026/10/07/nasas-spacex-crew-12-undocks-in-dragon-for-ride-home/",
-          "author": "NASA"
-        }
-      ]
-    },
-    {
-      "title": "Grok Bot will route to the best backend model per task",
-      "why": "Musk says Grok Bot will use Claude Opus 5.5, Midjourney, Suno and other APIs where they win, with a fast Grok 4.8 for simple requests once it ships. Grok Bot 0.68.1 also shipped Oct 7.",
-      "engagement": 104650,
-      "posts": [
-        {
-          "url": "https://x.com/elonmusk/status/2107724314451878104",
-          "author": "elonmusk"
-        },
-        {
-          "url": "https://x.ai/changelog/bot",
-          "author": "xAI"
+          "url": "https://x.com/SpaceXAI/status/2108259620758384812",
+          "author": "SpaceXAI"
         }
       ]
     }
