@@ -1,70 +1,63 @@
 {
-  "last_updated": "2026-10-09T10:35:15Z",
+  "last_updated": "2026-10-12T10:34:29Z",
   "topics": [
     {
-      "title": "llama-server's default port moves from 8080 to 9931 (b11521)",
-      "why": "Anything pointing at localhost:8080 without --port breaks on the next llama.cpp update; Docker images keep 8080 inside the container.",
+      "title": "llama.cpp Prism Bonsai 2 27B (ternary) runtime \u2014 b11556 / #29600",
+      "why": "Jev if-one-thing: new ternary/Hadamard-folded architecture class now runs in mainline llama.cpp; without the patch the same GGUF is nonsense PPL. Highlight-labeled PR merged Sun ~7:39am CT.",
       "engagement": 0,
       "posts": [
         {
-          "url": "https://github.com/ggml-org/llama.cpp/pull/30159",
-          "author": "ggml-org/llama.cpp"
+          "url": "https://github.com/ggml-org/llama.cpp/pull/29600",
+          "author": "bri-prism / PrismML-Eng"
         },
         {
-          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11521",
-          "author": "ggml-org/llama.cpp"
+          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11556",
+          "author": "ggml-org"
         }
       ]
     },
     {
-      "title": "JetBrains Mellum2.1 12B-A2.5B Thinking, Apache 2.0, official GGUF",
-      "why": "Small fast MoE coding-agent model with first-party Q4_K_M/Q6_K/Q8_0/MXFP4_MOE GGUFs.",
+      "title": "Ollama v0.40.3 \u2014 pause background model upgrades",
+      "why": "Background upgrades that landed with 0.40.2 were hurting embedding and other request performance; also clears Claude/Codex launcher warning noise.",
       "engagement": 0,
       "posts": [
         {
-          "url": "https://blog.jetbrains.com/ai/2026/10/mellum2-1-gets-to-work-a-fast-open-model-for-coding-agents/",
-          "author": "JetBrains"
-        },
-        {
-          "url": "https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking-GGUF",
-          "author": "JetBrains"
+          "url": "https://github.com/ollama/ollama/releases/tag/v0.40.3",
+          "author": "ollama"
         }
       ]
     },
     {
-      "title": "Ollama v0.40.2: upgraded models keep a backup copy on disk",
-      "why": "Models moved to the llama.cpp runner are stored twice until a future release cleans up; release notes include a command to delete the backups.",
-      "engagement": 0,
+      "title": "SpaceX SDA T1TL-A launched Sat ~2:39am CT",
+      "why": "Fourth Tranche 1 data-transport plane from Vandenberg; 21 sats; LZ-4 landing. Was briefed as NET Sat after slips \u2014 now complete.",
+      "engagement": 2030827,
       "posts": [
         {
-          "url": "https://github.com/ollama/ollama/releases/tag/v0.40.2",
-          "author": "ollama/ollama"
-        }
-      ]
-    },
-    {
-      "title": "SpaceX buys Grain's nationwide 800 MHz spectrum for Starlink Mobile",
-      "why": "Up to 14 MHz paired low-band for indoor coverage; pending FCC approval, price undisclosed.",
-      "engagement": 0,
-      "posts": [
-        {
-          "url": "https://x.com/SpaceX/status/2108291133025698301",
+          "url": "https://x.com/SpaceX/status/2108825295310475381",
           "author": "SpaceX"
         },
         {
-          "url": "https://www.prnewswire.com/news-releases/grain-management-announces-definitive-agreement-to-sell-nationwide-800-mhz-spectrum-portfolio-to-spacex-302902974.html",
-          "author": "Grain Management"
+          "url": "https://www.spacex.com/launches/sda-t1tl-a",
+          "author": "SpaceX"
+        },
+        {
+          "url": "https://www.sda.mil/pae-for-missile-warning-and-tracking-and-space-development-agency-successfully-deliver-fourth-orbital-plane-of-tranche-1-satellites-to-orbit/",
+          "author": "SDA"
         }
       ]
     },
     {
-      "title": "SpaceXAI backs Omarchy with $1.5M in Grok tokens",
-      "why": "Founding Corporate Patron of DHH's Omacom Foundation.",
+      "title": "llama.cpp MiniCPM-V 4.7 multimodal \u2014 b11551 / #29416",
+      "why": "Local vision path: MiniCPM-V 4.7 via existing v4.6 path + 3D RoPE.",
       "engagement": 0,
       "posts": [
         {
-          "url": "https://x.com/SpaceXAI/status/2108259620758384812",
-          "author": "SpaceXAI"
+          "url": "https://github.com/ggml-org/llama.cpp/pull/29416",
+          "author": "tc-mb"
+        },
+        {
+          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11551",
+          "author": "ggml-org"
         }
       ]
     }
