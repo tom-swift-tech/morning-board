@@ -1,63 +1,59 @@
 {
-  "last_updated": "2026-10-12T10:34:29Z",
+  "last_updated": "2026-10-13T10:39:30Z",
   "topics": [
     {
-      "title": "llama.cpp Prism Bonsai 2 27B (ternary) runtime \u2014 b11556 / #29600",
-      "why": "Jev if-one-thing: new ternary/Hadamard-folded architecture class now runs in mainline llama.cpp; without the patch the same GGUF is nonsense PPL. Highlight-labeled PR merged Sun ~7:39am CT.",
+      "title": "llama.cpp Decision 2/3 (vLLM) + HF d3 / Decision-2.0 GGUFs",
+      "why": "Mainline now loads vLLM Decision-2 and Decision-3 families; official Decision-2.0 GGUFs on HF; d3 0.6B\u201326B collection live. Tip b11583.",
       "engagement": 0,
       "posts": [
         {
-          "url": "https://github.com/ggml-org/llama.cpp/pull/29600",
-          "author": "bri-prism / PrismML-Eng"
+          "url": "https://github.com/ggml-org/llama.cpp/pull/30383",
+          "author": "ggml-org/llama.cpp"
         },
         {
-          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11556",
-          "author": "ggml-org"
+          "url": "https://github.com/ggml-org/llama.cpp/pull/30378",
+          "author": "ggml-org/llama.cpp"
+        },
+        {
+          "url": "https://huggingface.co/collections/vllm-sr/decision-30",
+          "author": "vllm-sr"
+        },
+        {
+          "url": "https://huggingface.co/vllm-sr/Decision-2.0-Vega-27B-GGUF",
+          "author": "vllm-sr"
         }
       ]
     },
     {
-      "title": "Ollama v0.40.3 \u2014 pause background model upgrades",
-      "why": "Background upgrades that landed with 0.40.2 were hurting embedding and other request performance; also clears Claude/Codex launcher warning noise.",
+      "title": "SpaceX CRS-35 Dragon ISS resupply",
+      "why": "Falcon 9 targeted Tue Oct 13 6:33am ET (5:33am CT) SLC-40; LZ-40; dock ~Thu Oct 15 11am ET.",
       "engagement": 0,
       "posts": [
         {
-          "url": "https://github.com/ollama/ollama/releases/tag/v0.40.3",
+          "url": "https://www.spacex.com/launches/crs35",
+          "author": "SpaceX"
+        }
+      ]
+    },
+    {
+      "title": "Ollama v0.40.4-rc1 (decision models + EmbeddingGemma 2)",
+      "why": "Pre-release bumps llama.cpp to b11521 for decision models and EmbeddingGemma 2; MLX bumps.",
+      "engagement": 0,
+      "posts": [
+        {
+          "url": "https://github.com/ollama/ollama/releases/tag/v0.40.4-rc1",
           "author": "ollama"
         }
       ]
     },
     {
-      "title": "SpaceX SDA T1TL-A launched Sat ~2:39am CT",
-      "why": "Fourth Tranche 1 data-transport plane from Vandenberg; 21 sats; LZ-4 landing. Was briefed as NET Sat after slips \u2014 now complete.",
-      "engagement": 2030827,
-      "posts": [
-        {
-          "url": "https://x.com/SpaceX/status/2108825295310475381",
-          "author": "SpaceX"
-        },
-        {
-          "url": "https://www.spacex.com/launches/sda-t1tl-a",
-          "author": "SpaceX"
-        },
-        {
-          "url": "https://www.sda.mil/pae-for-missile-warning-and-tracking-and-space-development-agency-successfully-deliver-fourth-orbital-plane-of-tranche-1-satellites-to-orbit/",
-          "author": "SDA"
-        }
-      ]
-    },
-    {
-      "title": "llama.cpp MiniCPM-V 4.7 multimodal \u2014 b11551 / #29416",
-      "why": "Local vision path: MiniCPM-V 4.7 via existing v4.6 path + 3D RoPE.",
+      "title": "Metal mul_mat_id duplicate expert ids fix",
+      "why": "Apple Silicon MoE correctness when expert ids duplicate (#30373 / b11569).",
       "engagement": 0,
       "posts": [
         {
-          "url": "https://github.com/ggml-org/llama.cpp/pull/29416",
-          "author": "tc-mb"
-        },
-        {
-          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11551",
-          "author": "ggml-org"
+          "url": "https://github.com/ggml-org/llama.cpp/pull/30373",
+          "author": "ggml-org/llama.cpp"
         }
       ]
     }
