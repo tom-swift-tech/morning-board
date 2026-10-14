@@ -1,59 +1,82 @@
 {
-  "last_updated": "2026-10-13T10:39:30Z",
+  "last_updated": "2026-10-14T10:36:16Z",
   "topics": [
     {
-      "title": "llama.cpp Decision 2/3 (vLLM) + HF d3 / Decision-2.0 GGUFs",
-      "why": "Mainline now loads vLLM Decision-2 and Decision-3 families; official Decision-2.0 GGUFs on HF; d3 0.6B\u201326B collection live. Tip b11583.",
+      "title": "llama.cpp tip b11612 \u2014 Unigram NFC (GLiNER2.5-Decide prereq)",
+      "why": "Jev if-one-thing: opt-in tokenizer.ggml.normalizer.nfc (#30390). Nightlies advanced b11583\u2192b11612; also KleidiAI SME2 Q4_K/Q6_K (b11604) and WebGPU MoE duplicate-id (b11609).",
       "engagement": 0,
       "posts": [
         {
-          "url": "https://github.com/ggml-org/llama.cpp/pull/30383",
+          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11612",
           "author": "ggml-org/llama.cpp"
         },
         {
-          "url": "https://github.com/ggml-org/llama.cpp/pull/30378",
+          "url": "https://github.com/ggml-org/llama.cpp/pull/30390",
           "author": "ggml-org/llama.cpp"
         },
         {
-          "url": "https://huggingface.co/collections/vllm-sr/decision-30",
-          "author": "vllm-sr"
-        },
-        {
-          "url": "https://huggingface.co/vllm-sr/Decision-2.0-Vega-27B-GGUF",
-          "author": "vllm-sr"
+          "url": "https://github.com/ggml-org/llama.cpp/pull/29219",
+          "author": "ggml-org/llama.cpp"
         }
       ]
     },
     {
-      "title": "SpaceX CRS-35 Dragon ISS resupply",
-      "why": "Falcon 9 targeted Tue Oct 13 6:33am ET (5:33am CT) SLC-40; LZ-40; dock ~Thu Oct 15 11am ET.",
-      "engagement": 0,
+      "title": "SpaceX CRS-35 launched \u2014 Dragon en route to ISS",
+      "why": "Falcon 9 lifted Tue Oct 13 ~5:33am CT (6:33am ET) SLC-40; B1096 LZ-40; Dragon C211 docks ~Thu Oct 15 11am ET (~10am CT). Material update from targeted.",
+      "engagement": 19735,
       "posts": [
         {
-          "url": "https://www.spacex.com/launches/crs35",
+          "url": "https://www.spacex.com/launches/crs35/",
           "author": "SpaceX"
+        },
+        {
+          "url": "https://x.com/SpaceX/status/2109991777361101135",
+          "author": "SpaceX"
+        },
+        {
+          "url": "https://www.nasa.gov/news-release/nasa-science-cargo-launch-on-35th-spacex-resupply-mission-to-station/",
+          "author": "NASA"
         }
       ]
     },
     {
-      "title": "Ollama v0.40.4-rc1 (decision models + EmbeddingGemma 2)",
-      "why": "Pre-release bumps llama.cpp to b11521 for decision models and EmbeddingGemma 2; MLX bumps.",
+      "title": "LM Studio 0.4.26 + Ollama v0.40.4 stable",
+      "why": "LM Studio Oct 13: Splash on M3+, /v1/systemone Jev + /v1/decisions. Ollama 0.40.4 stable (decision CLI) supersedes the rc1 noted Oct 13.",
       "engagement": 0,
       "posts": [
         {
-          "url": "https://github.com/ollama/ollama/releases/tag/v0.40.4-rc1",
+          "url": "https://lmstudio.ai/changelog/lmstudio",
+          "author": "LM Studio"
+        },
+        {
+          "url": "https://github.com/ollama/ollama/releases/tag/v0.40.4",
           "author": "ollama"
         }
       ]
     },
     {
-      "title": "Metal mul_mat_id duplicate expert ids fix",
-      "why": "Apple Silicon MoE correctness when expert ids duplicate (#30373 / b11569).",
+      "title": "Starship Ship 40 back at Starbase Megabay",
+      "why": "First Starship returned to launch site; vertical in Megabay for flown heatshield/Raptor data (@SpaceX Tue ~4:52pm CT).",
+      "engagement": 17134,
+      "posts": [
+        {
+          "url": "https://x.com/SpaceX/status/2110126570233094527",
+          "author": "SpaceX"
+        }
+      ]
+    },
+    {
+      "title": "xAI: X Subscription + Grok 4.7 on Bedrock",
+      "why": "X Subscription (announced Oct 12) bundles Grok/Grok Bot/Cursor/X Premium. AWS blog Oct 13: Grok 4.7 on Bedrock (us.xai.grok-4.7 / global.xai.grok-4.7, 500K ctx).",
       "engagement": 0,
       "posts": [
         {
-          "url": "https://github.com/ggml-org/llama.cpp/pull/30373",
-          "author": "ggml-org/llama.cpp"
+          "url": "https://x.ai/news/x-subscription",
+          "author": "xAI"
+        },
+        {
+          "url": "https://aws.amazon.com/blogs/machine-learning/build-long-horizon-agents-with-grok-4-7-on-amazon-bedrock/",
+          "author": "AWS"
         }
       ]
     }
