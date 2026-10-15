@@ -1,82 +1,55 @@
 {
-  "last_updated": "2026-10-14T10:36:16Z",
+  "last_updated": "2026-10-15T10:31:34Z",
   "topics": [
     {
-      "title": "llama.cpp tip b11612 \u2014 Unigram NFC (GLiNER2.5-Decide prereq)",
-      "why": "Jev if-one-thing: opt-in tokenizer.ggml.normalizer.nfc (#30390). Nightlies advanced b11583\u2192b11612; also KleidiAI SME2 Q4_K/Q6_K (b11604) and WebGPU MoE duplicate-id (b11609).",
+      "title": "llama.cpp GDN chunked CUDA/HIP kernel (b11632)",
+      "why": "PR #29353: on RTX 5090, prompt processing ~+16\u201318% on Qwen3.5-35B-A3B Q4_K_S and ~+5\u20136% on Qwen3.8-27B Q4_K_M (-b 2048 -fa 1). Tip overnight at b11643.",
       "engagement": 0,
       "posts": [
         {
-          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11612",
+          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11632",
           "author": "ggml-org/llama.cpp"
         },
         {
-          "url": "https://github.com/ggml-org/llama.cpp/pull/30390",
-          "author": "ggml-org/llama.cpp"
-        },
-        {
-          "url": "https://github.com/ggml-org/llama.cpp/pull/29219",
+          "url": "https://github.com/ggml-org/llama.cpp/pull/29353",
           "author": "ggml-org/llama.cpp"
         }
       ]
     },
     {
-      "title": "SpaceX CRS-35 launched \u2014 Dragon en route to ISS",
-      "why": "Falcon 9 lifted Tue Oct 13 ~5:33am CT (6:33am ET) SLC-40; B1096 LZ-40; Dragon C211 docks ~Thu Oct 15 11am ET (~10am CT). Material update from targeted.",
-      "engagement": 19735,
-      "posts": [
-        {
-          "url": "https://www.spacex.com/launches/crs35/",
-          "author": "SpaceX"
-        },
-        {
-          "url": "https://x.com/SpaceX/status/2109991777361101135",
-          "author": "SpaceX"
-        },
-        {
-          "url": "https://www.nasa.gov/news-release/nasa-science-cargo-launch-on-35th-spacex-resupply-mission-to-station/",
-          "author": "NASA"
-        }
-      ]
-    },
-    {
-      "title": "LM Studio 0.4.26 + Ollama v0.40.4 stable",
-      "why": "LM Studio Oct 13: Splash on M3+, /v1/systemone Jev + /v1/decisions. Ollama 0.40.4 stable (decision CLI) supersedes the rc1 noted Oct 13.",
+      "title": "llama.cpp LiliCorr speculative decode (b11641)",
+      "why": "PR #30506 adds NVIDIA LiliCorr on top of DFlash to raise draft acceptance via top-k in/out vector compatibility.",
       "engagement": 0,
       "posts": [
         {
-          "url": "https://lmstudio.ai/changelog/lmstudio",
-          "author": "LM Studio"
+          "url": "https://github.com/ggml-org/llama.cpp/pull/30506",
+          "author": "ggml-org/llama.cpp"
         },
         {
-          "url": "https://github.com/ollama/ollama/releases/tag/v0.40.4",
-          "author": "ollama"
+          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11641",
+          "author": "ggml-org/llama.cpp"
         }
       ]
     },
     {
-      "title": "Starship Ship 40 back at Starbase Megabay",
-      "why": "First Starship returned to launch site; vertical in Megabay for flown heatshield/Raptor data (@SpaceX Tue ~4:52pm CT).",
-      "engagement": 17134,
-      "posts": [
-        {
-          "url": "https://x.com/SpaceX/status/2110126570233094527",
-          "author": "SpaceX"
-        }
-      ]
-    },
-    {
-      "title": "xAI: X Subscription + Grok 4.7 on Bedrock",
-      "why": "X Subscription (announced Oct 12) bundles Grok/Grok Bot/Cursor/X Premium. AWS blog Oct 13: Grok 4.7 on Bedrock (us.xai.grok-4.7 / global.xai.grok-4.7, 500K ctx).",
+      "title": "xAI Grok Voice 3.0",
+      "why": "Speech-to-speech API; AA Index 86.9; same $0.08/min as 2.0; grok-voice-latest auto-switched. Announced Oct 14.",
       "engagement": 0,
       "posts": [
         {
-          "url": "https://x.ai/news/x-subscription",
+          "url": "https://x.ai/news/grok-voice-3",
           "author": "xAI"
-        },
+        }
+      ]
+    },
+    {
+      "title": "llama-server prompt-cache hygiene (b11642)",
+      "why": "Only restorable completion slot states are saved to the prompt cache; embed/rerank/decision/infill idle slots no longer fill it.",
+      "engagement": 0,
+      "posts": [
         {
-          "url": "https://aws.amazon.com/blogs/machine-learning/build-long-horizon-agents-with-grok-4-7-on-amazon-bedrock/",
-          "author": "AWS"
+          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11642",
+          "author": "ggml-org/llama.cpp"
         }
       ]
     }
