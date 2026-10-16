@@ -1,54 +1,70 @@
 {
-  "last_updated": "2026-10-15T10:31:34Z",
+  "last_updated": "2026-10-16T10:30:57Z",
   "topics": [
     {
-      "title": "llama.cpp GDN chunked CUDA/HIP kernel (b11632)",
-      "why": "PR #29353: on RTX 5090, prompt processing ~+16\u201318% on Qwen3.5-35B-A3B Q4_K_S and ~+5\u20136% on Qwen3.8-27B Q4_K_M (-b 2048 -fa 1). Tip overnight at b11643.",
+      "title": "Meta Muse Spark Open + llama.cpp (b11671)",
+      "why": "Open-weight multimodal MoE 816B total / 42B active, 1M ctx; MLX on dual M5 Ultra; llama.cpp arch #30616 landed b11671 Thu ~7:18pm CT. HF meta-models/muse-spark-open.",
       "engagement": 0,
       "posts": [
         {
-          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11632",
+          "url": "https://research.meta.ai/blog/muse-spark-open",
+          "author": "Meta AI Research"
+        },
+        {
+          "url": "https://huggingface.co/collections/meta-models/muse-spark-open",
+          "author": "meta-models"
+        },
+        {
+          "url": "https://github.com/ggml-org/llama.cpp/pull/30616",
           "author": "ggml-org/llama.cpp"
         },
         {
-          "url": "https://github.com/ggml-org/llama.cpp/pull/29353",
+          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11671",
           "author": "ggml-org/llama.cpp"
         }
       ]
     },
     {
-      "title": "llama.cpp LiliCorr speculative decode (b11641)",
-      "why": "PR #30506 adds NVIDIA LiliCorr on top of DFlash to raise draft acceptance via top-k in/out vector compatibility.",
+      "title": "SpaceX CRS-35 Dragon docked ISS",
+      "why": "Docked Thu Oct 15 ~9:27am CT (10:27am ET) at Harmony zenith; >6,300 lb cargo incl. final IROSA pair. Material vs Oct 15 brief drop of dock schedule.",
       "engagement": 0,
       "posts": [
         {
-          "url": "https://github.com/ggml-org/llama.cpp/pull/30506",
+          "url": "https://www.spacex.com/launches/crs35/",
+          "author": "SpaceX"
+        },
+        {
+          "url": "https://www.nasa.gov/blogs/spacestation/2026/10/15/spacex-dragon-docks-with-science-supplies-and-roll-out-solar-arrays/",
+          "author": "NASA"
+        }
+      ]
+    },
+    {
+      "title": "Ollama v0.40.5 \u2014 Nemotron 3.5 Super/Bolt",
+      "why": "Stable ships nemotron-3.5-super (120B/12B active VL, 1M ctx) and Bolt (74B/9B for 24GB GPUs), plus cloud decision models. Material vs Oct 15 drop of 0.40.5-rc0.",
+      "engagement": 0,
+      "posts": [
+        {
+          "url": "https://github.com/ollama/ollama/releases/tag/v0.40.5",
+          "author": "ollama/ollama"
+        },
+        {
+          "url": "https://ollama.com/library/nemotron-3.5-super",
+          "author": "Ollama"
+        }
+      ]
+    },
+    {
+      "title": "llama.cpp v0.7.0 stable",
+      "why": "Formal stable Thu ~12:13pm CT; packages MoE expert GPU cache (--moe-cache-mib), LiliCorr, Nemotron Super/Bolt, decision models, default port 9931. Tip overnight b11690.",
+      "engagement": 0,
+      "posts": [
+        {
+          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/v0.7.0",
           "author": "ggml-org/llama.cpp"
         },
         {
-          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11641",
-          "author": "ggml-org/llama.cpp"
-        }
-      ]
-    },
-    {
-      "title": "xAI Grok Voice 3.0",
-      "why": "Speech-to-speech API; AA Index 86.9; same $0.08/min as 2.0; grok-voice-latest auto-switched. Announced Oct 14.",
-      "engagement": 0,
-      "posts": [
-        {
-          "url": "https://x.ai/news/grok-voice-3",
-          "author": "xAI"
-        }
-      ]
-    },
-    {
-      "title": "llama-server prompt-cache hygiene (b11642)",
-      "why": "Only restorable completion slot states are saved to the prompt cache; embed/rerank/decision/infill idle slots no longer fill it.",
-      "engagement": 0,
-      "posts": [
-        {
-          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11642",
+          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11690",
           "author": "ggml-org/llama.cpp"
         }
       ]
