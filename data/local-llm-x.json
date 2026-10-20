@@ -1,92 +1,47 @@
 {
-  "last_updated": "2026-10-19T10:33:29Z",
+  "last_updated": "2026-10-20T10:40:00Z",
   "topics": [
     {
-      "title": "Kolibri-1 (Aleph Alpha 78B/3.46B-active MoE) now runs in stock llama.cpp",
-      "why": "b11709 (#30673) merged Sat Oct 17; Apache 2.0, 1M ctx; bartowski GGUFs up. Small active count suits RTX 5090 + system-RAM MoE offload.",
+      "title": "llama-server --connect: P2P remote access to your home llama.cpp server",
+      "why": "Merged Mon Oct 19 ~5:23pm CT (PR #28277, build b11744). Opt-in WebRTC, end-to-end encrypted link from the web UI to llama-server outside the LAN, no central relay. Web UI side (PR #24577) still open.",
       "engagement": 0,
       "posts": [
         {
-          "url": "https://github.com/ggml-org/llama.cpp/pull/30673",
+          "url": "https://github.com/ggml-org/llama.cpp/pull/28277",
           "author": "ggml-org/llama.cpp"
         },
         {
-          "url": "https://huggingface.co/bartowski/Kolibri-1-GGUF",
-          "author": "bartowski"
-        },
-        {
-          "url": "https://huggingface.co/Aleph-Alpha/Kolibri-1",
-          "author": "Aleph-Alpha"
-        }
-      ]
-    },
-    {
-      "title": "llama.cpp CUDA: faster low-bit MMVQ + grouped-experts MoE fusion",
-      "why": "b11713 (#30517) RTX 5090 q2_K ~1.13x, q1_0 ~1.12x kernel speed; b11710 (#29181) ~+20% TG on grouped-expert MoE.",
-      "engagement": 0,
-      "posts": [
-        {
-          "url": "https://github.com/ggml-org/llama.cpp/pull/30517",
-          "author": "ggml-org/llama.cpp"
-        },
-        {
-          "url": "https://github.com/ggml-org/llama.cpp/pull/29181",
+          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11744",
           "author": "ggml-org/llama.cpp"
         }
       ]
     },
     {
-      "title": "llama-server web UI can browse and download HF GGUFs",
-      "why": "b11714 (#29584): Discover Models view with memory-fit notes and auto quant-matched draft models.",
+      "title": "SpaceX Bandwagon-5 rideshare retargeted today; Q3 results at 3:30pm CT",
+      "why": "Falcon 9 with 32 payloads incl. SpaceX's Starfall reentry capsule scrubbed Monday for recovery weather, retargeted Tue Oct 20 ~6:04am CT. SpaceX posts Q3 2026 results after market close; webcast 3:30pm CT.",
       "engagement": 0,
       "posts": [
         {
-          "url": "https://github.com/ggml-org/llama.cpp/pull/29584",
+          "url": "https://spaceflightnow.com/2026/10/18/live-coverage-spacex-to-launch-starfall-reentry-capsule-31-customer-payloads-on-bandwagon-5-rideshare-mission/",
+          "author": "Spaceflight Now"
+        },
+        {
+          "url": "https://ir.spacex.com/updates/releases-details/2026/SpaceX-to-Post-Third-Quarter-2026-Results-and-Host-Webcast-on-October-20-2026-2026-QssQGye3im/",
+          "author": "SpaceX IR"
+        }
+      ]
+    },
+    {
+      "title": "llama.cpp Qwen fixes: Qwen3 embedding models and Qwen-VL image parity",
+      "why": "b11729 adds bidirectional attention + dense_2 for Qwen3 embedding models (voyage-4-nano); b11747 matches transformers Qwen-VL resize (no letterbox, fewer image tokens). Tip b11753 ~4:06am CT.",
+      "engagement": 0,
+      "posts": [
+        {
+          "url": "https://github.com/ggml-org/llama.cpp/pull/30607",
           "author": "ggml-org/llama.cpp"
-        }
-      ]
-    },
-    {
-      "title": "Ollama v0.40.6 stable, v0.40.7-rc0",
-      "why": "0.40.6 adds q2_0 GGUF type and Windows orphaned-runner fix; rc0 adds PPLX Decider v1.2 on MLX.",
-      "engagement": 0,
-      "posts": [
-        {
-          "url": "https://github.com/ollama/ollama/releases/tag/v0.40.6",
-          "author": "ollama"
         },
         {
-          "url": "https://github.com/ollama/ollama/releases/tag/v0.40.7-rc0",
-          "author": "ollama"
-        }
-      ]
-    },
-    {
-      "title": "NVIDIA Nemotron Labs Dory 1.0 4B (looped model)",
-      "why": "On HF Oct 16; 1-4 loops of a shared block, 256K ctx. llama.cpp support still an open PR (#30306).",
-      "engagement": 0,
-      "posts": [
-        {
-          "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-NVFP4",
-          "author": "nvidia"
-        },
-        {
-          "url": "https://github.com/ggml-org/llama.cpp/pull/30306",
-          "author": "ggml-org/llama.cpp"
-        }
-      ]
-    },
-    {
-      "title": "Reflection Beam-1.0-501B-A23B supported in llama.cpp",
-      "why": "b11701 (#30670); Unsloth smallest UD-IQ1_S ~103 GB.",
-      "engagement": 0,
-      "posts": [
-        {
-          "url": "https://huggingface.co/unsloth/Beam-1.0-501B-A23B-GGUF",
-          "author": "unsloth"
-        },
-        {
-          "url": "https://github.com/ggml-org/llama.cpp/pull/30670",
+          "url": "https://github.com/ggml-org/llama.cpp/pull/30736",
           "author": "ggml-org/llama.cpp"
         }
       ]
