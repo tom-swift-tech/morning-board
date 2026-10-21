@@ -1,49 +1,40 @@
 {
-  "last_updated": "2026-10-20T10:40:00Z",
+  "last_updated": "2026-10-21T10:45:00Z",
   "topics": [
     {
-      "title": "llama-server --connect: P2P remote access to your home llama.cpp server",
-      "why": "Merged Mon Oct 19 ~5:23pm CT (PR #28277, build b11744). Opt-in WebRTC, end-to-end encrypted link from the web UI to llama-server outside the LAN, no central relay. Web UI side (PR #24577) still open.",
+      "title": "llama-server goes voice: /tts and realtime transcription",
+      "why": "Merged Tue Oct 20 evening CT. POST /tts for TTS models with streaming and speaker-reference upload (PR #26603, b11781), plus an OpenAI-compatible /v1/realtime websocket transcription API (PR #30636, b11780), tested with Voxtral-Mini-4B-Realtime GGUF. Local speech in and out from one server.",
       "engagement": 0,
       "posts": [
-        {
-          "url": "https://github.com/ggml-org/llama.cpp/pull/28277",
-          "author": "ggml-org/llama.cpp"
-        },
-        {
-          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11744",
-          "author": "ggml-org/llama.cpp"
-        }
+        {"url": "https://github.com/ggml-org/llama.cpp/pull/26603", "author": "ggml-org/llama.cpp"},
+        {"url": "https://github.com/ggml-org/llama.cpp/pull/30636", "author": "ggml-org/llama.cpp"},
+        {"url": "https://huggingface.co/ggml-org/Voxtral-Mini-4B-Realtime-2602-GGUF", "author": "ggml-org"}
       ]
     },
     {
-      "title": "SpaceX Bandwagon-5 rideshare retargeted today; Q3 results at 3:30pm CT",
-      "why": "Falcon 9 with 32 payloads incl. SpaceX's Starfall reentry capsule scrubbed Monday for recovery weather, retargeted Tue Oct 20 ~6:04am CT. SpaceX posts Q3 2026 results after market close; webcast 3:30pm CT.",
+      "title": "SpaceX Q3: $14.58B revenue, Tesla merger committees",
+      "why": "Revenue up 161% vs $12.72B expected, net income $4.4B, AI business up ninefold (mostly renting compute). Q1 2027 guide $33-37B. Musk says both boards formed special committees to discuss a Tesla merger.",
       "engagement": 0,
       "posts": [
-        {
-          "url": "https://spaceflightnow.com/2026/10/18/live-coverage-spacex-to-launch-starfall-reentry-capsule-31-customer-payloads-on-bandwagon-5-rideshare-mission/",
-          "author": "Spaceflight Now"
-        },
-        {
-          "url": "https://ir.spacex.com/updates/releases-details/2026/SpaceX-to-Post-Third-Quarter-2026-Results-and-Host-Webcast-on-October-20-2026-2026-QssQGye3im/",
-          "author": "SpaceX IR"
-        }
+        {"url": "https://www.cnbc.com/2026/10/20/spacex-spcx-earnings-live-updates-q3-2026html.html", "author": "CNBC"}
       ]
     },
     {
-      "title": "llama.cpp Qwen fixes: Qwen3 embedding models and Qwen-VL image parity",
-      "why": "b11729 adds bidirectional attention + dense_2 for Qwen3 embedding models (voyage-4-nano); b11747 matches transformers Qwen-VL resize (no letterbox, fewer image tokens). Tip b11753 ~4:06am CT.",
+      "title": "Starship Flight 15 will try to catch both booster and ship",
+      "why": "Musk on the Q3 call: Flight 15 expected next month, first-ever ship catch attempt. Shotwell expects the FAA license to cover tower catch for both stages. Unofficial planning date NET Nov 8.",
       "engagement": 0,
       "posts": [
-        {
-          "url": "https://github.com/ggml-org/llama.cpp/pull/30607",
-          "author": "ggml-org/llama.cpp"
-        },
-        {
-          "url": "https://github.com/ggml-org/llama.cpp/pull/30736",
-          "author": "ggml-org/llama.cpp"
-        }
+        {"url": "https://spacenews.com/spacex-plans-starship-upper-stage-catch-on-next-launch/", "author": "SpaceNews"},
+        {"url": "https://www.nasaspaceflight.com/2026/10/spacex-flight-15-16-milestones/", "author": "NASASpaceFlight"}
+      ]
+    },
+    {
+      "title": "Ornith-1.5-122B: MIT open-weight MoE with official GGUF and MLX",
+      "why": "Qwen3.5-MoE architecture, so stock llama.cpp. Official Q4_K_M is 75.8GB (Q8_0 132.6GB), so on a 32GB card it is a GPU+RAM split. MLX 4/8-bit, FP8, NVFP4 also posted.",
+      "engagement": 0,
+      "posts": [
+        {"url": "https://huggingface.co/ornith-ai/Ornith-1.5-122B", "author": "ornith-ai"},
+        {"url": "https://huggingface.co/ornith-ai/Ornith-1.5-122B-GGUF", "author": "ornith-ai"}
       ]
     }
   ]
