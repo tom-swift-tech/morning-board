@@ -1,41 +1,9 @@
 {
-  "last_updated": "2026-10-21T10:45:00Z",
+  "last_updated": "2026-10-22T10:38:33Z",
   "topics": [
-    {
-      "title": "llama-server goes voice: /tts and realtime transcription",
-      "why": "Merged Tue Oct 20 evening CT. POST /tts for TTS models with streaming and speaker-reference upload (PR #26603, b11781), plus an OpenAI-compatible /v1/realtime websocket transcription API (PR #30636, b11780), tested with Voxtral-Mini-4B-Realtime GGUF. Local speech in and out from one server.",
-      "engagement": 0,
-      "posts": [
-        {"url": "https://github.com/ggml-org/llama.cpp/pull/26603", "author": "ggml-org/llama.cpp"},
-        {"url": "https://github.com/ggml-org/llama.cpp/pull/30636", "author": "ggml-org/llama.cpp"},
-        {"url": "https://huggingface.co/ggml-org/Voxtral-Mini-4B-Realtime-2602-GGUF", "author": "ggml-org"}
-      ]
-    },
-    {
-      "title": "SpaceX Q3: $14.58B revenue, Tesla merger committees",
-      "why": "Revenue up 161% vs $12.72B expected, net income $4.4B, AI business up ninefold (mostly renting compute). Q1 2027 guide $33-37B. Musk says both boards formed special committees to discuss a Tesla merger.",
-      "engagement": 0,
-      "posts": [
-        {"url": "https://www.cnbc.com/2026/10/20/spacex-spcx-earnings-live-updates-q3-2026html.html", "author": "CNBC"}
-      ]
-    },
-    {
-      "title": "Starship Flight 15 will try to catch both booster and ship",
-      "why": "Musk on the Q3 call: Flight 15 expected next month, first-ever ship catch attempt. Shotwell expects the FAA license to cover tower catch for both stages. Unofficial planning date NET Nov 8.",
-      "engagement": 0,
-      "posts": [
-        {"url": "https://spacenews.com/spacex-plans-starship-upper-stage-catch-on-next-launch/", "author": "SpaceNews"},
-        {"url": "https://www.nasaspaceflight.com/2026/10/spacex-flight-15-16-milestones/", "author": "NASASpaceFlight"}
-      ]
-    },
-    {
-      "title": "Ornith-1.5-122B: MIT open-weight MoE with official GGUF and MLX",
-      "why": "Qwen3.5-MoE architecture, so stock llama.cpp. Official Q4_K_M is 75.8GB (Q8_0 132.6GB), so on a 32GB card it is a GPU+RAM split. MLX 4/8-bit, FP8, NVFP4 also posted.",
-      "engagement": 0,
-      "posts": [
-        {"url": "https://huggingface.co/ornith-ai/Ornith-1.5-122B", "author": "ornith-ai"},
-        {"url": "https://huggingface.co/ornith-ai/Ornith-1.5-122B-GGUF", "author": "ornith-ai"}
-      ]
-    }
+    {"title": "Recursive Flint (40B MoE, ~2.5B active, Apache 2.0) lands in llama.cpp and Ollama", "why": "Coding-agent MoE with 262K context; llama.cpp support in b11803 with official NVFP4/INT4 GGUFs; Ollama v0.40.8 runs it on Mac now, other GPUs later.", "engagement": 0, "posts": [{"url": "https://huggingface.co/RecursiveSI/flint", "author": "RecursiveSI"}, {"url": "https://github.com/ggml-org/llama.cpp/pull/30928", "author": "ggml-org/llama.cpp"}, {"url": "https://github.com/ollama/ollama/releases/tag/v0.40.8", "author": "ollama"}]},
+    {"title": "llama.cpp fused QSA mask op", "why": "25 ops fused into one; roughly +4-7% prompt processing on RTX PRO 6000 and DGX Spark (b11800).", "engagement": 0, "posts": [{"url": "https://github.com/ggml-org/llama.cpp/pull/30640", "author": "ggml-org/llama.cpp"}]},
+    {"title": "SenseNova U1 vision-language support in llama.cpp", "why": "Text and image-to-text branch supported in b11801; image generation not included.", "engagement": 0, "posts": [{"url": "https://github.com/ggml-org/llama.cpp/pull/28919", "author": "ggml-org/llama.cpp"}]},
+    {"title": "Grok Bot can build self-updating reports, memos and dashboards", "why": "xAI rolled out pages the Bot can build and keep current, on the latest clients; no plan or pricing details yet.", "engagement": 0, "posts": [{"url": "https://thedailybot.vercel.app/issue/2026-10-21", "author": "The Daily Bot"}]}
   ]
 }
