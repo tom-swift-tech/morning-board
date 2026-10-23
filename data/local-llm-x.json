@@ -1,9 +1,10 @@
 {
-  "last_updated": "2026-10-22T10:38:33Z",
+  "last_updated": "2026-10-23T10:40:00Z",
   "topics": [
-    {"title": "Recursive Flint (40B MoE, ~2.5B active, Apache 2.0) lands in llama.cpp and Ollama", "why": "Coding-agent MoE with 262K context; llama.cpp support in b11803 with official NVFP4/INT4 GGUFs; Ollama v0.40.8 runs it on Mac now, other GPUs later.", "engagement": 0, "posts": [{"url": "https://huggingface.co/RecursiveSI/flint", "author": "RecursiveSI"}, {"url": "https://github.com/ggml-org/llama.cpp/pull/30928", "author": "ggml-org/llama.cpp"}, {"url": "https://github.com/ollama/ollama/releases/tag/v0.40.8", "author": "ollama"}]},
-    {"title": "llama.cpp fused QSA mask op", "why": "25 ops fused into one; roughly +4-7% prompt processing on RTX PRO 6000 and DGX Spark (b11800).", "engagement": 0, "posts": [{"url": "https://github.com/ggml-org/llama.cpp/pull/30640", "author": "ggml-org/llama.cpp"}]},
-    {"title": "SenseNova U1 vision-language support in llama.cpp", "why": "Text and image-to-text branch supported in b11801; image generation not included.", "engagement": 0, "posts": [{"url": "https://github.com/ggml-org/llama.cpp/pull/28919", "author": "ggml-org/llama.cpp"}]},
-    {"title": "Grok Bot can build self-updating reports, memos and dashboards", "why": "xAI rolled out pages the Bot can build and keep current, on the latest clients; no plan or pricing details yet.", "engagement": 0, "posts": [{"url": "https://thedailybot.vercel.app/issue/2026-10-21", "author": "The Daily Bot"}]}
+    {"title": "Ollama v0.40.9: Flint on Windows/Linux, Phonon speech, d3 decision models", "why": "Recursive Flint coding MoE now runs on Windows and Linux (was Mac-only); Phonon TTS on Apple Silicon via /v1/audio/speech; d3 2B-27B decision models with --ask.", "engagement": 0, "posts": [{"url": "https://github.com/ollama/ollama/releases/tag/v0.40.9", "author": "ollama"}]},
+    {"title": "SpaceX seeks 80,000 US cell sites for a wireless network", "why": "Bloomberg via Reuters: talks with Crown Castle and others, a path toward a fourth nationwide carrier.", "engagement": 0, "posts": [{"url": "https://www.investing.com/news/stock-market-news/spacex-seeks-access-to-80000-us-cell-sites-for-wireless-network-bloomberg-news-reports-4967805", "author": "Reuters"}]},
+    {"title": "SpaceX Super Intelligence Partner Network for Grok", "why": "Enterprise Grok partner program; 130+ early-access companies incl. Nvidia, Snowflake, Databricks.", "engagement": 0, "posts": [{"url": "https://x.ai/news/partnernetworkannouncement", "author": "xAI"}]},
+    {"title": "Space Force scrambles as Falcon 9 phases out for Starship", "why": "Military launch capacity risk as SpaceX retires its workhorse.", "engagement": 0, "posts": [{"url": "https://www.politico.com/news/2026/10/22/space-force-spacex-rocket-musk-01131131", "author": "Politico"}]},
+    {"title": "llama.cpp adds MiniCPM-OCR 1.0", "why": "Local OCR model in stock llama.cpp (PR #30979, b11826).", "engagement": 0, "posts": [{"url": "https://github.com/ggml-org/llama.cpp/pull/30979", "author": "ggml-org"}]}
   ]
 }
