@@ -1,10 +1,49 @@
 {
-  "last_updated": "2026-10-23T10:40:00Z",
+  "last_updated": "2026-10-26T10:45:00Z",
   "topics": [
-    {"title": "Ollama v0.40.9: Flint on Windows/Linux, Phonon speech, d3 decision models", "why": "Recursive Flint coding MoE now runs on Windows and Linux (was Mac-only); Phonon TTS on Apple Silicon via /v1/audio/speech; d3 2B-27B decision models with --ask.", "engagement": 0, "posts": [{"url": "https://github.com/ollama/ollama/releases/tag/v0.40.9", "author": "ollama"}]},
-    {"title": "SpaceX seeks 80,000 US cell sites for a wireless network", "why": "Bloomberg via Reuters: talks with Crown Castle and others, a path toward a fourth nationwide carrier.", "engagement": 0, "posts": [{"url": "https://www.investing.com/news/stock-market-news/spacex-seeks-access-to-80000-us-cell-sites-for-wireless-network-bloomberg-news-reports-4967805", "author": "Reuters"}]},
-    {"title": "SpaceX Super Intelligence Partner Network for Grok", "why": "Enterprise Grok partner program; 130+ early-access companies incl. Nvidia, Snowflake, Databricks.", "engagement": 0, "posts": [{"url": "https://x.ai/news/partnernetworkannouncement", "author": "xAI"}]},
-    {"title": "Space Force scrambles as Falcon 9 phases out for Starship", "why": "Military launch capacity risk as SpaceX retires its workhorse.", "engagement": 0, "posts": [{"url": "https://www.politico.com/news/2026/10/22/space-force-spacex-rocket-musk-01131131", "author": "Politico"}]},
-    {"title": "llama.cpp adds MiniCPM-OCR 1.0", "why": "Local OCR model in stock llama.cpp (PR #30979, b11826).", "engagement": 0, "posts": [{"url": "https://github.com/ggml-org/llama.cpp/pull/30979", "author": "ggml-org"}]}
+    {
+      "title": "llama.cpp CUDA fuses FFN gate/up + GLU for prompt processing",
+      "why": "PR #29948 (b11879, Sun Oct 25): one MMQ launch for dense-FFN gate/up/GLU on Turing+; PR's RTX 5090 bench shows Qwen3.8-27B Q4_K_M PP +2.8%, Q8_0 +4.1%, perplexity bit-identical.",
+      "engagement": 0,
+      "posts": [
+        {
+          "url": "https://github.com/ggml-org/llama.cpp/pull/29948",
+          "author": "ggml-org"
+        }
+      ]
+    },
+    {
+      "title": "Ollama v0.40.10: NVIDIA Nemotron 3.5 Bolt E4B",
+      "why": "Smaller Gemma 4-based vision-language model with 128K context, tool use, and a bundled DFlash draft for speculative decoding.",
+      "engagement": 0,
+      "posts": [
+        {
+          "url": "https://github.com/ollama/ollama/releases/tag/v0.40.10",
+          "author": "ollama"
+        }
+      ]
+    },
+    {
+      "title": "DeepSeek-V4.1-Flash lands in stock llama.cpp",
+      "why": "PR #31086 (b11870, Sat Oct 24) plus follow-up fixes #31137 (b11890); smallest Unsloth GGUF is ~233GB, so not a single-5090 box model.",
+      "engagement": 0,
+      "posts": [
+        {
+          "url": "https://github.com/ggml-org/llama.cpp/pull/31086",
+          "author": "ggml-org"
+        }
+      ]
+    },
+    {
+      "title": "Starship Flight 15 booster finishes 33-engine static fire",
+      "why": "Booster 22 full-duration static fire on Pad 2 Sun Oct 25; Flight 15 targets November with a planned catch of both stages pending FAA.",
+      "engagement": 0,
+      "posts": [
+        {
+          "url": "https://www.spaceflight-news.com/news/spacex-completes-full-duration-33-engine-static-fire-of-super-heavy-booster-22-ahead-of-flight-15",
+          "author": "Spaceflight News"
+        }
+      ]
+    }
   ]
 }
