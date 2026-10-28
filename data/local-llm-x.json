@@ -1,29 +1,56 @@
 {
-  "last_updated": "2026-10-27T10:45:00Z",
+  "last_updated": "2026-10-28T10:30:16Z",
   "topics": [
     {
-      "title": "llama.cpp drops kq_mask for GLM-5/DSA: 2–4GB VRAM back",
-      "why": "#31009 (b11926): GLM-5.3-Flash UD-IQ1_M at 512k ctx now fits a single RTX 5090 per the PR author (651 t/s prefill, 12.6 t/s decode).",
+      "title": "llama.cpp adds Liquid LFM3 family (text, VL, audio, omni, d1)",
+      "why": "Official small GGUFs for local agents, tool calling, structured output; b11938-b11945.",
       "engagement": 0,
       "posts": [
-        {"url": "https://github.com/ggml-org/llama.cpp/pull/31009", "author": "ggml-org/llama.cpp"},
-        {"url": "https://github.com/ggml-org/llama.cpp/releases/tag/b11926", "author": "ggml-org/llama.cpp"}
+        {
+          "url": "https://github.com/ggml-org/llama.cpp/pull/31252",
+          "author": "ggml-org/llama.cpp"
+        },
+        {
+          "url": "https://github.com/ggml-org/llama.cpp/pull/31257",
+          "author": "ggml-org/llama.cpp"
+        },
+        {
+          "url": "https://huggingface.co/collections/LiquidAI/lfm3",
+          "author": "LiquidAI"
+        }
       ]
     },
     {
-      "title": "SpaceX locks ~$40B GPU lease for Vera Rubin compute",
-      "why": "Binding master finance lease with an Apollo-managed entity; GPUs arrive H1 2027 to power Grok.",
+      "title": "llama-server /v1/realtime does full voice chat",
+      "why": "Streaming audio in/out plus live ASR with LFM3-Audio/Omni GGUFs (#31269, b11946).",
       "engagement": 0,
       "posts": [
-        {"url": "https://ir.spacex.com/updates/releases-details/2026/SPACEX-SECURES-40-BILLION-IN-THE-LARGEST-GPU-FINANCING-EVER-2026-EnDqGhTAB3/", "author": "SpaceX"}
+        {
+          "url": "https://github.com/ggml-org/llama.cpp/pull/31269",
+          "author": "ggml-org/llama.cpp"
+        }
       ]
     },
     {
-      "title": "Grok Bot v0.75.8: Auto-review rules from chat",
-      "why": "Bots can propose Auto-review rule changes on a confirm card; fewer approval cards for safe actions.",
+      "title": "Ollama v0.40.12 ships LFM3 and d1 2B (Apple-only for now)",
+      "why": "Linux/Windows support coming; DFlash2 speculative decoding on MLX.",
       "engagement": 0,
       "posts": [
-        {"url": "https://x.ai/changelog/bot", "author": "xAI"}
+        {
+          "url": "https://github.com/ollama/ollama/releases/tag/v0.40.12",
+          "author": "ollama"
+        }
+      ]
+    },
+    {
+      "title": "Grok Bot v0.77.0",
+      "why": "1Password per-login approval, Vault Payments tab, multi-question cards.",
+      "engagement": 0,
+      "posts": [
+        {
+          "url": "https://x.ai/changelog/bot",
+          "author": "xAI"
+        }
       ]
     }
   ]
