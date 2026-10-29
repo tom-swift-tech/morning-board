@@ -1,54 +1,57 @@
 {
-  "last_updated": "2026-10-28T10:30:16Z",
+  "last_updated": "2026-10-29T10:30:45Z",
   "topics": [
     {
-      "title": "llama.cpp adds Liquid LFM3 family (text, VL, audio, omni, d1)",
-      "why": "Official small GGUFs for local agents, tool calling, structured output; b11938-b11945.",
+      "title": "llama.cpp CUDA fuses MoE gate/up + GLU in MMQ",
+      "why": "Prompt processing on RTX 5090 up ~5.7-6.1% for Qwen3.6-35B-A3B and Qwen3-30B-A3B per the PR author's bench; perplexity unchanged.",
       "engagement": 0,
       "posts": [
         {
-          "url": "https://github.com/ggml-org/llama.cpp/pull/31252",
-          "author": "ggml-org/llama.cpp"
-        },
-        {
-          "url": "https://github.com/ggml-org/llama.cpp/pull/31257",
-          "author": "ggml-org/llama.cpp"
-        },
-        {
-          "url": "https://huggingface.co/collections/LiquidAI/lfm3",
-          "author": "LiquidAI"
-        }
-      ]
-    },
-    {
-      "title": "llama-server /v1/realtime does full voice chat",
-      "why": "Streaming audio in/out plus live ASR with LFM3-Audio/Omni GGUFs (#31269, b11946).",
-      "engagement": 0,
-      "posts": [
-        {
-          "url": "https://github.com/ggml-org/llama.cpp/pull/31269",
+          "url": "https://github.com/ggml-org/llama.cpp/pull/31188",
           "author": "ggml-org/llama.cpp"
         }
       ]
     },
     {
-      "title": "Ollama v0.40.12 ships LFM3 and d1 2B (Apple-only for now)",
-      "why": "Linux/Windows support coming; DFlash2 speculative decoding on MLX.",
+      "title": "llama.cpp v0.8.0 versioned release",
+      "why": "Rolls up LFM3 family, /v1/realtime and /tts voice, DeepSeek V4.1 Flash, Flint, MoE expert SLRU cache, ggml v0.28.0.",
       "engagement": 0,
       "posts": [
         {
-          "url": "https://github.com/ollama/ollama/releases/tag/v0.40.12",
+          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/v0.8.0",
+          "author": "ggml-org/llama.cpp"
+        }
+      ]
+    },
+    {
+      "title": "Ollama v0.40.13: LFM3 on Linux and Windows",
+      "why": "LFM3 incl. lfm3-audio and lfm3-omni TTS no longer Apple-only.",
+      "engagement": 0,
+      "posts": [
+        {
+          "url": "https://github.com/ollama/ollama/releases/tag/v0.40.13",
           "author": "ollama"
         }
       ]
     },
     {
-      "title": "Grok Bot v0.77.0",
-      "why": "1Password per-login approval, Vault Payments tab, multi-question cards.",
+      "title": "Starship Ship 42 static fire done ahead of Flight 15",
+      "why": "Both Flight 15 vehicles have now fired; November flight aims to catch booster and ship.",
       "engagement": 0,
       "posts": [
         {
-          "url": "https://x.ai/changelog/bot",
+          "url": "https://x.com/SpaceX/status/2115476295169814978",
+          "author": "SpaceX"
+        }
+      ]
+    },
+    {
+      "title": "Grok API adds content guidelines field",
+      "why": "Per-request decline rules for nsfw, violence, profanity on Chat Completions and Responses.",
+      "engagement": 0,
+      "posts": [
+        {
+          "url": "https://docs.x.ai/developers/release-notes",
           "author": "xAI"
         }
       ]
