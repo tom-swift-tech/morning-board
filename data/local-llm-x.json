@@ -1,60 +1,9 @@
 {
-  "last_updated": "2026-10-29T10:30:45Z",
+  "last_updated": "2026-10-30T10:45:00Z",
   "topics": [
-    {
-      "title": "llama.cpp CUDA fuses MoE gate/up + GLU in MMQ",
-      "why": "Prompt processing on RTX 5090 up ~5.7-6.1% for Qwen3.6-35B-A3B and Qwen3-30B-A3B per the PR author's bench; perplexity unchanged.",
-      "engagement": 0,
-      "posts": [
-        {
-          "url": "https://github.com/ggml-org/llama.cpp/pull/31188",
-          "author": "ggml-org/llama.cpp"
-        }
-      ]
-    },
-    {
-      "title": "llama.cpp v0.8.0 versioned release",
-      "why": "Rolls up LFM3 family, /v1/realtime and /tts voice, DeepSeek V4.1 Flash, Flint, MoE expert SLRU cache, ggml v0.28.0.",
-      "engagement": 0,
-      "posts": [
-        {
-          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/v0.8.0",
-          "author": "ggml-org/llama.cpp"
-        }
-      ]
-    },
-    {
-      "title": "Ollama v0.40.13: LFM3 on Linux and Windows",
-      "why": "LFM3 incl. lfm3-audio and lfm3-omni TTS no longer Apple-only.",
-      "engagement": 0,
-      "posts": [
-        {
-          "url": "https://github.com/ollama/ollama/releases/tag/v0.40.13",
-          "author": "ollama"
-        }
-      ]
-    },
-    {
-      "title": "Starship Ship 42 static fire done ahead of Flight 15",
-      "why": "Both Flight 15 vehicles have now fired; November flight aims to catch booster and ship.",
-      "engagement": 0,
-      "posts": [
-        {
-          "url": "https://x.com/SpaceX/status/2115476295169814978",
-          "author": "SpaceX"
-        }
-      ]
-    },
-    {
-      "title": "Grok API adds content guidelines field",
-      "why": "Per-request decline rules for nsfw, violence, profanity on Chat Completions and Responses.",
-      "engagement": 0,
-      "posts": [
-        {
-          "url": "https://docs.x.ai/developers/release-notes",
-          "author": "xAI"
-        }
-      ]
-    }
+    {"title": "llama.cpp keeps KV-cache rotation constants on the GPU (#31073)", "why": "Stops re-uploading Hadamard rotation matrices to the GPU; author measured +8.7% token generation on an RTX 3090 over PCIe 2.0 with quantized KV cache. Merged Oct 30.", "engagement": 0, "posts": [{"url": "https://github.com/ggml-org/llama.cpp/pull/31073", "author": "ggml-org/llama.cpp"}]},
+    {"title": "Mistral Large 4 (Le Chonk) open weights, day-0 llama.cpp support", "why": "1.05T-param multimodal MoE, ~52B active, 1M context, modified-MIT license. Smallest Unsloth GGUF is 233GB, so it won't fit a 32GB GPU + 128GB RAM box.", "engagement": 0, "posts": [{"url": "https://mistral.ai/news/mistral-large-4-oss/", "author": "Mistral AI"}, {"url": "https://huggingface.co/blog/mistral-large4", "author": "Hugging Face"}, {"url": "https://github.com/ggml-org/llama.cpp/pull/31376", "author": "ggml-org/llama.cpp"}]},
+    {"title": "llama.cpp: faster MXFP4 mat-vec on Metal, FP8 E4M3 quant type lands", "why": "Apple Silicon MXFP4 speedup (#31075); OCP FP8 E4M3 added to ggml (#27512), CUDA/Vulkan/KV follow-ups still pending.", "engagement": 0, "posts": [{"url": "https://github.com/ggml-org/llama.cpp/pull/31075", "author": "ggml-org/llama.cpp"}, {"url": "https://github.com/ggml-org/llama.cpp/pull/27512", "author": "ggml-org/llama.cpp"}]},
+    {"title": "Grok Bot v0.78.1: shopping cards, Shop Pay, subscription templates", "why": "Buy now with approval, Shop Pay in Vault Payments, free-trial and unused-subscription cancel templates, Team Bot sharing limits.", "engagement": 0, "posts": [{"url": "https://thetechsignal.co/2026/10/29/grok-bot-0-78-shopping-subscriptions/", "author": "The Tech Signal"}]}
   ]
 }
