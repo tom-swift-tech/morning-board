@@ -1,9 +1,61 @@
 {
-  "last_updated": "2026-10-30T10:45:00Z",
+  "last_updated": "2026-10-31T11:37:45Z",
   "topics": [
-    {"title": "llama.cpp keeps KV-cache rotation constants on the GPU (#31073)", "why": "Stops re-uploading Hadamard rotation matrices to the GPU; author measured +8.7% token generation on an RTX 3090 over PCIe 2.0 with quantized KV cache. Merged Oct 30.", "engagement": 0, "posts": [{"url": "https://github.com/ggml-org/llama.cpp/pull/31073", "author": "ggml-org/llama.cpp"}]},
-    {"title": "Mistral Large 4 (Le Chonk) open weights, day-0 llama.cpp support", "why": "1.05T-param multimodal MoE, ~52B active, 1M context, modified-MIT license. Smallest Unsloth GGUF is 233GB, so it won't fit a 32GB GPU + 128GB RAM box.", "engagement": 0, "posts": [{"url": "https://mistral.ai/news/mistral-large-4-oss/", "author": "Mistral AI"}, {"url": "https://huggingface.co/blog/mistral-large4", "author": "Hugging Face"}, {"url": "https://github.com/ggml-org/llama.cpp/pull/31376", "author": "ggml-org/llama.cpp"}]},
-    {"title": "llama.cpp: faster MXFP4 mat-vec on Metal, FP8 E4M3 quant type lands", "why": "Apple Silicon MXFP4 speedup (#31075); OCP FP8 E4M3 added to ggml (#27512), CUDA/Vulkan/KV follow-ups still pending.", "engagement": 0, "posts": [{"url": "https://github.com/ggml-org/llama.cpp/pull/31075", "author": "ggml-org/llama.cpp"}, {"url": "https://github.com/ggml-org/llama.cpp/pull/27512", "author": "ggml-org/llama.cpp"}]},
-    {"title": "Grok Bot v0.78.1: shopping cards, Shop Pay, subscription templates", "why": "Buy now with approval, Shop Pay in Vault Payments, free-trial and unused-subscription cancel templates, Team Bot sharing limits.", "engagement": 0, "posts": [{"url": "https://thetechsignal.co/2026/10/29/grok-bot-0-78-shopping-subscriptions/", "author": "The Tech Signal"}]}
+    {
+      "title": "Clover-35B-A3B-Preview: open diffusion MoE LM with GGUFs",
+      "why": "Apache-2.0 35B/3B-active diffusion model; Q4_K_M GGUF is 23GB (fits a 5090), but llama.cpp support is still an open PR",
+      "engagement": 0,
+      "posts": [
+        {
+          "url": "https://huggingface.co/blog/Diffuspace/clover-35b-a3b-preview",
+          "author": "DiffuSpace"
+        },
+        {
+          "url": "https://huggingface.co/Diffuspace/Clover-35B-A3B-Preview-GGUF",
+          "author": "Diffuspace"
+        },
+        {
+          "url": "https://github.com/ggml-org/llama.cpp/pull/31306",
+          "author": "Maphist0"
+        }
+      ]
+    },
+    {
+      "title": "llama.cpp small fixes to b12020",
+      "why": "qwen3-coder think-block strip with reasoning_format none; LFM3-Audio codec decoder can be quantized",
+      "engagement": 0,
+      "posts": [
+        {
+          "url": "https://github.com/ggml-org/llama.cpp/pull/31380",
+          "author": "ggml-org"
+        },
+        {
+          "url": "https://github.com/ggml-org/llama.cpp/pull/31386",
+          "author": "ggml-org"
+        }
+      ]
+    },
+    {
+      "title": "700th Falcon 9 launch (Starlink 15-18)",
+      "why": "Vandenberg launch Oct 30 11:04pm CT; Starship Flight 15 still waiting on FAA license",
+      "engagement": 0,
+      "posts": [
+        {
+          "url": "https://spaceflightnow.com/2026/10/30/live-coverage-spacex-to-close-out-october-with-halloween-eve-falcon-9-launch/",
+          "author": "Spaceflight Now"
+        }
+      ]
+    },
+    {
+      "title": "xAI wins pause of Minnesota AI image law",
+      "why": "8th Circuit temporarily suspended enforcement while xAI's lawsuit proceeds",
+      "engagement": 0,
+      "posts": [
+        {
+          "url": "https://24-ore.com/en/xai-wins-suspension-of-minnesota-law-against-fake-nude-images-created-with-ai/",
+          "author": "24 ore (citing Reuters)"
+        }
+      ]
+    }
   ]
 }
