@@ -1,59 +1,51 @@
 {
-  "last_updated": "2026-10-31T11:37:45Z",
+  "last_updated": "2026-11-01T12:38:20Z",
   "topics": [
     {
-      "title": "Clover-35B-A3B-Preview: open diffusion MoE LM with GGUFs",
-      "why": "Apache-2.0 35B/3B-active diffusion model; Q4_K_M GGUF is 23GB (fits a 5090), but llama.cpp support is still an open PR",
+      "title": "Unsloth Dynamic V3.1 GGUFs for DeepSeek-V4.1-Flash-1017",
+      "why": "Engram n-gram table mmaps from SSD, so UD-IQ1_S needs ~122GB RAM+VRAM, which fits Bastion (128GB + 5090).",
       "engagement": 0,
       "posts": [
         {
-          "url": "https://huggingface.co/blog/Diffuspace/clover-35b-a3b-preview",
-          "author": "DiffuSpace"
+          "url": "https://unsloth.ai/docs/models/deepseek-v4.1-flash",
+          "author": "Unsloth"
         },
         {
-          "url": "https://huggingface.co/Diffuspace/Clover-35B-A3B-Preview-GGUF",
-          "author": "Diffuspace"
-        },
-        {
-          "url": "https://github.com/ggml-org/llama.cpp/pull/31306",
-          "author": "Maphist0"
+          "url": "https://huggingface.co/unsloth/DeepSeek-V4.1-Flash-1017-GGUF",
+          "author": "unsloth"
         }
       ]
     },
     {
-      "title": "llama.cpp small fixes to b12020",
-      "why": "qwen3-coder think-block strip with reasoning_format none; LFM3-Audio codec decoder can be quantized",
+      "title": "Grok API text gets an invisible watermark by default from Nov 7",
+      "why": "Covers grok-4.7/4.6/4.5/4.3/4.20 incl. tool-call args; x-watermark header; opt-out needs a legal exception.",
       "engagement": 0,
       "posts": [
         {
-          "url": "https://github.com/ggml-org/llama.cpp/pull/31380",
+          "url": "https://docs.x.ai/developers/advanced-api-usage/watermarking",
+          "author": "xAI"
+        }
+      ]
+    },
+    {
+      "title": "llama.cpp b12032: LFM3 tensor split, OpenCL iq3",
+      "why": "Small weekend fixes; Clover diffusion support PR still open.",
+      "engagement": 0,
+      "posts": [
+        {
+          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b12032",
           "author": "ggml-org"
-        },
-        {
-          "url": "https://github.com/ggml-org/llama.cpp/pull/31386",
-          "author": "ggml-org"
         }
       ]
     },
     {
-      "title": "700th Falcon 9 launch (Starlink 15-18)",
-      "why": "Vandenberg launch Oct 30 11:04pm CT; Starship Flight 15 still waiting on FAA license",
+      "title": "Next SpaceX launch: Falcon 9 USSF-432, Mon Nov 2 7:42pm CT",
+      "why": "Quiet weekend; Starship Flight 15 targeted for November.",
       "engagement": 0,
       "posts": [
         {
-          "url": "https://spaceflightnow.com/2026/10/30/live-coverage-spacex-to-close-out-october-with-halloween-eve-falcon-9-launch/",
-          "author": "Spaceflight Now"
-        }
-      ]
-    },
-    {
-      "title": "xAI wins pause of Minnesota AI image law",
-      "why": "8th Circuit temporarily suspended enforcement while xAI's lawsuit proceeds",
-      "engagement": 0,
-      "posts": [
-        {
-          "url": "https://24-ore.com/en/xai-wins-suspension-of-minnesota-law-against-fake-nude-images-created-with-ai/",
-          "author": "24 ore (citing Reuters)"
+          "url": "https://www.spacex.com/launches/falcon-9/",
+          "author": "SpaceX"
         }
       ]
     }
