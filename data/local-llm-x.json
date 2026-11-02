@@ -1,53 +1,9 @@
 {
-  "last_updated": "2026-11-01T12:38:20Z",
+  "last_updated": "2026-11-02T11:45:00Z",
   "topics": [
-    {
-      "title": "Unsloth Dynamic V3.1 GGUFs for DeepSeek-V4.1-Flash-1017",
-      "why": "Engram n-gram table mmaps from SSD, so UD-IQ1_S needs ~122GB RAM+VRAM, which fits Bastion (128GB + 5090).",
-      "engagement": 0,
-      "posts": [
-        {
-          "url": "https://unsloth.ai/docs/models/deepseek-v4.1-flash",
-          "author": "Unsloth"
-        },
-        {
-          "url": "https://huggingface.co/unsloth/DeepSeek-V4.1-Flash-1017-GGUF",
-          "author": "unsloth"
-        }
-      ]
-    },
-    {
-      "title": "Grok API text gets an invisible watermark by default from Nov 7",
-      "why": "Covers grok-4.7/4.6/4.5/4.3/4.20 incl. tool-call args; x-watermark header; opt-out needs a legal exception.",
-      "engagement": 0,
-      "posts": [
-        {
-          "url": "https://docs.x.ai/developers/advanced-api-usage/watermarking",
-          "author": "xAI"
-        }
-      ]
-    },
-    {
-      "title": "llama.cpp b12032: LFM3 tensor split, OpenCL iq3",
-      "why": "Small weekend fixes; Clover diffusion support PR still open.",
-      "engagement": 0,
-      "posts": [
-        {
-          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b12032",
-          "author": "ggml-org"
-        }
-      ]
-    },
-    {
-      "title": "Next SpaceX launch: Falcon 9 USSF-432, Mon Nov 2 7:42pm CT",
-      "why": "Quiet weekend; Starship Flight 15 targeted for November.",
-      "engagement": 0,
-      "posts": [
-        {
-          "url": "https://www.spacex.com/launches/falcon-9/",
-          "author": "SpaceX"
-        }
-      ]
-    }
+    {"title": "Musk appears to have throttled Grok Bot over cost", "why": "Users hitting usage limits sooner; Musk said always-on agent cost is unsustainably high vs revenue.", "engagement": 0, "posts": [{"url": "https://www.theverge.com/ai-artificial-intelligence/1024272/elon-musk-appears-to-have-throttled-grok-bot-for-being-unsustainably-expensive", "author": "The Verge"}]},
+    {"title": "USSF-432 Falcon 9 slips to Tue Nov 3", "why": "Vandenberg window opens 7:28pm CT; booster's 8th flight.", "engagement": 0, "posts": [{"url": "https://www.spacex.com/launches/ussf432", "author": "SpaceX"}]},
+    {"title": "Starship Flight 15 eyeing Nov 12", "why": "FAA airspace data points to Nov 12; first dual tower catch, license update still pending.", "engagement": 0, "posts": [{"url": "https://www.space.com/space-exploration/launches-spacecraft/spacex-fires-up-starship-upper-stage-ahead-of-landmark-flight-15-test-launch-video", "author": "Space.com"}]},
+    {"title": "llama.cpp quiet at b12038", "why": "Only build/CI fixes overnight; Clover diffusion PR still open.", "engagement": 0, "posts": [{"url": "https://github.com/ggml-org/llama.cpp/releases/tag/b12038", "author": "ggml-org"}]}
   ]
 }
