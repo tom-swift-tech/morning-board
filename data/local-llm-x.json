@@ -1,49 +1,5 @@
-{
-  "last_updated": "2026-11-03T11:40:00Z",
-  "topics": [
-    {
-      "title": "llama.cpp merges Clover support (AR-only)",
-      "why": "PR #31306 landed Nov 2; Clover-35B-A3B MoE now loads in mainline llama.cpp, autoregressive path only, no diffusion decoding yet.",
-      "engagement": 0,
-      "posts": [
-        {
-          "url": "https://github.com/ggml-org/llama.cpp/pull/31306",
-          "author": "ggml-org"
-        }
-      ]
-    },
-    {
-      "title": "llama.cpp NCCL multi-node tensor parallelism",
-      "why": "#28967 merged Nov 3; PR shows two DGX Sparks running Qwen3.8-27B Q4 at ~23.5 t/s vs ~13 on one.",
-      "engagement": 0,
-      "posts": [
-        {
-          "url": "https://github.com/ggml-org/llama.cpp/pull/28967",
-          "author": "ggml-org"
-        }
-      ]
-    },
-    {
-      "title": "KVARK Sparkle 1.0 27B open weights",
-      "why": "Apache-2.0 Qwen3.8-27B reasoning finetune with official GGUF; vendor claims up to 67% fewer thinking tokens.",
-      "engagement": 0,
-      "posts": [
-        {
-          "url": "https://huggingface.co/Egzakta/Kvark-Sparkle-1.0-27B-GGUF",
-          "author": "Egzakta"
-        }
-      ]
-    },
-    {
-      "title": "Ollama v0.40.14",
-      "why": "OpenAI-compatible endpoints now keep a model's own sampler defaults; faster MLX top-k.",
-      "engagement": 0,
-      "posts": [
-        {
-          "url": "https://github.com/ollama/ollama/releases/tag/v0.40.14",
-          "author": "ollama"
-        }
-      ]
-    }
-  ]
-}
+{"last_updated":"2026-11-04T11:31:00Z","topics":[
+{"title":"llama.cpp adds Nemotron 3.5 Transcribe (30B-A4B speech-to-text)","why":"Offline transcription in 40 languages with speaker attribution via llama-mtmd-cli; llama-server needs --reasoning off","engagement":0,"posts":[{"url":"https://github.com/ggml-org/llama.cpp/pull/31471","author":"ggml-org/llama.cpp"},{"url":"https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B","author":"nvidia"}]},
+{"title":"llama.cpp: MTP speculative state save/restore + Chatterbox T2026-11-04T11:31:00Z","why":"MTP hidden state now survives KV checkpoint restores; Chatterbox TTS support landed (author calls it WIP); tip b12102","engagement":0,"posts":[{"url":"https://github.com/ggml-org/llama.cpp/pull/30141","author":"ggml-org/llama.cpp"},{"url":"https://github.com/ggml-org/llama.cpp/pull/30993","author":"ggml-org/llama.cpp"}]},
+{"title":"Ollama v0.40.15-rc0","why":"Pre-release adds MiMo V2.6 support and in-process bundled CUDA libs for MLX on Linux","engagement":0,"posts":[{"url":"https://github.com/ollama/ollama/releases/tag/v0.40.15-rc0","author":"ollama"}]},
+{"title":"USSF-432 Falcon 9 holds Fri Nov 6","why":"Window opens 6:46pm CT from Vandenberg; backup Sat Nov 7","engagement":0,"posts":[{"url":"https://www.spacex.com/launches/ussf432","author":"SpaceX"}]}]}
