@@ -1,5 +1,42 @@
-{"last_updated":"2026-11-04T11:31:00Z","topics":[
-{"title":"llama.cpp adds Nemotron 3.5 Transcribe (30B-A4B speech-to-text)","why":"Offline transcription in 40 languages with speaker attribution via llama-mtmd-cli; llama-server needs --reasoning off","engagement":0,"posts":[{"url":"https://github.com/ggml-org/llama.cpp/pull/31471","author":"ggml-org/llama.cpp"},{"url":"https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B","author":"nvidia"}]},
-{"title":"llama.cpp: MTP speculative state save/restore + Chatterbox T2026-11-04T11:31:00Z","why":"MTP hidden state now survives KV checkpoint restores; Chatterbox TTS support landed (author calls it WIP); tip b12102","engagement":0,"posts":[{"url":"https://github.com/ggml-org/llama.cpp/pull/30141","author":"ggml-org/llama.cpp"},{"url":"https://github.com/ggml-org/llama.cpp/pull/30993","author":"ggml-org/llama.cpp"}]},
-{"title":"Ollama v0.40.15-rc0","why":"Pre-release adds MiMo V2.6 support and in-process bundled CUDA libs for MLX on Linux","engagement":0,"posts":[{"url":"https://github.com/ollama/ollama/releases/tag/v0.40.15-rc0","author":"ollama"}]},
-{"title":"USSF-432 Falcon 9 holds Fri Nov 6","why":"Window opens 6:46pm CT from Vandenberg; backup Sat Nov 7","engagement":0,"posts":[{"url":"https://www.spacex.com/launches/ussf432","author":"SpaceX"}]}]}
+{
+  "last_updated": "2026-11-05T11:29:19Z",
+  "topics": [
+    {
+      "title": "llama.cpp v0.9.0: first versioned release",
+      "why": "FP8 E4M3 quant type, flash_attn_ext_rows for unified KV multi-seq, ggml v0.29.0; bundles Clover, Mistral Large 4, Nemotron Transcribe, Chatterbox TTS",
+      "engagement": 0,
+      "posts": [
+        {
+          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/v0.9.0",
+          "author": "ggml-org"
+        }
+      ]
+    },
+    {
+      "title": "llama.cpp CUDA: fused NVFP4 gate/up + GLU in MMQ",
+      "why": "Blackwell (RTX 5090) NVFP4 path gets fused FFN kernels; MoE MMQ/MMF layout linearized; tip b12125",
+      "engagement": 0,
+      "posts": [
+        {
+          "url": "https://github.com/ggml-org/llama.cpp/pull/31296",
+          "author": "ggml-org"
+        },
+        {
+          "url": "https://github.com/ggml-org/llama.cpp/pull/31047",
+          "author": "ggml-org"
+        }
+      ]
+    },
+    {
+      "title": "Unsloth Dynamic v3.1 GGUFs for Qwen3.8-Flash-Next",
+      "why": "Refreshed quants below UD-Q4_K_XL; Unsloth claims 10-15% better on agentic coding benches (vendor claim)",
+      "engagement": 0,
+      "posts": [
+        {
+          "url": "https://huggingface.co/unsloth/Qwen3.8-Flash-Next-GGUF",
+          "author": "unsloth"
+        }
+      ]
+    }
+  ]
+}
