@@ -1,9 +1,31 @@
 {
-  "last_updated": "2026-11-07T12:35:00Z",
+  "last_updated": "2026-11-08T12:40:00Z",
   "topics": [
-    {"title": "llama.cpp MoE expert cache gets smarter eviction (ClassLRU)", "why": "Frequency+recency expert cache; author-measured +6-7% decode on offloaded MoE with a warm cache", "engagement": 0, "posts": [{"url": "https://github.com/ggml-org/llama.cpp/pull/31233", "author": "ggml-org/llama.cpp"}]},
-    {"title": "SpaceX launches USSF-432 from Vandenberg", "why": "Classified Space Force mission, booster B1095 landed on OCISLY (8th flight)", "engagement": 0, "posts": [{"url": "https://www.spacex.com/launches/ussf432", "author": "SpaceX"}]},
-    {"title": "Publishers sue SpaceX Super Intelligence (formerly xAI) over book scanning", "why": "Three N.D. Cal suits target scanned purchased books used for Grok training", "engagement": 0, "posts": [{"url": "https://aivio.news/news/publishers-sue-spacex-super-intelligence-book-scanning/", "author": "aivio.news"}]},
-    {"title": "llama.cpp CUDA lightning-indexer bank-conflict fix", "why": "Faster sparse-attention (DSA) kernel on NVIDIA", "engagement": 0, "posts": [{"url": "https://github.com/ggml-org/llama.cpp/pull/31803", "author": "ggml-org/llama.cpp"}]}
+    {
+      "title": "llama.cpp MoE cache can run missed experts on CPU, plus a tuning script",
+      "why": "PR #30966 (b12191) adds --moe-cache-cpu-share and scripts/moe-cache-tune.py to find the best cache size and CPU split for big MoE models on your own GPU + RAM.",
+      "engagement": 0,
+      "posts": [
+        {"url": "https://github.com/ggml-org/llama.cpp/pull/30966", "author": "ggml-org/llama.cpp"},
+        {"url": "https://github.com/ggml-org/llama.cpp/releases/tag/b12191", "author": "ggml-org/llama.cpp"}
+      ]
+    },
+    {
+      "title": "Starship Flight 15 window posted: Fri Nov 13, 4:45pm CT",
+      "why": "SpaceX's mission page sets a 75-minute window for the first attempt to bring Starship back to Starbase for a tower catch; still pending FAA approval.",
+      "engagement": 0,
+      "posts": [
+        {"url": "https://www.spacex.com/launches/starship-flight-15", "author": "SpaceX"},
+        {"url": "https://www.spacex.com/updates/starship-sn15-flight-test", "author": "SpaceX"}
+      ]
+    },
+    {
+      "title": "Falcon 9 USSF-627 from Vandenberg Mon Nov 9",
+      "why": "Window opens 9:03pm CT Monday per SpaceX's launch list.",
+      "engagement": 0,
+      "posts": [
+        {"url": "https://www.spacex.com/launches/mission", "author": "SpaceX"}
+      ]
+    }
   ]
 }
