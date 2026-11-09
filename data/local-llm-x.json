@@ -1,30 +1,37 @@
 {
-  "last_updated": "2026-11-08T12:40:00Z",
+  "last_updated": "2026-11-09T11:37:14Z",
   "topics": [
     {
-      "title": "llama.cpp MoE cache can run missed experts on CPU, plus a tuning script",
-      "why": "PR #30966 (b12191) adds --moe-cache-cpu-share and scripts/moe-cache-tune.py to find the best cache size and CPU split for big MoE models on your own GPU + RAM.",
+      "title": "llama.cpp CUDA fast path for d_state=64 SSM scans (Zamba2-style hybrids)",
+      "why": "#31818 in b12207 stops CPU fallback; author reports ~35% throughput gain",
       "engagement": 0,
       "posts": [
-        {"url": "https://github.com/ggml-org/llama.cpp/pull/30966", "author": "ggml-org/llama.cpp"},
-        {"url": "https://github.com/ggml-org/llama.cpp/releases/tag/b12191", "author": "ggml-org/llama.cpp"}
+        {
+          "url": "https://github.com/ggml-org/llama.cpp/pull/31818",
+          "author": "ggml-org/llama.cpp"
+        }
       ]
     },
     {
-      "title": "Starship Flight 15 window posted: Fri Nov 13, 4:45pm CT",
-      "why": "SpaceX's mission page sets a 75-minute window for the first attempt to bring Starship back to Starbase for a tower catch; still pending FAA approval.",
+      "title": "llama.cpp MoE cache: CPU split no longer waits on cached experts",
+      "why": "#31888 in b12206; author reports ~7-9% faster TG on Gemma 4 with -cmoe",
       "engagement": 0,
       "posts": [
-        {"url": "https://www.spacex.com/launches/starship-flight-15", "author": "SpaceX"},
-        {"url": "https://www.spacex.com/updates/starship-sn15-flight-test", "author": "SpaceX"}
+        {
+          "url": "https://github.com/ggml-org/llama.cpp/pull/31888",
+          "author": "ggml-org/llama.cpp"
+        }
       ]
     },
     {
-      "title": "Falcon 9 USSF-627 from Vandenberg Mon Nov 9",
-      "why": "Window opens 9:03pm CT Monday per SpaceX's launch list.",
+      "title": "NASA names SpaceX among 8 CLPS 2 lunar delivery providers",
+      "why": "10-year, $10B contract pool announced Nov 7",
       "engagement": 0,
       "posts": [
-        {"url": "https://www.spacex.com/launches/mission", "author": "SpaceX"}
+        {
+          "url": "https://www.nasa.gov/news-release/nasa-awards-moon-base-transportation-technology-science-projects/",
+          "author": "NASA"
+        }
       ]
     }
   ]
