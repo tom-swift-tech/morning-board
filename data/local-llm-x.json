@@ -1,36 +1,58 @@
 {
-  "last_updated": "2026-11-09T11:37:14Z",
+  "last_updated": "2026-11-10T11:30:20Z",
   "topics": [
     {
-      "title": "llama.cpp CUDA fast path for d_state=64 SSM scans (Zamba2-style hybrids)",
-      "why": "#31818 in b12207 stops CPU fallback; author reports ~35% throughput gain",
+      "title": "Profero: Grok Bot sandbox flaws disclosed, no vendor fix yet",
+      "why": "Claims unauthenticated Docker API, static exec token, plaintext cookies, shared agent user; disclosed Aug 24.",
       "engagement": 0,
       "posts": [
         {
-          "url": "https://github.com/ggml-org/llama.cpp/pull/31818",
-          "author": "ggml-org/llama.cpp"
+          "url": "https://profero.io/blog/the-rootkit-built-into-grok-bot/",
+          "author": "Profero"
         }
       ]
     },
     {
-      "title": "llama.cpp MoE cache: CPU split no longer waits on cached experts",
-      "why": "#31888 in b12206; author reports ~7-9% faster TG on Gemma 4 with -cmoe",
+      "title": "Ollama v0.40.16: Ripple Preview 65B + Qwen3.8 Flash Next memory cut on Apple silicon",
+      "why": "New 65B dense coding model; ~27 GiB less memory for Qwen3.8 Flash Next on Macs.",
       "engagement": 0,
       "posts": [
         {
-          "url": "https://github.com/ggml-org/llama.cpp/pull/31888",
-          "author": "ggml-org/llama.cpp"
+          "url": "https://github.com/ollama/ollama/releases/tag/v0.40.16",
+          "author": "ollama"
         }
       ]
     },
     {
-      "title": "NASA names SpaceX among 8 CLPS 2 lunar delivery providers",
-      "why": "10-year, $10B contract pool announced Nov 7",
+      "title": "llama-server gets OpenAI-compatible /v1/audio/speech",
+      "why": "Local TTS through the same server API (b12238).",
       "engagement": 0,
       "posts": [
         {
-          "url": "https://www.nasa.gov/news-release/nasa-awards-moon-base-transportation-technology-science-projects/",
-          "author": "NASA"
+          "url": "https://github.com/ggml-org/llama.cpp/pull/31763",
+          "author": "ggml-org"
+        }
+      ]
+    },
+    {
+      "title": "llama.cpp --shard: load PLE files from a separate GGUF",
+      "why": "Gemma4 / Qwen3.8Next / GLM5.3Flash can share one PLE fragment across quants (b12233).",
+      "engagement": 0,
+      "posts": [
+        {
+          "url": "https://github.com/ggml-org/llama.cpp/pull/31185",
+          "author": "ggml-org"
+        }
+      ]
+    },
+    {
+      "title": "USSF-627 slips to Tue Nov 10, 8:49pm CT",
+      "why": "Falcon 9 from Vandenberg; backup Wed 8:35pm CT.",
+      "engagement": 0,
+      "posts": [
+        {
+          "url": "https://www.spacex.com/launches/ussf627",
+          "author": "SpaceX"
         }
       ]
     }
