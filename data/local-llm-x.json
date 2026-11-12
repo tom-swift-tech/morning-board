@@ -1,9 +1,9 @@
 {
-  "last_updated": "2026-11-11T11:40:00Z",
+  "last_updated": "2026-11-12T11:45:00Z",
   "topics": [
-    {"title": "llama.cpp adds FP8 KV-cache (b12274)", "why": "OCP FP8 E4M3 KV cache with optional per-tensor scales (#28392); half the KV memory of f16.", "engagement": 0, "posts": [{"url": "https://github.com/ggml-org/llama.cpp/pull/28392", "author": "ggml-org/llama.cpp"}]},
-    {"title": "Grok 4.8 soft rollout to Grok Bot this week", "why": "Pre-training done, in RL; xAI rewrote RL + inference stack in C/C++.", "engagement": 27847, "posts": [{"url": "https://x.com/elonmusk/status/2120088070443655190", "author": "elonmusk"}]},
-    {"title": "Ollama v0.40.17-rc0", "why": "Pre-release: MLX concurrent generation, mmap for Vulkan iGPUs, llama.cpp b12257.", "engagement": 0, "posts": [{"url": "https://github.com/ollama/ollama/releases/tag/v0.40.17-rc0", "author": "ollama"}]},
-    {"title": "USSF-627 slips to Wed Nov 11", "why": "Falcon 9 Vandenberg, window opens 8:35pm CT.", "engagement": 0, "posts": [{"url": "https://www.spacex.com/launches/ussf627", "author": "SpaceX"}]}
+    {"title": "llama.cpp: CUDA fuses NVFP4 weight scale into MMQ (faster prefill)", "why": "Faster prefill for NVFP4 checkpoints on Blackwell / RTX 5090; merged to master Nov 12 (#26048).", "engagement": 0, "posts": [{"url": "https://github.com/ggml-org/llama.cpp/pull/26048", "author": "ggml-org/llama.cpp"}]},
+    {"title": "llama-server security tightening (may break LAN setups)", "why": "Tools/MCP on non-loopback host now need an API key or --allow-unauthenticated-tools; CORS proxy and media URLs blocked from localhost/LAN by default (#32113, #32115, #32120).", "engagement": 0, "posts": [{"url": "https://github.com/ggml-org/llama.cpp/pull/32113", "author": "ggml-org/llama.cpp"}, {"url": "https://github.com/ggml-org/llama.cpp/pull/32115", "author": "ggml-org/llama.cpp"}]},
+    {"title": "BotPsy 0.8B on-device agent model (GGUF)", "why": "Tether QVAC tool-use model on Qwen3.5-0.8B, Apache 2.0, bf16/Q8/Q4 GGUF.", "engagement": 0, "posts": [{"url": "https://huggingface.co/blog/qvac/botpsy", "author": "Tether QVAC"}]},
+    {"title": "USSF-627 Falcon 9 launched", "why": "Classified Space Force mission from Vandenberg Nov 11 10:36pm CT after several slips.", "engagement": 0, "posts": [{"url": "https://www.space.com/space-exploration/launches-spacecraft/spacex-launches-2nd-mystery-mission-for-us-space-force-in-6-day-span-photos", "author": "Space.com"}]}
   ]
 }
