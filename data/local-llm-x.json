@@ -1,51 +1,55 @@
 {
-  "last_updated": "2026-11-13T11:34:25Z",
+  "last_updated": "2026-11-14T12:29:41Z",
   "topics": [
     {
-      "title": "llama.cpp v1.0.0 tagged",
-      "why": "First 1.0 of llama.cpp/ggml; deprecated API and --defrag-thold removed, speculative/NextN API promoted to llama.h.",
+      "title": "llama.cpp b12374-b12377: Metal fix, DFlash refactor",
+      "why": "Metal mul_mv offset overflow fix; DFlash spec-decoding code reorganized (move-only).",
       "engagement": 0,
       "posts": [
         {
-          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/v1.0.0",
+          "url": "https://github.com/ggml-org/llama.cpp/pull/32221",
           "author": "ggml-org"
         },
         {
-          "url": "https://github.com/ggml-org/llama.cpp/pull/30565",
+          "url": "https://github.com/ggml-org/llama.cpp/pull/32016",
           "author": "ggml-org"
         }
       ]
     },
     {
-      "title": "CUDA few-row MMQ for batch 2-24",
-      "why": "New tensor-core kernel speeds speculative decoding and small batches on Ampere+ (Q4_K-Q8_0, IQ4).",
+      "title": "Inkling 2 Small open weights (594B/17B active)",
+      "why": "Apache 2.0 weights public; smallest home quant ~172GB; llama.cpp support PRs still open.",
       "engagement": 0,
       "posts": [
         {
-          "url": "https://github.com/ggml-org/llama.cpp/pull/31533",
+          "url": "https://huggingface.co/thinkingmachines/Inkling-2-Small",
+          "author": "thinkingmachines"
+        },
+        {
+          "url": "https://github.com/ggml-org/llama.cpp/pull/32217",
           "author": "ggml-org"
         }
       ]
     },
     {
-      "title": "Starship Flight 15: first double catch attempt",
-      "why": "Window opens Fri 4:45pm CT; booster and ship catch, 26 Starlink V3; FAA approval pending as of late Thu.",
+      "title": "Starship Flight 15: Ship in orbit, booster lost",
+      "why": "Booster aborted catch (GNC) and exploded offshore; 26 Starlink V3 deployed; Ship catch try ~3:20pm CT Sat.",
       "engagement": 0,
       "posts": [
         {
-          "url": "https://www.spacex.com/launches/starship-flight-15",
-          "author": "SpaceX"
+          "url": "https://spaceflightnow.com/2026/11/13/live-coverage-starship-flight-15-attempts-to-recover-full-vehicle-in-double-launch-pad-catch/",
+          "author": "Spaceflight Now"
         }
       ]
     },
     {
-      "title": "Unsloth Qwen3.8-27B GGUF refresh",
-      "why": "GGUF repo re-uploaded Nov 11 with Dynamic v3.1 quants.",
+      "title": "Report: ~60 Grok Imagine roles cut",
+      "why": "The Information says resources shift to coding tools and Grok Bot; no company statement.",
       "engagement": 0,
       "posts": [
         {
-          "url": "https://huggingface.co/unsloth/Qwen3.8-27B-GGUF",
-          "author": "unsloth"
+          "url": "https://www.investing.com/news/stock-market-news/musks-ai-group-lays-off-60-staffers-from-grok-video-unit-the-information-reports-5025776",
+          "author": "Investing.com"
         }
       ]
     }
