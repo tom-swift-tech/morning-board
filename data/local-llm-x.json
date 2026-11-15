@@ -1,57 +1,6 @@
-{
-  "last_updated": "2026-11-14T12:29:41Z",
-  "topics": [
-    {
-      "title": "llama.cpp b12374-b12377: Metal fix, DFlash refactor",
-      "why": "Metal mul_mv offset overflow fix; DFlash spec-decoding code reorganized (move-only).",
-      "engagement": 0,
-      "posts": [
-        {
-          "url": "https://github.com/ggml-org/llama.cpp/pull/32221",
-          "author": "ggml-org"
-        },
-        {
-          "url": "https://github.com/ggml-org/llama.cpp/pull/32016",
-          "author": "ggml-org"
-        }
-      ]
-    },
-    {
-      "title": "Inkling 2 Small open weights (594B/17B active)",
-      "why": "Apache 2.0 weights public; smallest home quant ~172GB; llama.cpp support PRs still open.",
-      "engagement": 0,
-      "posts": [
-        {
-          "url": "https://huggingface.co/thinkingmachines/Inkling-2-Small",
-          "author": "thinkingmachines"
-        },
-        {
-          "url": "https://github.com/ggml-org/llama.cpp/pull/32217",
-          "author": "ggml-org"
-        }
-      ]
-    },
-    {
-      "title": "Starship Flight 15: Ship in orbit, booster lost",
-      "why": "Booster aborted catch (GNC) and exploded offshore; 26 Starlink V3 deployed; Ship catch try ~3:20pm CT Sat.",
-      "engagement": 0,
-      "posts": [
-        {
-          "url": "https://spaceflightnow.com/2026/11/13/live-coverage-starship-flight-15-attempts-to-recover-full-vehicle-in-double-launch-pad-catch/",
-          "author": "Spaceflight Now"
-        }
-      ]
-    },
-    {
-      "title": "Report: ~60 Grok Imagine roles cut",
-      "why": "The Information says resources shift to coding tools and Grok Bot; no company statement.",
-      "engagement": 0,
-      "posts": [
-        {
-          "url": "https://www.investing.com/news/stock-market-news/musks-ai-group-lays-off-60-staffers-from-grok-video-unit-the-information-reports-5025776",
-          "author": "Investing.com"
-        }
-      ]
-    }
-  ]
-}
+{"last_updated":"2026-11-15T12:45:00Z","topics":[
+{"title":"llama.cpp merges Inkling 2 support (b12406)","why":"Text+vision Inkling 2 now runs in llama.cpp; DSpark speculator PR still open. Smallest GGUFs ~150GB, too big for a single 5090.","engagement":0,"posts":[{"url":"https://github.com/ggml-org/llama.cpp/pull/32217","author":"ggml-org/llama.cpp"},{"url":"https://github.com/ggml-org/llama.cpp/releases/tag/b12406","author":"ggml-org/llama.cpp"},{"url":"https://huggingface.co/unsloth/Inkling-2-Small-GGUF","author":"unsloth"}]},
+{"title":"Starship Flight 15: first-ever Ship catch","why":"Ship 42 caught by the tower Sat Nov 14 3:20pm CT after 14 orbits; booster lost Fri.","engagement":0,"posts":[{"url":"https://www.spacex.com/launches/starship-flight-15/","author":"SpaceX"}]},
+{"title":"Grok Bot harness efficiency: ~7% more usage","why":"Up to 15% more on routine runs, no price change.","engagement":0,"posts":[{"url":"https://teslanorth.com/2026/11/14/grok-bot-efficiency-more-usage/","author":"TeslaNorth"}]},
+{"title":"llama-server slot scheduler refactor (b12411)","why":"server_slot_sched + prompt running hash; streamed-response connection reuse fix (b12404).","engagement":0,"posts":[{"url":"https://github.com/ggml-org/llama.cpp/pull/32154","author":"ggml-org/llama.cpp"}]}
+]}
