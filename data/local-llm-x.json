@@ -1,6 +1,46 @@
-{"last_updated":"2026-11-15T12:45:00Z","topics":[
-{"title":"llama.cpp merges Inkling 2 support (b12406)","why":"Text+vision Inkling 2 now runs in llama.cpp; DSpark speculator PR still open. Smallest GGUFs ~150GB, too big for a single 5090.","engagement":0,"posts":[{"url":"https://github.com/ggml-org/llama.cpp/pull/32217","author":"ggml-org/llama.cpp"},{"url":"https://github.com/ggml-org/llama.cpp/releases/tag/b12406","author":"ggml-org/llama.cpp"},{"url":"https://huggingface.co/unsloth/Inkling-2-Small-GGUF","author":"unsloth"}]},
-{"title":"Starship Flight 15: first-ever Ship catch","why":"Ship 42 caught by the tower Sat Nov 14 3:20pm CT after 14 orbits; booster lost Fri.","engagement":0,"posts":[{"url":"https://www.spacex.com/launches/starship-flight-15/","author":"SpaceX"}]},
-{"title":"Grok Bot harness efficiency: ~7% more usage","why":"Up to 15% more on routine runs, no price change.","engagement":0,"posts":[{"url":"https://teslanorth.com/2026/11/14/grok-bot-efficiency-more-usage/","author":"TeslaNorth"}]},
-{"title":"llama-server slot scheduler refactor (b12411)","why":"server_slot_sched + prompt running hash; streamed-response connection reuse fix (b12404).","engagement":0,"posts":[{"url":"https://github.com/ggml-org/llama.cpp/pull/32154","author":"ggml-org/llama.cpp"}]}
-]}
+{
+  "last_updated": "2026-11-16T11:29:25Z",
+  "topics": [
+    {
+      "title": "llama.cpp b12420: MiniMax-M3.1-Flash support merged",
+      "why": "428B/23B-active MoE now runs on mainline llama.cpp (vision + DSpark draft); smallest Unsloth GGUF is 129GB, borderline for a 128GB RAM + 32GB VRAM box.",
+      "engagement": 0,
+      "posts": [
+        {
+          "url": "https://github.com/ggml-org/llama.cpp/pull/32301",
+          "author": "ggml-org"
+        },
+        {
+          "url": "https://huggingface.co/unsloth/MiniMax-M3.1-Flash-GGUF",
+          "author": "unsloth"
+        }
+      ]
+    },
+    {
+      "title": "llama.cpp adds local speech: ZONOS3-Mini TTS, Higgs v3 STT, VibeVoice-ASR",
+      "why": "Speech in and out through mtmd in llama.cpp (b12424, b12426).",
+      "engagement": 0,
+      "posts": [
+        {
+          "url": "https://github.com/ggml-org/llama.cpp/pull/32020",
+          "author": "ggml-org"
+        },
+        {
+          "url": "https://github.com/ggml-org/llama.cpp/pull/32329",
+          "author": "ggml-org"
+        }
+      ]
+    },
+    {
+      "title": "ULA Vulcan anomaly on first Amazon Leo launch",
+      "why": "40 Amazon Leo satellites aboard; setback for Starlink's main competitor.",
+      "engagement": 0,
+      "posts": [
+        {
+          "url": "https://www.satellitetoday.com/eletters/daily-news-feed-11-16-2026/",
+          "author": "Via Satellite"
+        }
+      ]
+    }
+  ]
+}
