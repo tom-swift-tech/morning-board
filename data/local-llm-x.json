@@ -1,9 +1,64 @@
 {
-  "last_updated": "2026-11-17T11:45:00Z",
+  "last_updated": "2026-11-18T11:35:16Z",
   "topics": [
-    {"title": "llama.cpp b12452: Fish Audio S2 Pro TTS with voice cloning runs locally", "why": "Qwen3-4B backbone, 44.1kHz output, reference-clip cloning; small enough for any 5090 box", "engagement": 0, "posts": [{"url": "https://github.com/ggml-org/llama.cpp/pull/32330", "author": "ggml-org/llama.cpp"}, {"url": "https://huggingface.co/fishaudio/s2-pro", "author": "fishaudio"}]},
-    {"title": "llama.cpp b12455: Inkling 1/2 chat and tool-call parser merged", "why": "Follow-up to Inkling 2 support; DSpark #32218 still open", "engagement": 0, "posts": [{"url": "https://github.com/ggml-org/llama.cpp/pull/32381", "author": "ggml-org/llama.cpp"}]},
-    {"title": "Starship V4: ~70m ship, 9 engines, 2027; Ship 42 heat shield looks good", "why": "Next-gen size bump after first orbital ship catch", "engagement": 0, "posts": [{"url": "https://www.space.com/space-exploration/launches-spacecraft/elon-musk-says-spacexs-starship-already-the-largest-rocket-on-earth-will-get-even-bigger-with-next-gen-v4-model", "author": "Space.com"}, {"url": "https://aviationweek.com/space/launch-vehicles-propulsion/starship-heat-shield-good-shape-after-22-hr-orbital-flight", "author": "Aviation Week"}]},
-    {"title": "Anthropic IPO filing: ~$3.1B/month to SpaceX for Colossus compute", "why": "Up to $120.5B through 2029; full capacity in December", "engagement": 0, "posts": [{"url": "https://finance.yahoo.com/technology/ai/articles/anthropic-ipo-puts-spacex-spotlight-071427039.html", "author": "Yahoo Finance"}]}
+    {
+      "title": "llama.cpp adds Kokoro-82M TTS (b12494)",
+      "why": "Tiny 82M local text-to-speech now runs in mainline llama.cpp",
+      "engagement": 0,
+      "posts": [
+        {
+          "url": "https://github.com/ggml-org/llama.cpp/pull/32413",
+          "author": "ggml-org/llama.cpp"
+        },
+        {
+          "url": "https://huggingface.co/hexgrad/Kokoro-82M",
+          "author": "hexgrad"
+        }
+      ]
+    },
+    {
+      "title": "Qwen3-TTS reference (ICL) mode in llama.cpp (b12491)",
+      "why": "More accurate voice cloning from a reference clip",
+      "engagement": 0,
+      "posts": [
+        {
+          "url": "https://github.com/ggml-org/llama.cpp/pull/32438",
+          "author": "ggml-org/llama.cpp"
+        }
+      ]
+    },
+    {
+      "title": "MiniMax-Music3 lands in llama.cpp (b12479)",
+      "why": "Second local music-gen model after YuE2",
+      "engagement": 0,
+      "posts": [
+        {
+          "url": "https://github.com/ggml-org/llama.cpp/pull/32435",
+          "author": "ggml-org/llama.cpp"
+        }
+      ]
+    },
+    {
+      "title": "SpaceX $40B Nvidia GPU lease financing",
+      "why": "~$4B first bond tranche expected this week",
+      "engagement": 0,
+      "posts": [
+        {
+          "url": "https://finance.yahoo.com/technology/ai/articles/spacex-debt-ai-chips-hit-145310043.html",
+          "author": "Bloomberg via Yahoo Finance"
+        }
+      ]
+    },
+    {
+      "title": "CRS-35 Dragon undocking scrubbed for weather",
+      "why": "Next try Thu Nov 19 11:05am CT",
+      "engagement": 0,
+      "posts": [
+        {
+          "url": "https://www.nasa.gov/blogs/spacestation/2026/11/18/nasa-spacex-stand-down-from-dragons-undocking-on-wednesday/",
+          "author": "NASA"
+        }
+      ]
+    }
   ]
 }
