@@ -1,1 +1,50 @@
-{"last_updated":"2026-11-20T11:28:32Z","topics":[{"title":"OVHcloud Olala-v1.0-mini-7A1B open weights + GGUFs","why":"Apache-2.0 7B MoE (1B active), 6-7GB quants; needs OVH llama.cpp fork for now","engagement":0,"posts":[{"url":"https://huggingface.co/OVHaiLLM/Olala-v1.0-mini-7A1B-GGUF","author":"OVHaiLLM"}]},{"title":"llama.cpp b12561 Vulkan chunked GATED_DELTA_NET","why":"Faster linear-attention (Qwen3-next style) models on Vulkan; plus stream-k MUL_MAT in b12535","engagement":0,"posts":[{"url":"https://github.com/ggml-org/llama.cpp/pull/30207","author":"ggml-org/llama.cpp"},{"url":"https://github.com/ggml-org/llama.cpp/pull/28528","author":"ggml-org/llama.cpp"}]},{"title":"SpaceX GPU lenders want no-orbit clause","why":"Apollo-led $40B Vera Rubin lease investors seek terms barring launching the chips to space","engagement":0,"posts":[{"url":"https://biz.chosun.com/en/en-science/2026/11/20/PW545LVPNBFKNGOAX2JBXJZSR4/","author":"Chosunbiz"}]},{"title":"Starlink Direct-to-Cell V2 in 2027","why":"Musk at DealBook: ~40x bandwidth, rooftop microcells into production 2027","engagement":0,"posts":[{"url":"https://techcrunch.com/2026/11/19/elon-musk-says-spacex-has-a-plan-to-eliminate-cell-phone-dead-zones/","author":"TechCrunch"}]}]}
+{
+  "last_updated": "2026-11-21T12:34:02Z",
+  "topics": [
+    {
+      "title": "Inkling 2 Mini: Apache open weights, ~20GB, llama.cpp support merged",
+      "why": "26.4B/3.4B-active looped MoE sized for 32GB GPUs; llama.cpp b12600 adds support",
+      "engagement": 0,
+      "posts": [
+        {
+          "url": "https://thinkingmachines.ai/news/inkling-2-mini/",
+          "author": "Thinking Machines Lab"
+        },
+        {
+          "url": "https://huggingface.co/thinkingmachines/Inkling-2-Mini",
+          "author": "Hugging Face"
+        },
+        {
+          "url": "https://github.com/ggml-org/llama.cpp/pull/32694",
+          "author": "ggml-org"
+        }
+      ]
+    },
+    {
+      "title": "llama.cpp b12606: Domyn Edge 4B, drama3 voice cloning, gemma4 multi-seq PP",
+      "why": "Small runtime adds since b12562",
+      "engagement": 0,
+      "posts": [
+        {
+          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b12606",
+          "author": "ggml-org"
+        }
+      ]
+    },
+    {
+      "title": "Falcon 9 launches classified USSF-317; CRS-35 Dragon splashdown today",
+      "why": "SpaceX beat",
+      "engagement": 0,
+      "posts": [
+        {
+          "url": "https://www.space.com/space-exploration/launches-spacecraft/spacex-falcon-9-classified-space-force-launch-ussf-317",
+          "author": "Space.com"
+        },
+        {
+          "url": "https://www.nasa.gov/blogs/general-blog/2026/11/20/dragon-undocks-from-station-packed-with-science-and-cargo/",
+          "author": "NASA"
+        }
+      ]
+    }
+  ]
+}
