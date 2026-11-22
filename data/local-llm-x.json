@@ -1,48 +1,40 @@
 {
-  "last_updated": "2026-11-21T12:34:02Z",
+  "last_updated": "2026-11-22T12:30:49Z",
   "topics": [
     {
-      "title": "Inkling 2 Mini: Apache open weights, ~20GB, llama.cpp support merged",
-      "why": "26.4B/3.4B-active looped MoE sized for 32GB GPUs; llama.cpp b12600 adds support",
+      "title": "NariQ: Qwen3.8-27B in a 10GB GGUF (needs Nari fork)",
+      "why": "Trellis 3/2.5-bit quants that Nari Labs says match BF16 on agent tasks; full 262K ctx ~30GB, so it fits a 5090. Stock llama.cpp/Ollama/LM Studio can't load it yet; GeForce untested.",
       "engagement": 0,
       "posts": [
         {
-          "url": "https://thinkingmachines.ai/news/inkling-2-mini/",
-          "author": "Thinking Machines Lab"
-        },
-        {
-          "url": "https://huggingface.co/thinkingmachines/Inkling-2-Mini",
-          "author": "Hugging Face"
-        },
-        {
-          "url": "https://github.com/ggml-org/llama.cpp/pull/32694",
-          "author": "ggml-org"
+          "url": "https://huggingface.co/nari-labs/Qwen3.8-27B-NariQ-GGUF",
+          "author": "nari-labs"
         }
       ]
     },
     {
-      "title": "llama.cpp b12606: Domyn Edge 4B, drama3 voice cloning, gemma4 multi-seq PP",
-      "why": "Small runtime adds since b12562",
+      "title": "CRS-35 Dragon splashed down Sat 4:03pm CT",
+      "why": "Cargo Dragon back off California with a failed Canadarm2 wrist joint and science samples.",
       "engagement": 0,
       "posts": [
         {
-          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b12606",
-          "author": "ggml-org"
-        }
-      ]
-    },
-    {
-      "title": "Falcon 9 launches classified USSF-317; CRS-35 Dragon splashdown today",
-      "why": "SpaceX beat",
-      "engagement": 0,
-      "posts": [
-        {
-          "url": "https://www.space.com/space-exploration/launches-spacecraft/spacex-falcon-9-classified-space-force-launch-ussf-317",
-          "author": "Space.com"
+          "url": "https://www.spacex.com/launches/crs35",
+          "author": "SpaceX"
         },
         {
-          "url": "https://www.nasa.gov/blogs/general-blog/2026/11/20/dragon-undocks-from-station-packed-with-science-and-cargo/",
+          "url": "https://www.nasa.gov/blogs/spacestation/2026/11/21/dragon-returns-to-earth-packed-with-science-and-cargo/",
           "author": "NASA"
+        }
+      ]
+    },
+    {
+      "title": "Mexico presses SpaceX over Flight 15 booster debris",
+      "why": "1,500+ suspected fragments at Bagdad Beach near Matamoros; Mexico says SpaceX must take responsibility.",
+      "engagement": 0,
+      "posts": [
+        {
+          "url": "https://www.tpr.org/border-immigration/2026-11-21/mexico-says-spacex-must-take-responsibility-as-suspected-rocket-debris-washes-ashore-near-texas",
+          "author": "Texas Public Radio"
         }
       ]
     }
