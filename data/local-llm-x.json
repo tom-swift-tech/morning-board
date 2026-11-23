@@ -1,40 +1,51 @@
 {
-  "last_updated": "2026-11-22T12:30:49Z",
+  "last_updated": "2026-11-23T11:29:58Z",
   "topics": [
     {
-      "title": "NariQ: Qwen3.8-27B in a 10GB GGUF (needs Nari fork)",
-      "why": "Trellis 3/2.5-bit quants that Nari Labs says match BF16 on agent tasks; full 262K ctx ~30GB, so it fits a 5090. Stock llama.cpp/Ollama/LM Studio can't load it yet; GeForce untested.",
+      "title": "llama.cpp fixes Inkling 2 Mini tokenizer + tool calls",
+      "why": "b12641 makes Inkling 2 tokenize like the official tokenizer; b12650 reworks its tool-call parser. Update before judging Inkling on Bastion; some generation issues still open.",
       "engagement": 0,
       "posts": [
         {
-          "url": "https://huggingface.co/nari-labs/Qwen3.8-27B-NariQ-GGUF",
-          "author": "nari-labs"
-        }
-      ]
-    },
-    {
-      "title": "CRS-35 Dragon splashed down Sat 4:03pm CT",
-      "why": "Cargo Dragon back off California with a failed Canadarm2 wrist joint and science samples.",
-      "engagement": 0,
-      "posts": [
-        {
-          "url": "https://www.spacex.com/launches/crs35",
-          "author": "SpaceX"
+          "url": "https://github.com/ggml-org/llama.cpp/pull/32799",
+          "author": "ggml-org/llama.cpp"
         },
         {
-          "url": "https://www.nasa.gov/blogs/spacestation/2026/11/21/dragon-returns-to-earth-packed-with-science-and-cargo/",
-          "author": "NASA"
+          "url": "https://github.com/ggml-org/llama.cpp/pull/32833",
+          "author": "ggml-org/llama.cpp"
         }
       ]
     },
     {
-      "title": "Mexico presses SpaceX over Flight 15 booster debris",
-      "why": "1,500+ suspected fragments at Bagdad Beach near Matamoros; Mexico says SpaceX must take responsibility.",
+      "title": "llama.cpp token-aware chat parsing",
+      "why": "b12638: parsers can tell a real <think> token from the same text, fixing mis-parsed reasoning/tool output on Qwen3-style models.",
       "engagement": 0,
       "posts": [
         {
-          "url": "https://www.tpr.org/border-immigration/2026-11-21/mexico-says-spacex-must-take-responsibility-as-suspected-rocket-debris-washes-ashore-near-texas",
-          "author": "Texas Public Radio"
+          "url": "https://github.com/ggml-org/llama.cpp/pull/29307",
+          "author": "ggml-org/llama.cpp"
+        }
+      ]
+    },
+    {
+      "title": "SpaceX: 32-hour pad turnaround record at Vandenberg",
+      "why": "NROL-136 flew Sun 6:23am CT from SLC-4E 32h 3m after USSF-317; old record 45h. Next goal 24h.",
+      "engagement": 0,
+      "posts": [
+        {
+          "url": "https://www.space.com/space-exploration/launches-spacecraft/spacex-spy-satellite-launch-nrol-136-proliferated-architecture",
+          "author": "Space.com"
+        }
+      ]
+    },
+    {
+      "title": "Himes threatens SpaceX gov funding over Ukraine Starshield",
+      "why": "Incoming House Intel chair wants SpaceX to explain October Starshield changes in Ukraine.",
+      "engagement": 0,
+      "posts": [
+        {
+          "url": "https://arstechnica.com/space/2026/11/incoming-house-chair-threatens-spacex-funding-over-ukraine-controversy/",
+          "author": "Ars Technica"
         }
       ]
     }
