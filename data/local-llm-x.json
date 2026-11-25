@@ -1,40 +1,55 @@
 {
-  "last_updated": "2026-11-24T11:33:38Z",
+  "last_updated": "2026-11-25T11:31:28Z",
   "topics": [
     {
-      "title": "llama.cpp b12669: llama-quantize --target-size / --target-bpw",
-      "why": "Auto-picks a per-tensor quant mix to hit an exact file size at lowest error; build GGUFs that exactly fill 32GB VRAM (author: matched or beat standard quants in 93% of 238 tests).",
+      "title": "llama.cpp b12720: Inkling 2 DSpark speculator support",
+      "why": "Speculative-decoding draft head for Inkling 2 Mini (CITADEL default); drafters on HF, no speedup numbers yet",
       "engagement": 0,
       "posts": [
         {
-          "url": "https://github.com/ggml-org/llama.cpp/pull/15550",
-          "author": "EAddario"
+          "url": "https://github.com/ggml-org/llama.cpp/pull/32218",
+          "author": "ggml-org/llama.cpp"
         },
         {
-          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b12669",
-          "author": "ggml-org"
+          "url": "https://huggingface.co/intuit/Inkling-2-Mini-dspark",
+          "author": "intuit"
         }
       ]
     },
     {
-      "title": "NYT: SpaceX rents compute to Anthropic and Google",
-      "why": "Anthropic ~$3.1B/mo, Google ~$800M/mo, 90-day outs; Musk pushes revenue per GPU over benchmarks.",
+      "title": "llama.cpp b12708: llama-server passes MCP image/audio tool results",
+      "why": "Local agents can now see images/audio returned by MCP tools",
       "engagement": 0,
       "posts": [
         {
-          "url": "https://www.investing.com/news/stock-market-news/musks-ai-push-faces-a-dilemma-as-rivals-become-major-customers-5046067",
-          "author": "Investing.com / Reuters"
+          "url": "https://github.com/ggml-org/llama.cpp/pull/32064",
+          "author": "ggml-org/llama.cpp"
         }
       ]
     },
     {
-      "title": "llama.cpp b12668–b12675 backend fixes",
-      "why": "Metal BF16 matmul, compact flash-attn bias on CUDA/ROCm/Vulkan, server prompt-cache restore fix.",
+      "title": "Falcon 9 launches USSF-266 from Vandenberg",
+      "why": "Tue Nov 24 10:08am CT; B1081 29th flight, OCISLY landing",
       "engagement": 0,
       "posts": [
         {
-          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/b12675",
-          "author": "ggml-org"
+          "url": "https://www.spacex.com/launches/ussf266",
+          "author": "SpaceX"
+        }
+      ]
+    },
+    {
+      "title": "Virginia and Oregon sue SpaceX/xAI over Grok spicy-mode images",
+      "why": "State consumer-protection suits filed Nov 23 seek injunctions and penalties",
+      "engagement": 0,
+      "posts": [
+        {
+          "url": "https://www.oag.state.va.us/media-center/news-releases/jay-jones/3162-attorneys-general-jones-and-rayfield-file-suit-against-spacex-parent-company-of-x-xai-and-grok-over-creation-and-promotion-of-child-exploitation-and-non-consensual-images-on-platform",
+          "author": "Virginia AG"
+        },
+        {
+          "url": "https://www.cnbc.com/2026/11/23/oregon-virginia-spacex-grok-deepfake-lawsuits.html",
+          "author": "CNBC"
         }
       ]
     }
