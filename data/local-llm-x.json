@@ -1,59 +1,62 @@
 {
-  "last_updated": "2026-11-26T11:35:24Z",
+  "last_updated": "2026-11-27T11:30:05Z",
   "topics": [
     {
-      "title": "llama.cpp v1.1.0 tagged",
-      "why": "Inkling 2 family + DSpark, DFlash split, auto per-tensor quant to a bpw/size budget, server slot refactor, new web UI, ggml v1.1.0",
+      "title": "llama.cpp CUDA fuses Inkling 2 op chains (#33060, b12793)",
+      "why": "Decode kernel launches 5745→2584; author bench tg +28–31%, pp512 +16–22% (Inkling 2 Mini IQ4_NL, RTX PRO 6000). CITADEL's default model.",
       "engagement": 0,
       "posts": [
         {
-          "url": "https://github.com/ggml-org/llama.cpp/releases/tag/v1.1.0",
-          "author": "ggml-org"
-        },
-        {
-          "url": "https://github.com/ggml-org/llama.cpp/pull/33043",
-          "author": "ggml-org"
+          "url": "https://github.com/ggml-org/llama.cpp/pull/33060",
+          "author": "ggml-org/llama.cpp"
         }
       ]
     },
     {
-      "title": "Inkling 2 graph trims (bit-identical) + indexed-bias FA path",
-      "why": "Fewer ops per token in mix()/control() for CITADEL's default model; indexed-bias path not yet enabled on any backend",
+      "title": "ISTA-DASLab non-uniform GGUF quants of Inkling 2 Mini",
+      "why": "IQ3_XXS 10.61GB / IQ3_S 11.43GB; card claims IQ3_S within 1 pt of base (vendor only).",
       "engagement": 0,
       "posts": [
         {
-          "url": "https://github.com/ggml-org/llama.cpp/pull/32948",
-          "author": "ggml-org"
-        },
-        {
-          "url": "https://github.com/ggml-org/llama.cpp/pull/33053",
-          "author": "ggml-org"
+          "url": "https://huggingface.co/ISTA-DASLab/Inkling-2-Mini-GSQ-RCO-GGUF",
+          "author": "ISTA-DASLab"
         }
       ]
     },
     {
-      "title": "KRAFTON Raon-1-mini-preview in llama.cpp",
-      "why": "30B-A4B MoE, Apache-2.0, official GGUFs",
+      "title": "Inkling 2 Mini DFlash2 drafter in llama.cpp; Ollama v0.40.19-rc0",
+      "why": "More speculative-decoding options for Inkling 2; no speed numbers yet.",
       "engagement": 0,
       "posts": [
         {
-          "url": "https://github.com/ggml-org/llama.cpp/pull/32176",
-          "author": "ggml-org"
+          "url": "https://github.com/ggml-org/llama.cpp/pull/33073",
+          "author": "ggml-org/llama.cpp"
         },
         {
-          "url": "https://huggingface.co/KRAFTON/Raon-1-mini-preview-gguf",
-          "author": "KRAFTON"
+          "url": "https://github.com/ollama/ollama/releases/tag/v0.40.19-rc0",
+          "author": "ollama"
         }
       ]
     },
     {
-      "title": "Ternary-Bonsai-2.5-27B GGUF",
-      "why": "Ternary Qwen3.8-27B, 5.93GB PTQ1_0; only Q2_0 runs on stock llama.cpp",
+      "title": "FCC approves SpaceX Starmind orbital data-center constellation",
+      "why": "Up to 1M satellites; Musk targets first launches Q3 2027.",
       "engagement": 0,
       "posts": [
         {
-          "url": "https://huggingface.co/prism-ml/Ternary-Bonsai-2.5-27B-GGUF",
-          "author": "prism-ml"
+          "url": "https://spaceflightnow.com/2026/11/26/fcc-green-lights-spacexs-plan-to-launch-1-million-starmind-data-center-satellites/",
+          "author": "Spaceflight Now"
+        }
+      ]
+    },
+    {
+      "title": "JetBrains Mellum2.1-12B-A2.5B-Instruct",
+      "why": "Apache-2.0 non-thinking coding MoE for sub-agents, 131K ctx, MTP head.",
+      "engagement": 0,
+      "posts": [
+        {
+          "url": "https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Instruct",
+          "author": "JetBrains"
         }
       ]
     }
