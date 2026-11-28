@@ -1,62 +1,47 @@
 {
-  "last_updated": "2026-11-27T11:30:05Z",
+  "last_updated": "2026-11-28T12:39:00Z",
   "topics": [
     {
-      "title": "llama.cpp CUDA fuses Inkling 2 op chains (#33060, b12793)",
-      "why": "Decode kernel launches 5745→2584; author bench tg +28–31%, pp512 +16–22% (Inkling 2 Mini IQ4_NL, RTX PRO 6000). CITADEL's default model.",
+      "title": "llama.cpp b12828: Inkling 2 tau fix (#33186)",
+      "why": "Undoes a CPU-offload regression from #33060; author +23-26% tg on GB10, ~+1% on RTX 5090. Upgrade past b12793 to b12828+.",
       "engagement": 0,
       "posts": [
         {
-          "url": "https://github.com/ggml-org/llama.cpp/pull/33060",
-          "author": "ggml-org/llama.cpp"
+          "url": "https://github.com/ggml-org/llama.cpp/pull/33186",
+          "author": "anujj"
         }
       ]
     },
     {
-      "title": "ISTA-DASLab non-uniform GGUF quants of Inkling 2 Mini",
-      "why": "IQ3_XXS 10.61GB / IQ3_S 11.43GB; card claims IQ3_S within 1 pt of base (vendor only).",
+      "title": "Ollama v0.40.19 stable",
+      "why": "Faster Inkling 2 short histories, draft proposals, conv snapshots; MLX Engram buffer compaction.",
       "engagement": 0,
       "posts": [
         {
-          "url": "https://huggingface.co/ISTA-DASLab/Inkling-2-Mini-GSQ-RCO-GGUF",
-          "author": "ISTA-DASLab"
-        }
-      ]
-    },
-    {
-      "title": "Inkling 2 Mini DFlash2 drafter in llama.cpp; Ollama v0.40.19-rc0",
-      "why": "More speculative-decoding options for Inkling 2; no speed numbers yet.",
-      "engagement": 0,
-      "posts": [
-        {
-          "url": "https://github.com/ggml-org/llama.cpp/pull/33073",
-          "author": "ggml-org/llama.cpp"
-        },
-        {
-          "url": "https://github.com/ollama/ollama/releases/tag/v0.40.19-rc0",
+          "url": "https://github.com/ollama/ollama/releases/tag/v0.40.19",
           "author": "ollama"
         }
       ]
     },
     {
-      "title": "FCC approves SpaceX Starmind orbital data-center constellation",
-      "why": "Up to 1M satellites; Musk targets first launches Q3 2027.",
+      "title": "ggml FP8/NVFP4 quant scales (#28898, b12818)",
+      "why": "Direct conversion of many FP8/NVFP4 safetensors models; CUDA only for now.",
       "engagement": 0,
       "posts": [
         {
-          "url": "https://spaceflightnow.com/2026/11/26/fcc-green-lights-spacexs-plan-to-launch-1-million-starmind-data-center-satellites/",
-          "author": "Spaceflight Now"
+          "url": "https://github.com/ggml-org/llama.cpp/pull/28898",
+          "author": "0cc4m"
         }
       ]
     },
     {
-      "title": "JetBrains Mellum2.1-12B-A2.5B-Instruct",
-      "why": "Apache-2.0 non-thinking coding MoE for sub-agents, 131K ctx, MTP head.",
+      "title": "Falcon 9 USSF-380 tonight from Vandenberg",
+      "why": "Window opens Sat 10:39pm CT; booster's 27th flight; backup Sun 8:26pm CT.",
       "engagement": 0,
       "posts": [
         {
-          "url": "https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Instruct",
-          "author": "JetBrains"
+          "url": "https://www.spacex.com/launches/ussf380",
+          "author": "SpaceX"
         }
       ]
     }
